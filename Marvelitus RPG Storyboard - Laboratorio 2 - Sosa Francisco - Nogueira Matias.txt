@@ -1,0 +1,116 @@
+--------------------------------------------------------------------------------
+MARVELITUS STORYBOARD 
+--------------------------------------------------------------------------------
+
+--------------------- 01 Intro al Juego ----------------------------------------
+
+1.1 
+Imagen = Marvelitus_Intro.png (Hay que hacerla)
+Musica = Credits_INTRO.mp3
+
+1.2
+Escena = Planeta Tierra, Nave Milano y Avengers del juego, Boss Final detras.
+Musica = Game_Intro.mp3
+Menu = START/OPTIONS/PUNTAJES (10 mejores??)
+-->Musica ON/OFF
+-->Sonidos ON/OFF
+-->Dificultad (3 niveles)
+
+
+--------------------- 02 Trama del Juego y Personajes --------------------------
+
+2.1
+Escena = Malos y Boss atacando las calles, gente corriendo, edificios rotos, etc.
+Musica = SMALL_INTRO.mp3
+Texto = Historia de la trama (Hay que escribirla)
+
+2.2
+Seleccion de Personajes
+--> Capitan America, Historia, Imagen y CAPTAIN_AMERICA_INTRO.mp3
+--> Thor, Historia, Imagen y THOR_INTRO.mp3
+--> Iron Man, Historia, Imagen y IRON_MAN_INTRO.mp3
+--> DareDevil, Historia, Imagen y DAREDEVIL_INTRO.mp3
+--> Spider-Man, Historia, Imagen y SPIDERMAN_INTRO.mp3
+--> Star-Lord, Historia, Imagen y STAR_LORD_INTRO.mp3
+
+
+--------------------- 03 Juego principal ---------------------------------------
+
+(Juego lineal de accion-rpg)
+
+3.1
+El personaje elegido va matando enemigos pantalla tras pantalla, usando los poderes
+o acciones particulares que tenga. Dependiendo la dificultad, los atributos de
+los personajes y los enemigos cambian. (Cantidad de niveles a determinar.)
+Musica = SLOW_FIGHT.mp3
+
+3.2
+Aparicion del jefe final, se lucha una vez normal hasta derrotar su energia.
+El jefe revive y en ese momento se presentan dos situaciones.
+Musica = BOSS_INTRO.mp3 y FAST_FIGHT.mp3
+
+3.3
+Pantalla que dara la eleccion al jugador de continuar normalmente o pedir ayuda.
+
+3.4 A
+Si se continua solo el enemigo tiene una barra mas de energia y al derrotarlo,
+comienza la secuencia final del juego.
+Musica = FAST_FIGHT.mp3
+
+3.4 B
+Si se elige ayuda el jefe tiene 3 barras de energia mas.
+La primer barra será eliminada por la ayuda invocada.
+Escena = Dance off Ataque!!
+Musica = DANCE_OFf_WIN.mp3
+
+Escena de baile y atque conjunto a Guardianes de la Galaxia, o Hulk Buster Iron Man.
+Luego le quedan al jugador 2 barras de energia mas. Tras derrotar al jefe en este modo
+cae/aparece una gema con un codigo especial para desbloquear el mini juego espacial.
+
+--------------------- 04 Escena  de Fin de Juego Principal ---------------------
+
+4.1
+Los personajes se suben a la nave Milano, la tierra festeja, todos felices.
+Musica = FINAL_SCENE.mp3
+
+4.2
+Aparicion de pantalla para desbloquear el minijuego. Si se tiene el codigo lo puede
+desbloquear MILANO SHOOTER . Sino continua hacia la escena de Creditos.
+
+--------------------- 05 Creditos Finales --------------------------------------
+
+Escena con creditos (Fotos de los personajes, y Fotos 8 Bits de Fran y Matias)
+Musica = CREDITS_OUTRO.mp3
+
+--------------------- 06 Reinicio del Juego ------------------------------------
+
+Si el juego de bonus fue desbloqueado, aparece junto al menu principal para poder
+iniciarlo. 
+
+REINICIO A
+Sin juego bonus, puede revisar su puntuacion y jugar otra vez.
+
+REINICIO B
+Con juego especial.
+
+6.1 
+Escena de Intro Milano Shooter
+Musica = Milano_Game_Intro.mp3
+
+6.2
+Juego lateral espacial de disparos
+Musica = Galaxy_Fighter_Space.mp3
+
+6.3
+Aparcicion de Jefe, Lucha normal.
+Musica = Galaxy_Fighter_Boss.mp3
+
+6.4
+Al derrotar al jefe escena final de la nave llendo al espacio.
+Musica = Galaxy_Fighter_FinalScene_Credits
+
+6.5
+Reinicio al menu principal, y aparicion de segunda lista de Puntuacion.
+
+--------------------- El fin mas final de todos los finales. -------------------
+RPG Marvelitus - Sosa Francisco - Nogueira Matias
