@@ -149,9 +149,11 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="INCLUDE/clsBienvenida.h" />
 		<Unit filename="INCLUDE/clsDespedida.h" />
 		<Unit filename="INCLUDE/clsFondo.h" />
+		<Unit filename="INCLUDE/clsJuego.h" />
 		<Unit filename="INCLUDE/clsMotor.h" />
 		<Unit filename="LOG/stdout.txt" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/despedida.png" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/juego.png" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/presentacion.png" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/001-Milano_Game_Intro.mp3" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/002-Galaxy_Fighter_Space.mp3" />
@@ -175,6 +177,7 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="SOURCE/clsBienvenida.cpp" />
 		<Unit filename="SOURCE/clsDespedida.cpp" />
 		<Unit filename="SOURCE/clsFondo.cpp" />
+		<Unit filename="SOURCE/clsJuego.cpp" />
 		<Unit filename="SOURCE/clsMotor.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>

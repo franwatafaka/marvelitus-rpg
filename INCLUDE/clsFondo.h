@@ -11,6 +11,7 @@ class clsFondo : public clsSprite
         int iniciar();
         void setBienvenida();
         void setDespedida();
+        void setJuego();
     protected:
         void inherit(){};
 

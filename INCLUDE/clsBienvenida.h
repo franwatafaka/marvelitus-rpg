@@ -27,7 +27,6 @@ class clsBienvenida
         clsError error;
         //Objeto fondo
         clsFondo fondo;
-    private:
 };
 
 #endif // CLSBIENVENIDA_H

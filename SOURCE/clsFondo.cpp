@@ -3,7 +3,7 @@
 int clsFondo::iniciar()
 {
     error.set(0);
-    setItems(2);
+    setItems(3);
     //Fondo Presentacion
     setI(0);
     error.set(load("RESOURCES/IMAGES/BACKGROUNDS/presentacion.png"));
@@ -18,6 +18,13 @@ int clsFondo::iniciar()
     {
         return error.get();
     }
+    //Fondo Presentacion
+    setI(2);
+    error.set(load("RESOURCES/IMAGES/BACKGROUNDS/juego.png"));
+    if(error.get())
+    {
+        return error.get();
+    }
     setX(0);
     setY(0);
     return error.get();
@@ -26,11 +33,16 @@ int clsFondo::iniciar()
 void clsFondo::setBienvenida()
 {
     setI(0);
-    cout << "Fondo Bienvenida" << endl;
+    cout << "Carga Indice Fondo Bienvenida" << endl;
 }
 
 void clsFondo::setDespedida()
 {
     setI(1);
-    cout << "Fondo Despedida" << endl;
+    cout << "Carga Indice Fondo Despedida" << endl;
+}
+void clsFondo::setJuego()
+{
+    setI(2);
+    cout << "Carga Indice Fondo Juego" << endl;
 }

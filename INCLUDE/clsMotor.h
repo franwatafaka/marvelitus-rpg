@@ -10,6 +10,7 @@
 //--------------------------Includes Programa-----------------------------------
 #include "clsBienvenida.h"
 #include "clsDespedida.h"
+#include "clsJuego.h"
 //------------------------------------------------------------------------------
 
 class clsMotor
@@ -34,6 +35,8 @@ class clsMotor
         clsBienvenida bienvenida;
         //Objeto de la clase Despedida
         clsDespedida despedida;
+        //Objeto de la clase Juego
+        clsJuego juego;
 };
 
 #endif // CLSMOTOR_H
