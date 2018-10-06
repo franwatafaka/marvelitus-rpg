@@ -100,6 +100,9 @@
 #include <clsScreen.h>      // Administra las pantallas donde se pegaran las imagenes.
 #include <clsTimer.h>       // Administra el temporizador del juego
 #include <clsDot.h>         // Administra los pixeles basados en la resolucion.
+#include <clsEvent.h>       // Administra los eventos del programa.
+
+#include "clsMotor.h"       // Clase del motor grafico
 
 using namespace std;        // Espacio de nombres estandar.
 
@@ -129,41 +132,20 @@ int main ( int argc, char** argv )
 
   //-------------------------------------
   // OBJETOS NECESARIOS PARA EL PROGRAMA
-  clsError error;           // Objeto para el uso de la clase Errores.
-  clsMode mode;             // Objeto para el uso de la clase Motor grafico.
-  clsScreen screen;         // Objeto para el uso de la clase Pantallas.
-  clsTimer timer;           // Objeto para el uso de la clase Temporizadores.
-  clsDot dot;               // Objeto para el uso de la clase Pixeles.
 
+  // Objeto para el uso de la clase Error.
+  clsError error;
+  // Objeto para el uso de la clase Motor.
+  clsMotor motor;
 
   //--------------------------------
   // CODIGO DEL PROGRAMA PRINCIPAL
 
-  //Resolucion de pantalla
-  mode.init(1280,720,32);
-  //Superficie de Pantalla, sin titulo y pantalla completa
-  screen.init(mode.getScrWidth(),mode.getScrHeight(),mode.getScrDepth(),DISABLED,FULLSCREEN);
-  //Color rgb gris en la pantalla
-  screen.clean(GRAY);
-  //Pixel de un color blanco en el medio de la pantalla
-  dot.set(screen.getWidth()/2,screen.getHeight()/2,WHITE,screen.getPtr());
+  error.set(motor.iniciar());
+  if(error.get()) return error.get();
 
-
-
-
-
-
-
-
-
-  //Refrescar la pantalla
-  screen.refresh();
-  //Esperar tecla para continuar
-  timer.waitForKey(KEY_ESCAPE);
-
-
-
-
+  error.set(motor.correr());
+  if(error.get()) return error.get();
 
   //----------------------------
   // FIN DEL PROGRAMA PRINCIPAL

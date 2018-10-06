@@ -146,7 +146,11 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="FONTS/FreeSerifItalic.ttf" />
 		<Unit filename="GPL LICENSE/Licencia GPL (traduccion NO OFICIAL - castellano argentina).txt" />
 		<Unit filename="GPL LICENSE/Licencia GPL original (ingles).txt" />
+		<Unit filename="INCLUDE/clsBienvenida.h" />
+		<Unit filename="INCLUDE/clsMotor.h" />
 		<Unit filename="LOG/stdout.txt" />
+		<Unit filename="SOURCE/clsBienvenida.cpp" />
+		<Unit filename="SOURCE/clsMotor.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
