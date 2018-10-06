@@ -16,42 +16,36 @@ int clsMotor::iniciar()
     {
         return error.get();
     }
+    error.set(bienvenida.iniciar(&pantalla,&evento));
+    if(error.get())
+    {
+        return error.get();
+    }
+    error.set(despedida.iniciar(&pantalla,&evento));
+    if(error.get())
+    {
+        return error.get();
+    }
     return error.get();
 }
 //Metodo para Correr Motor
 int clsMotor::correr()
 {
     error.set(0);
-    bool salir=false;
-    pantalla.clean(GRAY);
-    pantalla.refresh();
-    while(!salir)
+    error.set(bienvenida.correr());
+    if(error.get())
     {
-        if(evento.wasEvent())
-        {
-            if(evento.getEventType() == KEY_PRESSED)
-            {
-                error.set(accionTeclado(&salir,evento.getKey()));
-                if(error.get())
-                {
-                    return error.get();
-                }
-            }
-        }
+        return error.get();
     }
-    return error.get();
-}
-//Metodo para manejarEventos del teclado
-int clsMotor::accionTeclado(bool* salir, Uint16 tecla)
-{
-    error.set(0);
-    switch(tecla)
+    cout << "Corre bienvenida OK" << endl;
+
+    //Menu Juego <<<------------------------------------------------------------
+
+    error.set(despedida.correr());
+    if(error.get())
     {
-    case KEY_ESCAPE:
-        {
-            *salir = true;
-        }
-    break;
+        return error.get();
     }
+    cout << "Corre despedida OK" << endl;
     return error.get();
 }

@@ -1,11 +1,16 @@
 #ifndef CLSMOTOR_H
 #define CLSMOTOR_H
-
-#include <clsError.h>
+//--------------------------Includes ADN-x--------------------------------------
+#include <clsMode.h>
 #include <clsEvent.h>
 #include <clsScreen.h>
-#include <clsMode.h>
 #include <adnConsts.h>
+#include <clsError.h>
+#include <clsFondo.h>
+//--------------------------Includes Programa-----------------------------------
+#include "clsBienvenida.h"
+#include "clsDespedida.h"
+//------------------------------------------------------------------------------
 
 class clsMotor
 {
@@ -16,9 +21,6 @@ class clsMotor
         int correr();
         //Metodo para manejarEventos del teclado
         int accionTeclado(bool*, Uint16);
-
-    protected:
-
     private:
         //Objeto de la clase Event
         clsEvent evento;
@@ -28,6 +30,10 @@ class clsMotor
         clsMode modoGrafico;
         //Objeto de la clase Screen
         clsScreen pantalla;
+        //Objeto de la clase Bienvenida
+        clsBienvenida bienvenida;
+        //Objeto de la clase Despedida
+        clsDespedida despedida;
 };
 
 #endif // CLSMOTOR_H

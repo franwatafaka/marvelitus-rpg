@@ -118,25 +118,50 @@
 1415818188 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-rpg\adn-x\clstimer.h
 	"clsEvent.h"
 
-1538839336 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-rpg\main.cpp
+1538844472 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-rpg\main.cpp
 	<iostream>
-	<adnConsts.h>
 	<clsLog.h>
-	<clsError.h>
-	<clsMode.h>
-	<clsScreen.h>
 	<clsTimer.h>
 	<clsDot.h>
-	<clsEvent.h>
 	"clsMotor.h"
+	"clsBienvenida.h"
 
-1538837628 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-rpg\include\clsmotor.h
-	<clsError.h>
+1538857600 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-rpg\include\clsmotor.h
+	<clsMode.h>
 	<clsEvent.h>
 	<clsScreen.h>
-	<clsMode.h>
 	<adnConsts.h>
+	<clsError.h>
+	<clsFondo.h>
+	"clsBienvenida.h"
+	"clsDespedida.h"
 
-1538839442 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-rpg\source\clsmotor.cpp
+1538857600 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-rpg\source\clsmotor.cpp
 	"clsMotor.h"
+
+1538857600 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-rpg\source\clsbienvenida.cpp
+	"clsBienvenida.h"
+
+1538857600 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-rpg\include\clsbienvenida.h
+	<clsEvent.h>
+	<clsScreen.h>
+	<adnConsts.h>
+	<clsError.h>
+	<clsFondo.h>
+
+1538849684 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-rpg\include\clsfondo.h
+	<clsSprite.h>
+
+1538852149 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-rpg\source\clsfondo.cpp
+	"clsFondo.h"
+
+1538857600 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-rpg\include\clsdespedida.h
+	<clsEvent.h>
+	<clsScreen.h>
+	<adnConsts.h>
+	<clsError.h>
+	<clsFondo.h>
+
+1538854628 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-rpg\source\clsdespedida.cpp
+	"clsDespedida.h"
 

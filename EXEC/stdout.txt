@@ -4,9 +4,21 @@
 
 Modo grafico iniciado correctamente.
 Monitor de video iniciado correctamente.
+Carga Fondo Bienvenida
+Fondo Bienvenida
+Carga Fondo Despedida
+Fondo Despedida
+Corre bienvenida OK
+Corre despedida OK
 
 **********************************************************
        El proyecto ADN-X ha finalizado correctamente      
 ##########################################################
+Se destruyo la imagen0 del sprite sin Nombre
+Se destruyo la imagen1 del sprite sin Nombre
+Se destruyeron la imagenes del sprite sin Nombre
+Se destruyo la imagen0 del sprite sin Nombre
+Se destruyo la imagen1 del sprite sin Nombre
+Se destruyeron la imagenes del sprite sin Nombre
 Monitor de video cerrado correctamente.
 El modo grafico se cerro correctamente.

@@ -2,9 +2,49 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="INCLUDE\clsMotor.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="8463" topLine="121" />
+			<Cursor1 position="259" topLine="2" />
+		</Cursor>
+	</File>
+	<File name="SOURCE\clsBienvenida.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="390" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7503" topLine="107" />
+		</Cursor>
+	</File>
+	<File name="SOURCE\clsMotor.cpp" open="1" top="1" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="211" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="INCLUDE\clsBienvenida.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="851" topLine="15" />
+		</Cursor>
+	</File>
+	<File name="SOURCE\clsDespedida.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="345" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="SOURCE\clsFondo.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="505" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="INCLUDE\clsDespedida.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="245" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="INCLUDE\clsFondo.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="213" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

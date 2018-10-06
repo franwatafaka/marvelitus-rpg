@@ -93,16 +93,11 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 #include <iostream>         // Contiene "cout".
-#include <adnConsts.h>      // Tipos de datos del sistema adn-X.
 #include <clsLog.h>         // stdout.txt para Linux.
-#include <clsError.h>       // Administrador de errores.
-#include <clsMode.h>        // Administra el modo de Resolucion y Color Grafico.
-#include <clsScreen.h>      // Administra las pantallas donde se pegaran las imagenes.
 #include <clsTimer.h>       // Administra el temporizador del juego
 #include <clsDot.h>         // Administra los pixeles basados en la resolucion.
-#include <clsEvent.h>       // Administra los eventos del programa.
-
-#include "clsMotor.h"       // Clase del motor grafico
+#include "clsMotor.h"       // Clase Motor Grafico
+#include "clsBienvenida.h"  // Clase Bienvenida
 
 using namespace std;        // Espacio de nombres estandar.
 
@@ -142,10 +137,16 @@ int main ( int argc, char** argv )
   // CODIGO DEL PROGRAMA PRINCIPAL
 
   error.set(motor.iniciar());
-  if(error.get()) return error.get();
+  if(error.get())
+  {
+      return error.get();
+  }
 
   error.set(motor.correr());
-  if(error.get()) return error.get();
+  if(error.get())
+  {
+      return error.get();
+  }
 
   //----------------------------
   // FIN DEL PROGRAMA PRINCIPAL
