@@ -32,7 +32,7 @@ int clsDespedida::correr()
     tiempo.start();
     while(!salir)
     {
-        if(tiempo.getState()== 46000)
+        if(tiempo.getState()== 45000)
         {
             musicaDespedida.stopMusic();
             salir = true;
