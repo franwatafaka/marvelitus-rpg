@@ -7,6 +7,9 @@
 #include <adnConsts.h>
 #include <clsError.h>
 #include <clsFondo.h>
+#include <clsAudio.h>
+#include <clsSoundEffect.h>
+#include <clsMusic.h>
 //--------------------------Includes Programa-----------------------------------
 #include "clsBienvenida.h"
 #include "clsDespedida.h"
@@ -37,6 +40,12 @@ class clsMotor
         clsDespedida despedida;
         //Objeto de la clase Juego
         clsJuego juego;
+        //Objeto de la clase Audio
+        clsAudio audio;
+        //Objeto de la clase Music
+        clsMusic musica;
+        //Objeto de la clase SoundEffect
+        clsSoundEffect efecto;
 };
 
 #endif // CLSMOTOR_H

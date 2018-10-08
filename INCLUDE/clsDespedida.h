@@ -1,11 +1,16 @@
 #ifndef CLSDESPEDIDA_H
 #define CLSDESPEDIDA_H
 //--------------------------Includes--------------------------------------------
+#include <clsMode.h>
 #include <clsEvent.h>
 #include <clsScreen.h>
 #include <adnConsts.h>
 #include <clsError.h>
 #include <clsFondo.h>
+#include <clsAudio.h>
+#include <clsSoundEffect.h>
+#include <clsMusic.h>
+#include <clsTimer.h>
 //------------------------------------------------------------------------------
 
 class clsDespedida
@@ -27,6 +32,10 @@ class clsDespedida
         clsError error;
         //Objeto fondo
         clsFondo fondo;
+        //Objeto Musica
+        clsMusic musicaDespedida;
+        //Objeto Timer
+        clsTimer tiempo;
 };
 
 #endif // CLSDESPEDIDA_H

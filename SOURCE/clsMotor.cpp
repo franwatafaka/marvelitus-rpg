@@ -16,6 +16,14 @@ int clsMotor::iniciar()
     {
         return error.get();
     }
+    //Inicializar Audio
+    error.set(audio.init());
+    if(error.get())
+    {
+        return error.get();
+    }
+
+    /***--------------------------------------------------------------------***/
     //Inicializar Bienvenida
     error.set(bienvenida.iniciar(&pantalla,&evento));
     if(error.get())
@@ -36,6 +44,7 @@ int clsMotor::iniciar()
     }
     return error.get();
 }
+
 //Metodo para Correr Motor
 int clsMotor::correr()
 {

@@ -11,6 +11,11 @@ int clsBienvenida::iniciar(clsScreen* pantalla, clsEvent* evento)
     {
         return error.get();
     }
+    error.set(musicaBienvenida.loadMusic("RESOURCES/SOUNDS/MUSIC/01-Credits_Intro.mp3"));
+    if(error.get())
+    {
+        return error.get();
+    }
     cout << "Carga Fondo Bienvenida" << endl;
     fondo.setBienvenida();
     return error.get();
@@ -24,8 +29,16 @@ int clsBienvenida::correr()
     pantalla->clean(BLACK);
     fondo.paste(pantalla->getPtr());
     pantalla->refresh();
+    musicaBienvenida.playMusic(-1);
+    tiempo.start();
     while(!salir)
     {
+        tiempo.update();
+        if(tiempo.getState()== 22000)
+        {
+            musicaBienvenida.stopMusic();
+            salir = true;
+        }
         if(evento->wasEvent())
         {
             if(evento->getEventType() == KEY_PRESSED)
@@ -49,6 +62,7 @@ int clsBienvenida::accionTeclado(bool* salir, Uint16 tecla)
     {
     case KEY_ESCAPE:
         {
+            musicaBienvenida.stopMusic();
             *salir = true;
         }
     break;

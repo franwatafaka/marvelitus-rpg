@@ -1,11 +1,16 @@
 #ifndef CLSBIENVENIDA_H
 #define CLSBIENVENIDA_H
 //--------------------------Includes--------------------------------------------
+#include <clsMode.h>
 #include <clsEvent.h>
 #include <clsScreen.h>
 #include <adnConsts.h>
 #include <clsError.h>
 #include <clsFondo.h>
+#include <clsAudio.h>
+#include <clsSoundEffect.h>
+#include <clsMusic.h>
+#include <clsTimer.h>
 //------------------------------------------------------------------------------
 
 class clsBienvenida
@@ -27,6 +32,10 @@ class clsBienvenida
         clsError error;
         //Objeto fondo
         clsFondo fondo;
+        //Objeto Musica
+        clsMusic musicaBienvenida;
+        //Objeto Timer
+        clsTimer tiempo;
 };
 
 #endif // CLSBIENVENIDA_H
