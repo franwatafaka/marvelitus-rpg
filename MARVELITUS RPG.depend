@@ -506,7 +506,16 @@
 	"clsMotor.h"
 	"clsBienvenida.h"
 
-1539089963 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\include\clsmotor.h
+1539020074 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\include\clsmotor.h
+	<clsMode.h>
+	<clsEvent.h>
+	<clsScreen.h>
+	<adnConsts.h>
+	<clsError.h>
+	<clsFondo.h>
+	<clsAudio.h>
+	<clsSoundEffect.h>
+	<clsMusic.h>
 	"clsBienvenida.h"
 	"clsDespedida.h"
 	"clsJuego.h"
@@ -514,7 +523,7 @@
 1538861372 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\include\clsfondo.h
 	<clsSprite.h>
 
-1539089963 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\include\clsbienvenida.h
+1539020634 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\include\clsbienvenida.h
 	<clsMode.h>
 	<clsEvent.h>
 	<clsScreen.h>
@@ -526,7 +535,7 @@
 	<clsMusic.h>
 	<clsTimer.h>
 
-1539089963 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\include\clsdespedida.h
+1539020831 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\include\clsdespedida.h
 	<clsMode.h>
 	<clsEvent.h>
 	<clsScreen.h>
@@ -538,28 +547,23 @@
 	<clsMusic.h>
 	<clsTimer.h>
 
-1539090060 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\include\clsjuego.h
-	<clsMode.h>
+1538861123 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\include\clsjuego.h
 	<clsEvent.h>
 	<clsScreen.h>
 	<adnConsts.h>
 	<clsError.h>
 	<clsFondo.h>
-	<clsAudio.h>
-	<clsSoundEffect.h>
-	<clsMusic.h>
-	<clsTimer.h>
 
-1539089885 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\source\clsbienvenida.cpp
+1539023499 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\source\clsbienvenida.cpp
 	"clsBienvenida.h"
 
 1539030223 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\source\clsdespedida.cpp
 	"clsDespedida.h"
 
-1539089296 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\source\clsfondo.cpp
+1538861475 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\source\clsfondo.cpp
 	"clsFondo.h"
 
-1539090134 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\source\clsjuego.cpp
+1538861348 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\source\clsjuego.cpp
 	"clsJuego.h"
 
 1539019972 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\source\clsmotor.cpp

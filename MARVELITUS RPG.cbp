@@ -152,6 +152,13 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="INCLUDE/clsJuego.h" />
 		<Unit filename="INCLUDE/clsMotor.h" />
 		<Unit filename="LOG/stdout.txt" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Captain_America_Intro.png" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Dare_Devil_Intro.png" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Iron_Man_Intro.png" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Plot.png" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Spider_Man_Intro.png" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Star_Lord_Intro.png" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Thor_Intro.png" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/despedida.png" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/juego.png" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/main_menu.png" />
