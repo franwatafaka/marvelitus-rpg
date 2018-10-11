@@ -5,9 +5,7 @@
 Modo grafico iniciado correctamente.
 Monitor de video iniciado correctamente.
 Sistema de audio iniciado correctamente.
-Carga Fondo Bienvenida
 Carga Indice Fondo Bienvenida
-Carga Fondo Juego
 Carga Indice Fondo Juego
 Carga Indice Fondo Despedida
 Corre bienvenida OK

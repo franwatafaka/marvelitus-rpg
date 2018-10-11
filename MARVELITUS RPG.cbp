@@ -154,6 +154,7 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="LOG/stdout.txt" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/despedida.png" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/juego.png" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/main_menu.png" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/presentacion.png" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/001-Milano_Game_Intro.mp3" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/002-Galaxy_Fighter_Space.mp3" />

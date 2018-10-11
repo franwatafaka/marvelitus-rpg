@@ -1,15 +1,5 @@
 #ifndef CLSMOTOR_H
 #define CLSMOTOR_H
-//--------------------------Includes ADN-x--------------------------------------
-#include <clsMode.h>
-#include <clsEvent.h>
-#include <clsScreen.h>
-#include <adnConsts.h>
-#include <clsError.h>
-#include <clsFondo.h>
-#include <clsAudio.h>
-#include <clsSoundEffect.h>
-#include <clsMusic.h>
 //--------------------------Includes Programa-----------------------------------
 #include "clsBienvenida.h"
 #include "clsDespedida.h"

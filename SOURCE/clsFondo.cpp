@@ -20,7 +20,7 @@ int clsFondo::iniciar()
     }
     //Fondo Presentacion
     setI(2);
-    error.set(load("RESOURCES/IMAGES/BACKGROUNDS/juego.png"));
+    error.set(load("RESOURCES/IMAGES/BACKGROUNDS/main_menu.png"));
     if(error.get())
     {
         return error.get();

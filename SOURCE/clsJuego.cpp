@@ -12,7 +12,11 @@ int clsJuego::iniciar(clsScreen* pantalla, clsEvent* evento)
     {
         return error.get();
     }
-    cout << "Carga Fondo Juego" << endl;
+    error.set(musicaMenu.loadMusic("RESOURCES/SOUNDS/MUSIC/02-Game_Intro.mp3"));
+    if(error.get())
+    {
+        return error.get();
+    }
     fondo.setJuego();
     return error.get();
 }
@@ -22,11 +26,19 @@ int clsJuego::correr()
 {
     error.set(0);
     bool salir=false;
-    pantalla->clean(BLUE);
+    pantalla->clean(BLACK);
     fondo.paste(pantalla->getPtr());
     pantalla->refresh();
+    musicaMenu.playMusic(-1);
+    tiempo.start();
     while(!salir)
     {
+        tiempo.update();
+        if(tiempo.getState()== 141000)
+        {
+            musicaMenu.stopMusic();
+            salir = true;
+        }
         if(evento->wasEvent())
         {
             if(evento->getEventType() == KEY_PRESSED)

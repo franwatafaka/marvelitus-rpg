@@ -1,11 +1,16 @@
 #ifndef CLSJUEGO_H
 #define CLSJUEGO_H
 //--------------------------Includes--------------------------------------------
+#include <clsMode.h>
 #include <clsEvent.h>
 #include <clsScreen.h>
 #include <adnConsts.h>
 #include <clsError.h>
 #include <clsFondo.h>
+#include <clsAudio.h>
+#include <clsSoundEffect.h>
+#include <clsMusic.h>
+#include <clsTimer.h>
 //------------------------------------------------------------------------------
 
 class clsJuego
@@ -27,8 +32,12 @@ class clsJuego
         clsEvent *evento;
         //Objeto Error
         clsError error;
-        //Objeto fondo
+        //Objeto Fondo
         clsFondo fondo;
+        //Objeto Music
+        clsMusic musicaMenu;
+        //Objeto Timer
+        clsTimer tiempo;
 };
 
 #endif // CLSJUEGO_H

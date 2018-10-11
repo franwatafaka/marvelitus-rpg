@@ -16,7 +16,6 @@ int clsBienvenida::iniciar(clsScreen* pantalla, clsEvent* evento)
     {
         return error.get();
     }
-    cout << "Carga Fondo Bienvenida" << endl;
     fondo.setBienvenida();
     return error.get();
 }
