@@ -8,6 +8,7 @@ int clsJuego::iniciar(clsScreen* pantalla, clsEvent* evento)
     this->pantalla = pantalla;
     this->evento = evento;
     error.set(fondo.iniciar());
+    error.set(imagen.iniciar());
     if(error.get())
     {
         return error.get();
@@ -17,7 +18,8 @@ int clsJuego::iniciar(clsScreen* pantalla, clsEvent* evento)
     {
         return error.get();
     }
-    fondo.setJuego();
+    fondo.setMenu();
+    imagen.setMenuPrincipal();
     return error.get();
 }
 
@@ -28,12 +30,17 @@ int clsJuego::correr()
     bool salir=false;
     pantalla->clean(BLACK);
     fondo.paste(pantalla->getPtr());
+    imagen.paste(pantalla->getPtr());
     pantalla->refresh();
+    //Musica de Menu principal
     musicaMenu.playMusic(-1);
+    //Inicio del cronometro de tiempo
     tiempo.start();
     while(!salir)
     {
+        //Reviso cronomoetro de tiempo
         tiempo.update();
+        //Si el tiempo es igual a 1:41
         if(tiempo.getState()== 141000)
         {
             musicaMenu.stopMusic();
@@ -61,6 +68,16 @@ int clsJuego::accionTeclado(bool* salir, Uint16 tecla)
     switch(tecla)
     {
     case KEY_ESCAPE:
+        {
+            *salir = true;
+        }
+    break;
+    case KEY_W:
+        {
+            *salir = true;
+        }
+    break;
+    case KEY_S:
         {
             *salir = true;
         }

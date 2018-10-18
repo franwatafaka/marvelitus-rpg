@@ -41,8 +41,8 @@ void clsFondo::setDespedida()
     setI(1);
     cout << "Carga Indice Fondo Despedida" << endl;
 }
-void clsFondo::setJuego()
+void clsFondo::setMenu()
 {
     setI(2);
-    cout << "Carga Indice Fondo Juego" << endl;
+    cout << "Carga Indice Fondo Menu" << endl;
 }

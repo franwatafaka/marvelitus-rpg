@@ -6,7 +6,8 @@ Modo grafico iniciado correctamente.
 Monitor de video iniciado correctamente.
 Sistema de audio iniciado correctamente.
 Carga Indice Fondo Bienvenida
-Carga Indice Fondo Juego
+Carga Indice Fondo Menu
+Carga Imagen Menu Principal
 Carga Indice Fondo Despedida
 Corre bienvenida OK
 Corre juego OK
@@ -16,8 +17,6 @@ Corre despedida OK
        El proyecto ADN-X ha finalizado correctamente      
 ##########################################################
 Se destruyo la imagen0 del sprite sin Nombre
-Se destruyo la imagen1 del sprite sin Nombre
-Se destruyo la imagen2 del sprite sin Nombre
 Se destruyeron la imagenes del sprite sin Nombre
 Se destruyo la imagen0 del sprite sin Nombre
 Se destruyo la imagen1 del sprite sin Nombre
@@ -27,5 +26,3 @@ Se destruyo la imagen0 del sprite sin Nombre
 Se destruyo la imagen1 del sprite sin Nombre
 Se destruyo la imagen2 del sprite sin Nombre
 Se destruyeron la imagenes del sprite sin Nombre
-Monitor de video cerrado correctamente.
-El modo grafico se cerro correctamente.

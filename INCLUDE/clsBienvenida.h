@@ -11,6 +11,8 @@
 #include <clsSoundEffect.h>
 #include <clsMusic.h>
 #include <clsTimer.h>
+#include "clsPersonajes.h"
+
 //------------------------------------------------------------------------------
 
 class clsBienvenida
@@ -36,6 +38,8 @@ class clsBienvenida
         clsMusic musicaBienvenida;
         //Objeto Timer
         clsTimer tiempo;
+        //Objeto Personaje
+        clsPersonajes jugadores[6];
 };
 
 #endif // CLSBIENVENIDA_H

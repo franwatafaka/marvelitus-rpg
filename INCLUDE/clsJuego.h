@@ -11,6 +11,7 @@
 #include <clsSoundEffect.h>
 #include <clsMusic.h>
 #include <clsTimer.h>
+#include <clsImagenes.h>
 //------------------------------------------------------------------------------
 
 class clsJuego
@@ -38,6 +39,8 @@ class clsJuego
         clsMusic musicaMenu;
         //Objeto Timer
         clsTimer tiempo;
+        //Objeto Imagenes
+        clsImagenes imagen;
 };
 
 #endif // CLSJUEGO_H

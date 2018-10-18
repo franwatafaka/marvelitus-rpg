@@ -4,6 +4,7 @@
 #include "clsBienvenida.h"
 #include "clsDespedida.h"
 #include "clsJuego.h"
+#include "clsPersonajes.h"
 //------------------------------------------------------------------------------
 
 class clsMotor

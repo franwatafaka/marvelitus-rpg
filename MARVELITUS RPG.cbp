@@ -149,8 +149,10 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="INCLUDE/clsBienvenida.h" />
 		<Unit filename="INCLUDE/clsDespedida.h" />
 		<Unit filename="INCLUDE/clsFondo.h" />
+		<Unit filename="INCLUDE/clsImagenes.h" />
 		<Unit filename="INCLUDE/clsJuego.h" />
 		<Unit filename="INCLUDE/clsMotor.h" />
+		<Unit filename="INCLUDE/clsPersonajes.h" />
 		<Unit filename="LOG/stdout.txt" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Captain_America_Intro.png" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Dare_Devil_Intro.png" />
@@ -185,8 +187,10 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="SOURCE/clsBienvenida.cpp" />
 		<Unit filename="SOURCE/clsDespedida.cpp" />
 		<Unit filename="SOURCE/clsFondo.cpp" />
+		<Unit filename="SOURCE/clsImagenes.cpp" />
 		<Unit filename="SOURCE/clsJuego.cpp" />
 		<Unit filename="SOURCE/clsMotor.cpp" />
+		<Unit filename="SOURCE/clsPersonajes.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
