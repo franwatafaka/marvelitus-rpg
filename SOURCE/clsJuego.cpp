@@ -1,6 +1,6 @@
 #include "clsJuego.h"
 
-char *capitanAmericaSprites[10] = {
+char const *capitanAmericaSprites[10] = {
 "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_0.png",
 "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_1.png",
 "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png",
@@ -29,7 +29,7 @@ int clsJuego::iniciar(clsScreen* pantalla, clsEvent* evento)
     {
         return error.get();
     }
-    error.set(capitanAmerica.iniciar(*capitanAmericaSprites,10));
+    error.set(capitanAmerica.iniciar(capitanAmericaSprites,10));
     if(error.get())
     {
         return error.get();
@@ -47,7 +47,7 @@ int clsJuego::correr()
     pantalla->clean(BLACK);
     fondo.paste(pantalla->getPtr());
     imagen.paste(pantalla->getPtr());
-    capitanAmerica.setI(1);
+    capitanAmerica.setI(8);
     capitanAmerica.paste(pantalla->getPtr());
     pantalla->refresh();
     //Musica de Menu principal

@@ -8,7 +8,7 @@ class clsPersonajes : public clsSprite
 {
     public:
         //Metodo para iniciar Sprites de Personajes
-        int iniciar(char*,int);
+        int iniciar(char const *ruta[10],int);
         //Setter y Getter Vida
         void setVida(int);
         int getVida();

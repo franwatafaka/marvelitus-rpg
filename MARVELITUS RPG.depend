@@ -755,7 +755,7 @@
 1539633116 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsfondo.cpp
 	"clsFondo.h"
 
-1540060750 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsjuego.cpp
+1540066679 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsjuego.cpp
 	"clsJuego.h"
 
 1540043769 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsimagenes.cpp
@@ -764,10 +764,10 @@
 1539629504 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\include\clsimagenes.h
 	<clsSprite.h>
 
-1540060437 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\include\clspersonajes.h
+1540065755 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\include\clspersonajes.h
 	<clsSprite.h>
 
-1540053748 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clspersonajes.cpp
+1540066646 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clspersonajes.cpp
 	"clsPersonajes.h"
 
 1539906734 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-git\include\clspersonajes.h
