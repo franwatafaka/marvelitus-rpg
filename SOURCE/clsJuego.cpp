@@ -1,5 +1,16 @@
 #include "clsJuego.h"
 
+char *capitanAmericaSprites[10] = {
+"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_0.png",
+"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_1.png",
+"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png",
+"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_4.png",
+"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A1.png",
+"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A2.png",
+"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A3.png",
+"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A4.png",
+"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_D.png",
+"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_D2.png"};
 
 //Metodo para Iniciar Modulo Juego
 int clsJuego::iniciar(clsScreen* pantalla, clsEvent* evento)
@@ -18,6 +29,11 @@ int clsJuego::iniciar(clsScreen* pantalla, clsEvent* evento)
     {
         return error.get();
     }
+    error.set(capitanAmerica.iniciar(*capitanAmericaSprites,10));
+    if(error.get())
+    {
+        return error.get();
+    }
     fondo.setMenu();
     imagen.setMenuPrincipal();
     return error.get();
@@ -31,6 +47,8 @@ int clsJuego::correr()
     pantalla->clean(BLACK);
     fondo.paste(pantalla->getPtr());
     imagen.paste(pantalla->getPtr());
+    capitanAmerica.setI(1);
+    capitanAmerica.paste(pantalla->getPtr());
     pantalla->refresh();
     //Musica de Menu principal
     musicaMenu.playMusic(-1);

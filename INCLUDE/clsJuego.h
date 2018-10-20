@@ -12,6 +12,7 @@
 #include <clsMusic.h>
 #include <clsTimer.h>
 #include <clsImagenes.h>
+#include "clsPersonajes.h"
 //------------------------------------------------------------------------------
 
 class clsJuego
@@ -41,6 +42,8 @@ class clsJuego
         clsTimer tiempo;
         //Objeto Imagenes
         clsImagenes imagen;
+        //Objeto Personaje
+        clsPersonajes capitanAmerica;
 };
 
 #endif // CLSJUEGO_H

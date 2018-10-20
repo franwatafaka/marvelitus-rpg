@@ -1,5 +1,4 @@
 #include "clsBienvenida.h"
-char jug_1[] = "RESOURCES/IMAGES/SPRITES/CHARACTERS/Captain_America_Editable.png";
 
 //Metodo para Iniciar Modulo Bienvenida
 int clsBienvenida::iniciar(clsScreen* pantalla, clsEvent* evento)
@@ -18,11 +17,6 @@ int clsBienvenida::iniciar(clsScreen* pantalla, clsEvent* evento)
         return error.get();
     }
     fondo.setBienvenida();
-    error.set(jugadores[0].iniciar(jug_1,1));
-    if(error.get())
-    {
-        return error.get();
-    }
     return error.get();
 }
 
@@ -32,8 +26,8 @@ int clsBienvenida::correr()
     error.set(0);
     bool salir=false;
     pantalla->clean(BLACK);
+    cout << fondo.getY();
     fondo.paste(pantalla->getPtr());
-    jugadores[0].paste(pantalla->getPtr());
     pantalla->refresh();
     musicaBienvenida.playMusic(-1);
     tiempo.start();

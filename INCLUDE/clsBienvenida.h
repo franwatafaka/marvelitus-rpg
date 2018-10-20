@@ -38,8 +38,6 @@ class clsBienvenida
         clsMusic musicaBienvenida;
         //Objeto Timer
         clsTimer tiempo;
-        //Objeto Personaje
-        clsPersonajes jugadores[6];
 };
 
 #endif // CLSBIENVENIDA_H
