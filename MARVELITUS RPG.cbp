@@ -153,6 +153,7 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="INCLUDE/clsJuego.h" />
 		<Unit filename="INCLUDE/clsMotor.h" />
 		<Unit filename="INCLUDE/clsPersonajes.h" />
+		<Unit filename="INCLUDE/rutasSprites.h" />
 		<Unit filename="LOG/stdout.txt" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Captain_America_Intro.png" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Dare_Devil_Intro.png" />

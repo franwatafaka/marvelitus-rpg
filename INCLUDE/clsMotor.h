@@ -37,6 +37,7 @@ private:
     clsMusic musica;
     //Objeto de la clase SoundEffect
     clsSoundEffect efecto;
+
 };
 
 #endif // CLSMOTOR_H

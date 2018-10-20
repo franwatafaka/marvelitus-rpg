@@ -1,18 +1,5 @@
 #include "clsJuego.h"
-
-char const *capitanAmericaSprites[10] =
-{
-    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_0.png",
-    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_1.png",
-    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png",
-    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_4.png",
-    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A1.png",
-    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A2.png",
-    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A3.png",
-    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A4.png",
-    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_D.png",
-    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_D2.png"
-};
+#include "../INCLUDE/rutasSprites.h"
 
 //Metodo para Iniciar Modulo Juego
 int clsJuego::iniciar(clsScreen* pantalla, clsEvent* evento)
@@ -36,6 +23,31 @@ int clsJuego::iniciar(clsScreen* pantalla, clsEvent* evento)
     {
         return error.get();
     }
+    error.set(dareDevil.iniciar(dareDevilSprites,10));
+    if(error.get())
+    {
+        return error.get();
+    }
+    error.set(ironMan.iniciar(ironManSprites,10));
+    if(error.get())
+    {
+        return error.get();
+    }
+    error.set(spiderMan.iniciar(spiderManSprites,10));
+    if(error.get())
+    {
+        return error.get();
+    }
+    error.set(starLord.iniciar(starLordSprites,10));
+    if(error.get())
+    {
+        return error.get();
+    }
+    error.set(thor.iniciar(thorSprites,10));
+    if(error.get())
+    {
+        return error.get();
+    }
     fondo.setMenu();
     imagen.setMenuPrincipal();
     return error.get();
@@ -49,10 +61,39 @@ int clsJuego::correr()
     pantalla->clean(BLACK);
     fondo.paste(pantalla->getPtr());
     imagen.paste(pantalla->getPtr());
-    capitanAmerica.setI(9);
-    capitanAmerica.setPosX(1070);
-    capitanAmerica.setPosY(600);
+    //Capitan America en Pantalla
+    capitanAmerica.setI(8);
+    capitanAmerica.setPosX(0);
+    capitanAmerica.setPosY(0);
     capitanAmerica.paste(pantalla->getPtr());
+    //Dare Devil en Pantalla
+    dareDevil.setI(8);
+    dareDevil.setPosX(200);
+    dareDevil.setPosY(0);
+    dareDevil.paste(pantalla->getPtr());
+    //Iron_Man en Pantalla
+    ironMan.setI(8);
+    ironMan.setPosX(400);
+    ironMan.setPosY(0);
+    ironMan.paste(pantalla->getPtr());
+    pantalla->refresh();
+    //Spider_Man en Pantalla
+    spiderMan.setI(8);
+    spiderMan.setPosX(600);
+    spiderMan.setPosY(0);
+    spiderMan.paste(pantalla->getPtr());
+    pantalla->refresh();
+    //Star_Lord en Pantalla
+    starLord.setI(8);
+    starLord.setPosX(800);
+    starLord.setPosY(0);
+    starLord.paste(pantalla->getPtr());
+    pantalla->refresh();
+    //Thor en Pantalla
+    thor.setI(8);
+    thor.setPosX(1000);
+    thor.setPosY(0);
+    thor.paste(pantalla->getPtr());
     pantalla->refresh();
     //Musica de Menu principal
     musicaMenu.playMusic(-1);

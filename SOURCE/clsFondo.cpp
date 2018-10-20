@@ -25,24 +25,28 @@ int clsFondo::iniciar()
     {
         return error.get();
     }
-    setX(0);
-    setY(0);
     return error.get();
 }
 
 void clsFondo::setBienvenida()
 {
     setI(0);
+    setX(0);
+    setY(0);
     cout << "Carga Indice Fondo Bienvenida" << endl;
 }
 
 void clsFondo::setDespedida()
 {
     setI(1);
+    setX(0);
+    setY(0);
     cout << "Carga Indice Fondo Despedida" << endl;
 }
 void clsFondo::setMenu()
 {
     setI(2);
+    setX(0);
+    setY(0);
     cout << "Carga Indice Fondo Menu" << endl;
 }

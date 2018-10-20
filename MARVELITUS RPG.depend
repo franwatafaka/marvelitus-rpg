@@ -91,7 +91,7 @@
 	"adnConsts.h"
 	"clsError.h"
 
-1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clssprite.cpp
+1540070487 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clssprite.cpp
 	"clsSprite.h"
 
 1540069692 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clssprite.h
@@ -126,7 +126,7 @@
 	"clsMotor.h"
 	"clsBienvenida.h"
 
-1540069692 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\include\clsmotor.h
+1540072962 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\include\clsmotor.h
 	"clsBienvenida.h"
 	"clsDespedida.h"
 	"clsJuego.h"
@@ -163,7 +163,7 @@
 	<clsMusic.h>
 	<clsTimer.h>
 
-1540069692 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\include\clsjuego.h
+1540072971 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\include\clsjuego.h
 	<clsMode.h>
 	<clsEvent.h>
 	<clsScreen.h>
@@ -186,18 +186,21 @@
 1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsdespedida.cpp
 	"clsDespedida.h"
 
-1539633116 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsfondo.cpp
+1540070770 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsfondo.cpp
 	"clsFondo.h"
 
 1540043769 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsimagenes.cpp
 	"clsImagenes.h"
 
-1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsjuego.cpp
+1540072794 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsjuego.cpp
 	"clsJuego.h"
+	"../INCLUDE/rutasSprites.h"
 
 1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsmotor.cpp
 	"clsMotor.h"
 
 1540069399 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clspersonajes.cpp
 	"clsPersonajes.h"
+
+1540072869 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\include\rutassprites.h
 

@@ -43,7 +43,8 @@ protected:
     //Objeto Imagenes
     clsImagenes imagen;
     //Objeto Personaje
-    clsPersonajes capitanAmerica;
+    clsPersonajes capitanAmerica,dareDevil,ironMan,spiderMan,starLord,thor,
+    ronan,enemigos[25];
 };
 
 #endif // CLSJUEGO_H

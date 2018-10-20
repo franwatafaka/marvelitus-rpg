@@ -16,30 +16,3 @@ Corre despedida OK
 **********************************************************
        El proyecto ADN-X ha finalizado correctamente      
 ##########################################################
-Se destruyo la imagen0 del sprite sin Nombre
-Se destruyo la imagen1 del sprite sin Nombre
-Se destruyo la imagen2 del sprite sin Nombre
-Se destruyo la imagen3 del sprite sin Nombre
-Se destruyo la imagen4 del sprite sin Nombre
-Se destruyo la imagen5 del sprite sin Nombre
-Se destruyo la imagen6 del sprite sin Nombre
-Se destruyo la imagen7 del sprite sin Nombre
-Se destruyo la imagen8 del sprite sin Nombre
-Se destruyo la imagen9 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyo la imagen0 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyo la imagen0 del sprite sin Nombre
-Se destruyo la imagen1 del sprite sin Nombre
-Se destruyo la imagen2 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyo la imagen0 del sprite sin Nombre
-Se destruyo la imagen1 del sprite sin Nombre
-Se destruyo la imagen2 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyo la imagen0 del sprite sin Nombre
-Se destruyo la imagen1 del sprite sin Nombre
-Se destruyo la imagen2 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Monitor de video cerrado correctamente.
-El modo grafico se cerro correctamente.
