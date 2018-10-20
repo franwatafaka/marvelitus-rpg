@@ -9,8 +9,6 @@ int clsPersonajes::iniciar(char const *ruta[10], int sprites)
     //Sprite personaje
     setI(0);
     error.set(load(ruta[0]));
-    setX(0);
-    setY(0);
     if(error.get())
     {
         return error.get();
@@ -18,8 +16,6 @@ int clsPersonajes::iniciar(char const *ruta[10], int sprites)
     //
     setI(1);
     error.set(load(ruta[1]));
-    setX(10);
-    setY(10);
     if(error.get())
     {
         return error.get();
@@ -27,8 +23,6 @@ int clsPersonajes::iniciar(char const *ruta[10], int sprites)
     //
     setI(2);
     error.set(load(ruta[2]));
-    setX(20);
-    setY(20);
     if(error.get())
     {
         return error.get();
@@ -36,8 +30,6 @@ int clsPersonajes::iniciar(char const *ruta[10], int sprites)
     //
     setI(3);
     error.set(load(ruta[3]));
-    setX(30);
-    setY(30);
     if(error.get())
     {
         return error.get();
@@ -45,8 +37,6 @@ int clsPersonajes::iniciar(char const *ruta[10], int sprites)
     //
     setI(4);
     error.set(load(ruta[4]));
-    setX(40);
-    setY(40);
     if(error.get())
     {
         return error.get();
@@ -54,8 +44,6 @@ int clsPersonajes::iniciar(char const *ruta[10], int sprites)
     //
     setI(5);
     error.set(load(ruta[5]));
-    setX(50);
-    setY(50);
     if(error.get())
     {
         return error.get();
@@ -63,8 +51,6 @@ int clsPersonajes::iniciar(char const *ruta[10], int sprites)
     //
     setI(6);
     error.set(load(ruta[6]));
-    setX(60);
-    setY(60);
     if(error.get())
     {
         return error.get();
@@ -72,16 +58,12 @@ int clsPersonajes::iniciar(char const *ruta[10], int sprites)
     //
     setI(7);
     error.set(load(ruta[7]));
-    setX(70);
-    setY(70);
     if(error.get())
     {
         return error.get();
     }
     //
     setI(8);
-    setX(1280);
-    setY(500);
     error.set(load(ruta[8]));
     if(error.get())
     {
@@ -90,8 +72,6 @@ int clsPersonajes::iniciar(char const *ruta[10], int sprites)
     //
     setI(9);
     error.set(load(ruta[9]));
-    setX(90);
-    setY(90);
     if(error.get())
     {
         return error.get();
@@ -99,6 +79,27 @@ int clsPersonajes::iniciar(char const *ruta[10], int sprites)
 
     return error.get();
 }
+
+//Setter y Getter Posicion X
+void clsPersonajes::setPosX(int x)
+{
+    this->setX(x);
+}
+int clsPersonajes::getPosX()
+{
+    return getX();
+}
+
+//Setter y Getter Posicion Y
+void clsPersonajes::setPosY(int y)
+{
+    this->setY(y);
+}
+int clsPersonajes::getPosY()
+{
+    return getY();
+}
+
 //Setter y Getter Vida
 void clsPersonajes::setVida(int vida)
 {

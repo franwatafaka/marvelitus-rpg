@@ -6,30 +6,36 @@
 
 class clsPersonajes : public clsSprite
 {
-    public:
-        //Metodo para iniciar Sprites de Personajes
-        int iniciar(char const *ruta[10],int);
-        //Setter y Getter Vida
-        void setVida(int);
-        int getVida();
-        //Setter y Getter Daño
-        void setDanio(int);
-        int getDanio();
-        //Setter y Getter Activo
-        void setActivo(bool);
-        bool getActivo();
-        //Constructor Personajes
-        clsPersonajes();
-        //Destructor Personajes
-        ~clsPersonajes();
+public:
+    //Metodo para iniciar Sprites de Personajes
+    int iniciar(char const *ruta[10],int);
+    //Setter y Getter Posicion X
+    void setPosX(int);
+    int getPosX();
+    //Setter y Getter Posicion Y
+    void setPosY(int);
+    int getPosY();
+    //Setter y Getter Vida
+    void setVida(int);
+    int getVida();
+    //Setter y Getter Daño
+    void setDanio(int);
+    int getDanio();
+    //Setter y Getter Activo
+    void setActivo(bool);
+    bool getActivo();
+    //Constructor Personajes
+    clsPersonajes();
+    //Destructor Personajes
+    ~clsPersonajes();
 
-    protected:
-        void inherit(){};
+protected:
+    void inherit() {};
 
-    private:
-        int vida;
-        int danio;
-        bool activo;
+private:
+    int vida;
+    int danio;
+    bool activo;
 };
 
 #endif // CLSPERSONAJES_H

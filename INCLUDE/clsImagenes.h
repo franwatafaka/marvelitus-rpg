@@ -6,14 +6,14 @@
 
 class clsImagenes : public clsSprite
 {
-    public:
-        //Metodo para Iniciar Imagenes
-        int iniciar();
-        //Metodo para iniciar Imagen Flecha Derecha
-        void setMenuPrincipal();
+public:
+    //Metodo para Iniciar Imagenes
+    int iniciar();
+    //Metodo para iniciar Imagen Flecha Derecha
+    void setMenuPrincipal();
 
-    protected:
-        void inherit(){};
+protected:
+    void inherit() {};
 };
 
 #endif // CLSIMAGENES_H

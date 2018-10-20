@@ -11,7 +11,7 @@ int clsMotor::iniciar()
     }
     //Inicializar Pantalla
     error.set(pantalla.init(modoGrafico.getScrWidth(),
-    modoGrafico.getScrHeight(),modoGrafico.getScrDepth(),DISABLED,FULLSCREEN));
+                            modoGrafico.getScrHeight(),modoGrafico.getScrDepth(),DISABLED,FULLSCREEN));
     if(error.get())
     {
         return error.get();

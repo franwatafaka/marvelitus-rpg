@@ -17,27 +17,27 @@
 
 class clsBienvenida
 {
-    public:
-        //Metodo para Iniciar Modulo Bienvenida
-        int iniciar(clsScreen*, clsEvent*);
-        //Metodo para Correr Modulo Bienvenida
-        int correr();
-        //Metodo para manejarEventos del teclado
-        int accionTeclado(bool*, Uint16);
+public:
+    //Metodo para Iniciar Modulo Bienvenida
+    int iniciar(clsScreen*, clsEvent*);
+    //Metodo para Correr Modulo Bienvenida
+    int correr();
+    //Metodo para manejarEventos del teclado
+    int accionTeclado(bool*, Uint16);
 
-    protected:
-        //Objeto Pantalla
-        clsScreen *pantalla;
-        //Objeto Evento
-        clsEvent *evento;
-        //Objeto Error
-        clsError error;
-        //Objeto fondo
-        clsFondo fondo;
-        //Objeto Musica
-        clsMusic musicaBienvenida;
-        //Objeto Timer
-        clsTimer tiempo;
+protected:
+    //Objeto Pantalla
+    clsScreen *pantalla;
+    //Objeto Evento
+    clsEvent *evento;
+    //Objeto Error
+    clsError error;
+    //Objeto fondo
+    clsFondo fondo;
+    //Objeto Musica
+    clsMusic musicaBienvenida;
+    //Objeto Timer
+    clsTimer tiempo;
 };
 
 #endif // CLSBIENVENIDA_H

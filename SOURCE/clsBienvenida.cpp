@@ -61,10 +61,10 @@ int clsBienvenida::accionTeclado(bool* salir, Uint16 tecla)
     switch(tecla)
     {
     case KEY_ESCAPE:
-        {
-            musicaBienvenida.stopMusic();
-            *salir = true;
-        }
+    {
+        musicaBienvenida.stopMusic();
+        *salir = true;
+    }
     break;
     }
     return error.get();

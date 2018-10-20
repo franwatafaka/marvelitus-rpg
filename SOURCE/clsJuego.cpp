@@ -1,16 +1,18 @@
 #include "clsJuego.h"
 
-char const *capitanAmericaSprites[10] = {
-"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_0.png",
-"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_1.png",
-"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png",
-"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_4.png",
-"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A1.png",
-"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A2.png",
-"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A3.png",
-"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A4.png",
-"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_D.png",
-"RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_D2.png"};
+char const *capitanAmericaSprites[10] =
+{
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_D.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_D2.png"
+};
 
 //Metodo para Iniciar Modulo Juego
 int clsJuego::iniciar(clsScreen* pantalla, clsEvent* evento)
@@ -47,7 +49,9 @@ int clsJuego::correr()
     pantalla->clean(BLACK);
     fondo.paste(pantalla->getPtr());
     imagen.paste(pantalla->getPtr());
-    capitanAmerica.setI(8);
+    capitanAmerica.setI(9);
+    capitanAmerica.setPosX(1070);
+    capitanAmerica.setPosY(600);
     capitanAmerica.paste(pantalla->getPtr());
     pantalla->refresh();
     //Musica de Menu principal
@@ -86,19 +90,19 @@ int clsJuego::accionTeclado(bool* salir, Uint16 tecla)
     switch(tecla)
     {
     case KEY_ESCAPE:
-        {
-            *salir = true;
-        }
+    {
+        *salir = true;
+    }
     break;
     case KEY_W:
-        {
-            *salir = true;
-        }
+    {
+        *salir = true;
+    }
     break;
     case KEY_S:
-        {
-            *salir = true;
-        }
+    {
+        *salir = true;
+    }
     break;
     }
     return error.get();

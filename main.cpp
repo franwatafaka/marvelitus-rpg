@@ -108,53 +108,53 @@ using namespace std;        // Espacio de nombres estandar.
 int main ( int argc, char** argv )
 {
 
-  //---------------------------------------------------------------------------
-  // Habilitar "stdout.txt" (solo para Linux).
-  //---------------------------------------------------------------------------
-  #ifdef _LINUX
+    //---------------------------------------------------------------------------
+    // Habilitar "stdout.txt" (solo para Linux).
+    //---------------------------------------------------------------------------
+#ifdef _LINUX
     clsLog logFile; // Administrador de informes logs para Linux. (recomendado).
     logFile.open(); // Habilita la salida "stdout.txt"
     system("date"); // Muestra la fecha y hora de ejecucion en el logFile.
-  #endif
+#endif
 
-  //---------------------------------------------------------------------------
-  // IDENTIFICACION DE LA VERSION adn-X EN EL ARCHIVO "stdout.txt".
-  //---------------------------------------------------------------------------
-  cout << "##########################################################" << endl;
-  cout << "           " << ADNPP_VERSION                               << endl;
-  cout << "**********************************************************" << endl;
-  cout <<  endl;
+    //---------------------------------------------------------------------------
+    // IDENTIFICACION DE LA VERSION adn-X EN EL ARCHIVO "stdout.txt".
+    //---------------------------------------------------------------------------
+    cout << "##########################################################" << endl;
+    cout << "           " << ADNPP_VERSION                               << endl;
+    cout << "**********************************************************" << endl;
+    cout <<  endl;
 
-  //-------------------------------------
-  // OBJETOS NECESARIOS PARA EL PROGRAMA
+    //-------------------------------------
+    // OBJETOS NECESARIOS PARA EL PROGRAMA
 
-  // Objeto para el uso de la clase Error.
-  clsError error;
-  // Objeto para el uso de la clase Motor.
-  clsMotor motor;
+    // Objeto para el uso de la clase Error.
+    clsError error;
+    // Objeto para el uso de la clase Motor.
+    clsMotor motor;
 
-  //--------------------------------
-  // CODIGO DEL PROGRAMA PRINCIPAL
+    //--------------------------------
+    // CODIGO DEL PROGRAMA PRINCIPAL
 
-  error.set(motor.iniciar());
-  if(error.get())
-  {
-      return error.get();
-  }
+    error.set(motor.iniciar());
+    if(error.get())
+    {
+        return error.get();
+    }
 
-  error.set(motor.correr());
-  if(error.get())
-  {
-      return error.get();
-  }
+    error.set(motor.correr());
+    if(error.get())
+    {
+        return error.get();
+    }
 
-  //----------------------------
-  // FIN DEL PROGRAMA PRINCIPAL
-  cout << endl;
-  cout << "**********************************************************" << endl;
-  cout << "       El proyecto ADN-X ha finalizado correctamente      " << endl;
-  cout << "##########################################################" << endl;
-  return error.get(); // Fin normal del programa principal.
+    //----------------------------
+    // FIN DEL PROGRAMA PRINCIPAL
+    cout << endl;
+    cout << "**********************************************************" << endl;
+    cout << "       El proyecto ADN-X ha finalizado correctamente      " << endl;
+    cout << "##########################################################" << endl;
+    return error.get(); // Fin normal del programa principal.
 }
 
 //### FIN DE ARCHIVO ##########################################################

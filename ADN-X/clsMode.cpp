@@ -73,32 +73,32 @@
 //-----------------------------------------------------------------------------
 int clsMode::init(graphicVideoMode gvm=DEFAULT)
 {
-  const SDL_VideoInfo* videoinfo;
+    const SDL_VideoInfo* videoinfo;
 
-  sdlError=SDL_InitSubSystem(SDL_INIT_VIDEO);
-  if(sdlError<0)
-  {
-    error.set(100); // <100> ERRORES DE SUBSISTEMA DE VIDEO
+    sdlError=SDL_InitSubSystem(SDL_INIT_VIDEO);
+    if(sdlError<0)
+    {
+        error.set(100); // <100> ERRORES DE SUBSISTEMA DE VIDEO
+        return error.get();
+    }
+
+    if(gvm==AUTODETECT)
+    {
+        videoinfo=SDL_GetVideoInfo();
+        scrWidth=videoinfo->current_w;
+        scrHeight=videoinfo->current_h;
+        scrDepth=videoinfo->vfmt->BitsPerPixel;
+    }
+    else
+    {
+        scrWidth=800;
+        scrHeight=600;
+        scrDepth=16;
+    }
+
+    cout << "Modo grafico iniciado correctamente." << endl;
+    error.set(0);
     return error.get();
-  }
-
-  if(gvm==AUTODETECT)
-  {
-     videoinfo=SDL_GetVideoInfo();
-     scrWidth=videoinfo->current_w;
-     scrHeight=videoinfo->current_h;
-     scrDepth=videoinfo->vfmt->BitsPerPixel;
-  }
-  else
-  {
-    scrWidth=800;
-    scrHeight=600;
-    scrDepth=16;
-  }
-
-  cout << "Modo grafico iniciado correctamente." << endl;
-  error.set(0);
-  return error.get();
 }
 
 //=============================================================================
@@ -111,20 +111,20 @@ int clsMode::init(graphicVideoMode gvm=DEFAULT)
 //-----------------------------------------------------------------------------
 int clsMode::init(int w, int h, int d)
 {
-  sdlError=SDL_InitSubSystem(SDL_INIT_VIDEO);
-  if(sdlError<0)
-  {
-    error.set(100); // <100> ERRORES DE SUBSISTEMA DE VIDEO
+    sdlError=SDL_InitSubSystem(SDL_INIT_VIDEO);
+    if(sdlError<0)
+    {
+        error.set(100); // <100> ERRORES DE SUBSISTEMA DE VIDEO
+        return error.get();
+    }
+
+    scrWidth=w;
+    scrHeight=h;
+    scrDepth=d;
+
+    cout << "Modo grafico iniciado correctamente." << endl;
+    error.set(0);
     return error.get();
-  }
-
-  scrWidth=w;
-  scrHeight=h;
-  scrDepth=d;
-
-  cout << "Modo grafico iniciado correctamente." << endl;
-  error.set(0);
-  return error.get();
 }
 
 //=============================================================================
@@ -135,8 +135,8 @@ int clsMode::init(int w, int h, int d)
 //-----------------------------------------------------------------------------
 clsMode::~clsMode()
 {
-  SDL_QuitSubSystem(SDL_INIT_VIDEO);
-  cout << "El modo grafico se cerro correctamente." << endl;
+    SDL_QuitSubSystem(SDL_INIT_VIDEO);
+    cout << "El modo grafico se cerro correctamente." << endl;
 }
 
 //=============================================================================
@@ -147,7 +147,7 @@ clsMode::~clsMode()
 //-----------------------------------------------------------------------------
 void clsMode::crashPrevent()
 {
-  atexit(SDL_Quit);
+    atexit(SDL_Quit);
 }
 
 //=============================================================================
@@ -156,7 +156,10 @@ void clsMode::crashPrevent()
 // PARAMETROS: NADA.
 // DEVUELVE  : int --> ancho en pixeles.
 //-----------------------------------------------------------------------------
-int clsMode::getScrWidth(){return scrWidth;}
+int clsMode::getScrWidth()
+{
+    return scrWidth;
+}
 
 //=============================================================================
 // METODO    : int getScrHeight()
@@ -164,7 +167,10 @@ int clsMode::getScrWidth(){return scrWidth;}
 // PARAMETROS: NADA.
 // DEVUELVE  : int --> alto en pixeles.
 //-----------------------------------------------------------------------------
-int clsMode::getScrHeight(){return scrHeight;}
+int clsMode::getScrHeight()
+{
+    return scrHeight;
+}
 
 //=============================================================================
 // METODO    : int getScrDepth()
@@ -172,7 +178,10 @@ int clsMode::getScrHeight(){return scrHeight;}
 // PARAMETROS: NADA.
 // DEVUELVE  : int --> profundidad en bits.
 //-----------------------------------------------------------------------------
-int clsMode::getScrDepth(){return scrDepth;}
+int clsMode::getScrDepth()
+{
+    return scrDepth;
+}
 
 //### FIN DE ARCHIVO ##########################################################
 
