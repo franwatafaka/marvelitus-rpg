@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="MARVELITUS RPG" />
+		<Option title="Marvelitus RPG" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Option show_notes="1">
@@ -58,7 +58,7 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		</Option>
 		<Build>
 			<Target title="Debug">
-				<Option output="EXEC/MARVELITUS RPG" prefix_auto="1" extension_auto="1" />
+				<Option output="EXEC/Marvelitus RPG" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="./LOG/" />
 				<Option object_output="./OBJECTS/" />
 				<Option type="1" />
@@ -75,7 +75,7 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="./MARVELITUS RPG" prefix_auto="1" extension_auto="1" />
+				<Option output="./Marvelitus RPG" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="./LOG/" />
 				<Option object_output="./OBJECTS/" />
 				<Option type="0" />
@@ -132,6 +132,7 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="ADN-X/clsText.h" />
 		<Unit filename="ADN-X/clsTimer.cpp" />
 		<Unit filename="ADN-X/clsTimer.h" />
+		<Unit filename="FONTS/ComicBook.ttf" />
 		<Unit filename="FONTS/FreeMono.ttf" />
 		<Unit filename="FONTS/FreeMonoBold.ttf" />
 		<Unit filename="FONTS/FreeMonoBoldOblique.ttf" />
@@ -146,26 +147,28 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="FONTS/FreeSerifItalic.ttf" />
 		<Unit filename="GPL LICENSE/Licencia GPL (traduccion NO OFICIAL - castellano argentina).txt" />
 		<Unit filename="GPL LICENSE/Licencia GPL original (ingles).txt" />
-		<Unit filename="INCLUDE/clsBienvenida.h" />
-		<Unit filename="INCLUDE/clsDespedida.h" />
+		<Unit filename="INCLUDE/clsAnimacion.h" />
 		<Unit filename="INCLUDE/clsFondo.h" />
-		<Unit filename="INCLUDE/clsImagenes.h" />
-		<Unit filename="INCLUDE/clsJuego.h" />
 		<Unit filename="INCLUDE/clsMotor.h" />
-		<Unit filename="INCLUDE/clsPersonajes.h" />
-		<Unit filename="INCLUDE/rutasSprites.h" />
+		<Unit filename="INCLUDE/clsPersonaje.h" />
+		<Unit filename="INCLUDE/consTextos.h" />
+		<Unit filename="INCLUDE/rutasRecursos.h" />
 		<Unit filename="LOG/stdout.txt" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Bienvenida.png" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Captain_America_Intro.png" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Dare_Devil_Intro.png" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Despedida.png" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Escena_Final.png" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Historia.png" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Iron_Man_Intro.png" />
-		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Plot.png" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Main_menu.png" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Nivel_1.png" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Nivel_2.png" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Nivel_3.png" />
+		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Seleccion_Personajes.png" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Spider_Man_Intro.png" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Star_Lord_Intro.png" />
 		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/Thor_Intro.png" />
-		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/despedida.png" />
-		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/juego.png" />
-		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/main_menu.png" />
-		<Unit filename="RESOURCES/IMAGES/BACKGROUNDS/presentacion.png" />
 		<Unit filename="RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_0.png" />
 		<Unit filename="RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_1.png" />
 		<Unit filename="RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png" />
@@ -226,6 +229,7 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_A4.png" />
 		<Unit filename="RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_D.png" />
 		<Unit filename="RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_D2.png" />
+		<Unit filename="RESOURCES/IMAGES/SPRITES/CONTEXT/Burbuja_Chat_Grande.png" />
 		<Unit filename="RESOURCES/IMAGES/SPRITES/CONTEXT/menu_test.png" />
 		<Unit filename="RESOURCES/IMAGES/SPRITES/EFFECTS/Captain_America_A2.png" />
 		<Unit filename="RESOURCES/IMAGES/SPRITES/EFFECTS/Captain_America_A4.png" />
@@ -239,14 +243,13 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="RESOURCES/IMAGES/SPRITES/EFFECTS/Star_Lord_A4.png" />
 		<Unit filename="RESOURCES/IMAGES/SPRITES/EFFECTS/Thor_A2.png" />
 		<Unit filename="RESOURCES/IMAGES/SPRITES/EFFECTS/Thor_A4.png" />
-		<Unit filename="RESOURCES/Marvelitus RPG Storyboard - Laboratorio 2 - Sosa Francisco - Nogueira Matias.txt" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/001-Milano_Game_Intro.mp3" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/002-Galaxy_Fighter_Space.mp3" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/003-Galaxy_Fighter_Boss.mp3" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/004-Galaxy_Fighter_FinalScene_Credits.mp3" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/01-Credits_Intro.mp3" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/02-Game_Intro.mp3" />
-		<Unit filename="RESOURCES/SOUNDS/MUSIC/03-Plot.mp3" />
+		<Unit filename="RESOURCES/SOUNDS/MUSIC/03-History.mp3" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/04-Slow_Fight.mp3" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/05-Boss_Intro.mp3" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/06-Fast_Fight.mp3" />
@@ -256,16 +259,14 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/Captain_America_Intro.mp3" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/Daredevil_Intro.mp3" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/Iron_Man_Intro.mp3" />
+		<Unit filename="RESOURCES/SOUNDS/MUSIC/Seleccion_Personajes.mp3" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/Spiderman_Intro.mp3" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/Star_Lord_Intro.mp3" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/Thor_Intro.mp3" />
-		<Unit filename="SOURCE/clsBienvenida.cpp" />
-		<Unit filename="SOURCE/clsDespedida.cpp" />
+		<Unit filename="SOURCE/clsAnimacion.cpp" />
 		<Unit filename="SOURCE/clsFondo.cpp" />
-		<Unit filename="SOURCE/clsImagenes.cpp" />
-		<Unit filename="SOURCE/clsJuego.cpp" />
 		<Unit filename="SOURCE/clsMotor.cpp" />
-		<Unit filename="SOURCE/clsPersonajes.cpp" />
+		<Unit filename="SOURCE/clsPersonaje.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

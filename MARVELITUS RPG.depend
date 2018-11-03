@@ -1,13 +1,13 @@
 # depslib dependency file v1.0
-1540069693 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clsaudio.cpp
+1540640185 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clsaudio.cpp
 	"clsAudio.h"
 
-1540069692 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clsaudio.h
+1540640185 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clsaudio.h
 	<iostream>
 	"adnConsts.h"
 	"clsError.h"
 
-1540069692 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\adnconsts.h
+1541275073 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\adnconsts.h
 	<SDL/SDL.h>
 	<SDL/SDL_video.h>
 	<SDL/SDL_image.h>
@@ -19,82 +19,82 @@
 	"SDL_ttf.h"
 	"SDL_mixer.h"
 
-1540069693 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clserror.h
+1540640185 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clserror.h
 
-1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clsdot.cpp
+1540640185 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clsdot.cpp
 	"clsDot.h"
 
-1540069692 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clsdot.h
+1540640185 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clsdot.h
 	"adnConsts.h"
 
-1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clserror.cpp
+1540640185 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clserror.cpp
 	<cstring>
 	<iostream>
 	"clsError.h"
 
-1540069693 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clsevent.cpp
+1540640185 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clsevent.cpp
 	"clsEvent.h"
 
-1540069693 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clsevent.h
+1540640186 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clsevent.h
 	"adnConsts.h"
 
-1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clsimage.cpp
+1540640186 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clsimage.cpp
 	"clsImage.h"
 
-1540069693 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clsimage.h
+1540640186 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clsimage.h
 	"adnConsts.h"
 	"clsError.h"
 
-1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clslog.cpp
+1540640186 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clslog.cpp
 	"clsLog.h"
 
-1540069692 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clslog.h
+1540640186 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clslog.h
 	<cstdio>
 
-1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clsmode.cpp
+1540640185 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clsmode.cpp
 	"clsMode.h"
 
-1540069693 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clsmode.h
+1540640185 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clsmode.h
 	<iostream>
 	"adnConsts.h"
 	"clsError.h"
 
-1540069693 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clsmusic.cpp
+1540640185 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clsmusic.cpp
 	"clsMusic.h"
 
-1540069693 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clsmusic.h
+1540640185 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clsmusic.h
 	<iostream>
 	"adnConsts.h"
 	"clsError.h"
 
-1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clsrandom.cpp
+1540640186 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clsrandom.cpp
 	"clsRandom.h"
 
-1540069692 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clsrandom.h
+1540640186 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clsrandom.h
 	<ctime>
 	<cstdlib>
 	<iostream>
 
-1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clsscreen.cpp
+1540640185 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clsscreen.cpp
 	"clsScreen.h"
 
-1540069692 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clsscreen.h
+1540640185 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clsscreen.h
 	<iostream>
 	"adnConsts.h"
 	"clsError.h"
 
-1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clssoundeffect.cpp
+1540640185 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clssoundeffect.cpp
 	"clsSoundEffect.h"
 
-1540069692 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clssoundeffect.h
+1540640185 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clssoundeffect.h
 	<iostream>
 	"adnConsts.h"
 	"clsError.h"
 
-1540070487 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clssprite.cpp
+1540640186 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clssprite.cpp
 	"clsSprite.h"
 
-1540069692 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clssprite.h
+1540640185 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clssprite.h
 	<iostream>
 	<cstring>
 	"adnConsts.h"
@@ -104,103 +104,250 @@
 	"clsDot.h"
 	"clsScreen.h"
 
-1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clstext.cpp
+1540640185 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clstext.cpp
 	"clsText.h"
 
-1540069693 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clstext.h
+1540640185 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clstext.h
 	<iostream>
 	"adnConsts.h"
 	"clsError.h"
 
-1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clstimer.cpp
+1540640185 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clstimer.cpp
 	"clsTimer.h"
 
-1540069693 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\adn-x\clstimer.h
+1540640185 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clstimer.h
 	"clsEvent.h"
 
-1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\main.cpp
+1541273250 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\main.cpp
 	<iostream>
 	<clsLog.h>
-	<clsTimer.h>
-	<clsDot.h>
-	"clsMotor.h"
-	"clsBienvenida.h"
+	<clsError.h>
+	<clsMotor.h>
+	<locale>
 
-1540072962 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\include\clsmotor.h
-	"clsBienvenida.h"
-	"clsDespedida.h"
-	"clsJuego.h"
-	"clsPersonajes.h"
-
-1540069692 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\include\clsbienvenida.h
-	<clsMode.h>
-	<clsEvent.h>
-	<clsScreen.h>
+1541266472 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\include\clsmotor.h
 	<adnConsts.h>
 	<clsError.h>
-	<clsFondo.h>
-	<clsAudio.h>
-	<clsSoundEffect.h>
-	<clsMusic.h>
-	<clsTimer.h>
-	"clsPersonajes.h"
-
-1540069692 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\include\clsfondo.h
-	<clsSprite.h>
-
-1540069783 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\include\clspersonajes.h
-	<clsSprite.h>
-
-1540069692 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\include\clsdespedida.h
-	<clsMode.h>
 	<clsEvent.h>
-	<clsScreen.h>
-	<adnConsts.h>
-	<clsError.h>
-	<clsFondo.h>
-	<clsAudio.h>
-	<clsSoundEffect.h>
-	<clsMusic.h>
-	<clsTimer.h>
-
-1540072971 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\include\clsjuego.h
 	<clsMode.h>
-	<clsEvent.h>
 	<clsScreen.h>
-	<adnConsts.h>
-	<clsError.h>
-	<clsFondo.h>
 	<clsAudio.h>
-	<clsSoundEffect.h>
 	<clsMusic.h>
+	<clsSoundEffect.h>
+	<clsText.h>
 	<clsTimer.h>
-	<clsImagenes.h>
-	"clsPersonajes.h"
-
-1540069692 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\include\clsimagenes.h
-	<clsSprite.h>
-
-1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsbienvenida.cpp
-	"clsBienvenida.h"
-
-1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsdespedida.cpp
-	"clsDespedida.h"
-
-1540070770 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsfondo.cpp
 	"clsFondo.h"
+	"clsAnimacion.h"
+	"clsPersonaje.h"
 
-1540043769 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsimagenes.cpp
-	"clsImagenes.h"
-
-1540072794 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsjuego.cpp
-	"clsJuego.h"
-	"../INCLUDE/rutasSprites.h"
-
-1540069692 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clsmotor.cpp
+1541275170 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\source\clsmotor.cpp
 	"clsMotor.h"
+	"../INCLUDE/rutasRecursos.h"
+	"../INCLUDE/consTextos.h"
 
-1540069399 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\source\clspersonajes.cpp
-	"clsPersonajes.h"
+1541175242 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\source\clsfondo.cpp
+	"clsFondo.h"
+	"../INCLUDE/rutasRecursos.h"
 
-1540072869 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus-desarrollo\include\rutassprites.h
+1540833506 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\include\clsfondo.h
+	<clsSprite.h>
+	<clsScreen.h>
+
+1541253144 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\include\rutasrecursos.h
+
+1541271098 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\source\clsanimacion.cpp
+	"clsAnimacion.h"
+	"../INCLUDE/rutasRecursos.h"
+
+1541253359 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\include\clsanimacion.h
+	<clsSprite.h>
+	<clsScreen.h>
+	<clsTimer.h>
+
+1541188320 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\include\constextos.h
+
+1541277088 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\source\clspersonaje.cpp
+	"clsPersonaje.h"
+
+1541275771 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\include\clspersonaje.h
+	<clsSprite.h>
+	<clsEvent.h>
+	<clsFondo.h>
+	"rutasRecursos.h"
+
+1540640185 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clsaudio.cpp
+	"clsAudio.h"
+
+1540640185 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clsaudio.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1541275073 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\adnconsts.h
+	<SDL/SDL.h>
+	<SDL/SDL_video.h>
+	<SDL/SDL_image.h>
+	<SDL/SDL_ttf.h>
+	<SDL/SDL_mixer.h>
+	<SDL.h>
+	<SDL_video.h>
+	"SDL_image.h"
+	"SDL_ttf.h"
+	"SDL_mixer.h"
+
+1540640185 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clserror.h
+
+1540640185 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clsdot.cpp
+	"clsDot.h"
+
+1540640185 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clsdot.h
+	"adnConsts.h"
+
+1540640185 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clserror.cpp
+	<cstring>
+	<iostream>
+	"clsError.h"
+
+1540640185 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clsevent.cpp
+	"clsEvent.h"
+
+1540640186 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clsevent.h
+	"adnConsts.h"
+
+1540640186 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clsimage.cpp
+	"clsImage.h"
+
+1540640186 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clsimage.h
+	"adnConsts.h"
+	"clsError.h"
+
+1540640186 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clslog.cpp
+	"clsLog.h"
+
+1540640186 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clslog.h
+	<cstdio>
+
+1540640185 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clsmode.cpp
+	"clsMode.h"
+
+1540640185 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clsmode.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1540640185 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clsmusic.cpp
+	"clsMusic.h"
+
+1540640185 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clsmusic.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1540640186 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clsrandom.cpp
+	"clsRandom.h"
+
+1540640186 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clsrandom.h
+	<ctime>
+	<cstdlib>
+	<iostream>
+
+1540640185 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clsscreen.cpp
+	"clsScreen.h"
+
+1540640185 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clsscreen.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1540640185 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clssoundeffect.cpp
+	"clsSoundEffect.h"
+
+1540640185 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clssoundeffect.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1540640186 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clssprite.cpp
+	"clsSprite.h"
+
+1540640185 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clssprite.h
+	<iostream>
+	<cstring>
+	"adnConsts.h"
+	"clsError.h"
+	"clsDot.h"
+	"clsImage.h"
+	"clsDot.h"
+	"clsScreen.h"
+
+1540640185 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clstext.cpp
+	"clsText.h"
+
+1540640185 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clstext.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1540640185 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clstimer.cpp
+	"clsTimer.h"
+
+1540640185 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\adn-x\clstimer.h
+	"clsEvent.h"
+
+1541273250 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\main.cpp
+	<iostream>
+	<clsLog.h>
+	<clsError.h>
+	<clsMotor.h>
+	<locale>
+
+1541266472 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\include\clsmotor.h
+	<adnConsts.h>
+	<clsError.h>
+	<clsEvent.h>
+	<clsMode.h>
+	<clsScreen.h>
+	<clsAudio.h>
+	<clsMusic.h>
+	<clsSoundEffect.h>
+	<clsText.h>
+	<clsTimer.h>
+	"clsFondo.h"
+	"clsAnimacion.h"
+	"clsPersonaje.h"
+
+1540833506 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\include\clsfondo.h
+	<clsSprite.h>
+	<clsScreen.h>
+
+1541253359 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\include\clsanimacion.h
+	<clsSprite.h>
+	<clsScreen.h>
+	<clsTimer.h>
+
+1541275771 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\include\clspersonaje.h
+	<clsSprite.h>
+	<clsEvent.h>
+	<clsFondo.h>
+	"rutasRecursos.h"
+
+1541253144 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\include\rutasrecursos.h
+
+1541271098 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\source\clsanimacion.cpp
+	"clsAnimacion.h"
+	"../INCLUDE/rutasRecursos.h"
+
+1541175242 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\source\clsfondo.cpp
+	"clsFondo.h"
+	"../INCLUDE/rutasRecursos.h"
+
+1541275648 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\source\clspersonaje.cpp
+	"clsPersonaje.h"
+
+1541275170 source:c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\source\clsmotor.cpp
+	"clsMotor.h"
+	"../INCLUDE/rutasRecursos.h"
+	"../INCLUDE/consTextos.h"
+
+1541188320 c:\users\matiasfrancisconogue\box\copia funcional de marvelitus\include\constextos.h
 

@@ -94,10 +94,10 @@
 ///////////////////////////////////////////////////////////////////////////////
 #include <iostream>         // Contiene "cout".
 #include <clsLog.h>         // stdout.txt para Linux.
-#include <clsTimer.h>       // Administra el temporizador del juego
-#include <clsDot.h>         // Administra los pixeles basados en la resolucion.
-#include "clsMotor.h"       // Clase Motor Grafico
-#include "clsBienvenida.h"  // Clase Bienvenida
+#include <clsError.h>       // Administrador de errores.
+#include <clsMotor.h>       // Adinistrador del motor de ejecucion
+#include <locale>
+///////////////////////////////////////////////////////////////////////////////
 
 using namespace std;        // Espacio de nombres estandar.
 
@@ -107,6 +107,8 @@ using namespace std;        // Espacio de nombres estandar.
 //=============================================================================
 int main ( int argc, char** argv )
 {
+    //Uso de Caracteres españoles
+    setlocale(LC_ALL,"spanish");
 
     //---------------------------------------------------------------------------
     // Habilitar "stdout.txt" (solo para Linux).
@@ -125,36 +127,65 @@ int main ( int argc, char** argv )
     cout << "**********************************************************" << endl;
     cout <<  endl;
 
+
+
     //-------------------------------------
     // OBJETOS NECESARIOS PARA EL PROGRAMA
+    clsError error;   // Administrador de errores  (necesario).
+    clsMotor motor;   //Administrador del motor de ejecucion.
 
-    // Objeto para el uso de la clase Error.
-    clsError error;
-    // Objeto para el uso de la clase Motor.
-    clsMotor motor;
+    /**************************************************************************/
+
+    error.set(0);
+    //--------------------------------------------------------------------------
 
     //--------------------------------
     // CODIGO DEL PROGRAMA PRINCIPAL
 
+    //Inicializar Motor
     error.set(motor.iniciar());
     if(error.get())
     {
+        error.show(true);
         return error.get();
     }
 
-    error.set(motor.correr());
+    //Correr Bienvenida
+    error.set(motor.bienvenida());
     if(error.get())
     {
+        error.show(true);
         return error.get();
     }
 
+    //Correr menu
+    error.set(motor.menu());
+    if(error.get())
+    {
+        error.show(true);
+        return error.get();
+    }
+
+    //Correr Despedida
+    error.set(motor.despedida());
+    if(error.get())
+    {
+        error.show(true);
+        return error.get();
+    }
     //----------------------------
     // FIN DEL PROGRAMA PRINCIPAL
+
+
     cout << endl;
     cout << "**********************************************************" << endl;
     cout << "       El proyecto ADN-X ha finalizado correctamente      " << endl;
     cout << "##########################################################" << endl;
+
+    //--------------------------------------------------------------------------
     return error.get(); // Fin normal del programa principal.
+
+    /**************************************************************************/
 }
 
 //### FIN DE ARCHIVO ##########################################################

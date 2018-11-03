@@ -1,0 +1,394 @@
+#ifndef RUTASRECURSOS_H_INCLUDED
+#define RUTASRECURSOS_H_INCLUDED
+
+///**************************************************************************///
+//------------------------------------------------------------------------------
+//                           Fuentes de Letras
+//------------------------------------------------------------------------------
+const char comic[] = {"FONTS/ComicBook.ttf"};
+
+///**************************************************************************///
+
+///**************************************************************************///
+//------------------------------------------------------------------------------
+//                                  Fondos
+//------------------------------------------------------------------------------
+
+const char fondoDeBienvenida[] = {"RESOURCES/IMAGES/BACKGROUNDS/Bienvenida.png"};
+const char fondoDeMenu[] = {"RESOURCES/IMAGES/BACKGROUNDS/Main_menu.png"};
+const char fondoDeHistoria[] = {"RESOURCES/IMAGES/BACKGROUNDS/Historia.png"};
+const char fondoDeCapitanAmerica[] = {"RESOURCES/IMAGES/BACKGROUNDS/Captain_America_Intro.png"};
+const char fondoDeDareDevil[] = {"RESOURCES/IMAGES/BACKGROUNDS/Dare_Devil_Intro.png"};
+const char fondoDeIronMan[] = {"RESOURCES/IMAGES/BACKGROUNDS/Iron_Man_Intro.png"};
+const char fondoDeSpiderMan[] = {"RESOURCES/IMAGES/BACKGROUNDS/Spider_Man_Intro.png"};
+const char fondoDeStarLord[] = {"RESOURCES/IMAGES/BACKGROUNDS/Star_Lord_Intro.png"};
+const char fondoDeThor[] = {"RESOURCES/IMAGES/BACKGROUNDS/Thor_Intro.png"};
+const char fondoDeNivel_1[] = {"RESOURCES/IMAGES/BACKGROUNDS/Nivel_1.png"};
+const char fondoDeNivel_2[] = {"RESOURCES/IMAGES/BACKGROUNDS/Nivel_2.png"};
+const char fondoDeNivel_3[] = {"RESOURCES/IMAGES/BACKGROUNDS/Nivel_3.png"};
+const char fondoDeEscenaFinalGana[] = {"RESOURCES/IMAGES/BACKGROUNDS/Escena_Final_Gana.png"};
+const char fondoDeDespedida[] = {"RESOURCES/IMAGES/BACKGROUNDS/Despedida.png"};
+const char fondoDeSeleccionPersonajes[] = {"RESOURCES/IMAGES/BACKGROUNDS/Seleccion_Personajes.png"};
+const char fondoDeEscenaFinalPierde[] = {"RESOURCES/IMAGES/BACKGROUNDS/Escena_Final_Pierde.png"};
+
+
+///**************************************************************************///
+
+
+
+///**************************************************************************///
+//------------------------------------------------------------------------------
+//                                  Musicas
+//------------------------------------------------------------------------------
+
+const char musicaDeBienvenida[] = {"RESOURCES/SOUNDS/MUSIC/01-Credits_Intro.mp3"};
+const char musicaDeMenu[] = {"RESOURCES/SOUNDS/MUSIC/02-Game_Intro.mp3"};
+const char musicaDeHistoria[] = {"RESOURCES/SOUNDS/MUSIC/03-History.mp3"};
+const char musicaDeCapitanAmerica[] = {"RESOURCES/SOUNDS/MUSIC/Captain_America_Intro.mp3"};
+const char musicaDeDareDevil[] = {"RESOURCES/SOUNDS/MUSIC/Daredevil_Intro.mp3"};
+const char musicaDeIronMan[] = {"RESOURCES/SOUNDS/MUSIC/Iron_Man_Intro.mp3"};
+const char musicaDeSpiderMan[] = {"RESOURCES/SOUNDS/MUSIC/Spiderman_Intro.mp3"};
+const char musicaDeStarLord[] = {"RESOURCES/SOUNDS/MUSIC/Star_Lord_Intro.mp3"};
+const char musicaDeThor[] = {"RESOURCES/SOUNDS/MUSIC/Thor_Intro.mp3"};
+const char musicaDeNivel_1[] = {"RESOURCES/SOUNDS/MUSIC/04-Slow_Fight.mp3"};
+const char musicaDeNivel_2[] = {"RESOURCES/SOUNDS/MUSIC/04-Slow_Fight.mp3"};
+const char musicaDeJefe[] = {"RESOURCES/SOUNDS/MUSIC/05-Boss_Intro.mp3"};
+const char musicaDeNivel_3[] = {"RESOURCES/SOUNDS/MUSIC/06-Fast_Fight.mp3"};
+const char musicaDanceOff[] = {"RESOURCES/SOUNDS/MUSIC/07-Dance_Off_Win.mp3"};
+const char musicaDeEscenaFinalGana[] = {"RESOURCES/SOUNDS/MUSIC/08-Final_Scene_Win.mp3"};
+const char musicaDeDespedida[] = {"RESOURCES/SOUNDS/MUSIC/10-Credits_Outro.mp3"};
+const char musicaDeSeleccion[] = {"RESOURCES/SOUNDS/MUSIC/Seleccion_Personajes.mp3"};
+const char musicaDeEscenaFinalPierde[] = {"RESOURCES/SOUNDS/MUSIC/09-Final_Scene_Lose.mp3"};
+
+///**************************************************************************///
+
+
+
+///**************************************************************************///
+//------------------------------------------------------------------------------
+//                                  Sonidos
+//------------------------------------------------------------------------------
+
+///**************************************************************************///
+
+
+
+///**************************************************************************///
+//------------------------------------------------------------------------------
+//                                  Imagenes
+//------------------------------------------------------------------------------
+
+const char chat_grande[] = {"RESOURCES/IMAGES/SPRITES/CONTEXT/Burbuja_Chat_Grande.png"};
+
+///**************************************************************************///
+
+
+
+///**************************************************************************///
+//------------------------------------------------------------------------------
+//                           Sprites Animaciones
+//------------------------------------------------------------------------------
+
+const char * const spritesAnimacionCapi[] =
+{
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_D.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_D2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png"
+};
+
+const char * const spritesAnimacionDare[] =
+{
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_A1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_A3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_D.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_D2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_A2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_3.png"
+};
+
+const char * const spritesAnimacionIron[] =
+{
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_A1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_A3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_D.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_D2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_A2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_3.png"
+};
+
+const char * const spritesAnimacionSpider[] =
+{
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_A1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_A3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_D.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_D2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_A2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_3.png"
+};
+
+const char * const spritesAnimacionStar[] =
+{
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_A1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_A3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_D.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_D2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_A2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_3.png"
+};
+
+const char * const spritesAnimacionThor[] =
+{
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_A1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_A3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_D.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_D2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_A2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_3.png"
+};
+
+///**************************************************************************///
+
+///**************************************************************************///
+//------------------------------------------------------------------------------
+//                           Sprites Animaciones
+//------------------------------------------------------------------------------
+
+//Capitan America
+const char * const spritesJuegoCapitan[] =
+{
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_A4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_D.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/CAPTAIN_AMERICA/Captain_America_D2.png"
+};
+
+//Dare Devil
+const char * const spritesJuegoDare[] =
+{
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_A1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_A2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_A3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_A4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_D.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_D2.png"
+};
+
+//Iron Man
+const char * const spritesJuegoIron[] =
+{
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_A1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_A2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_A3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_A4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_D.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/IRON_MAN/Iron_Man_D2.png"
+};
+
+//Spider Man
+const char * const spritesJuegoSpider[] =
+{
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_A1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_A2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_A3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_A4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_D.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/SPIDER_MAN/Spider_Man_D2.png"
+};
+
+//Star Lord
+const char * const spritesJuegoStar[] =
+{
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_A1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_A2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_A3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_A4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_D.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/STAR_LORD/Star_Lord_D2.png"
+};
+
+const char * const spritesJuegoThor[] =
+{
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_0.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_A1.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_A2.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_A3.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_A4.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_D.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/THOR/Thor_D2.png"
+};
+
+///**************************************************************************///
+
+#endif // RUTASRECURSOS_H_INCLUDED

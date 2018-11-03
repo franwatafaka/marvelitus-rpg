@@ -219,6 +219,13 @@ const rgbColor VIOLET   = {128,0,255};   // Violeta.
 const rgbColor WHITE    = {255,255,255}; // Blanco.
 const rgbColor YELLOW   = {255,255,0};   // Amarillo puro.
 
+const rgbColor AZUL_CAPI = {43,21,165};  //
+const rgbColor ROJO_DARE = {135, 8, 22}; //
+const rgbColor AMARILLO_IRON = {221, 211, 59}; //
+const rgbColor ROJO_SPIDER = {252, 40, 40}; //
+const rgbColor VIOLETA_STAR = {150, 16, 204}; //
+const rgbColor CELESTE_THOR = {49, 234, 225}; //
+
 //-----------------------------------------------------------------------------
 
 
@@ -516,6 +523,13 @@ enum tFontStyle {NORMAL,BOLD,ITALIC};
 
 //-----------------------------------------------------------------------------
 
+//-----------------------------------------------------------------------------
+// DIRECCIONES
+//        Tipos de direcciones posibles.
+//-----------------------------------------------------------------------------
+enum tDireccion {QUIETO,ARRIBA,DERECHA,ABAJO,IZQUIERDA,DS_DER,DS_IZQ,DI_DER,DI_IZQ,ATACA_C,ATACA_L,DEFIENDE};
+
+//-----------------------------------------------------------------------------
 
 #endif // ADNCONSTS_H
 
