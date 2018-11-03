@@ -1125,6 +1125,12 @@ int clsMotor::nivel_3(clsPersonaje seleccionado)
     //Loop del Motor
     while(!salirNivel_3)
     {
+        //Revision de reloj
+        if(reloj.getState() == 16500)
+        {
+            musica[11].stopMusic();
+            musica[12].playMusic(-1);
+        }
         //Si hubo un evento
         if(evento.wasEvent())
         {
