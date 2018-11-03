@@ -118,7 +118,7 @@
 1540640185 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\adn-x\clstimer.h
 	"clsEvent.h"
 
-1541273250 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\main.cpp
+1541279312 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\main.cpp
 	<iostream>
 	<clsLog.h>
 	<clsError.h>
@@ -140,7 +140,7 @@
 	"clsAnimacion.h"
 	"clsPersonaje.h"
 
-1541275170 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\source\clsmotor.cpp
+1541278486 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\source\clsmotor.cpp
 	"clsMotor.h"
 	"../INCLUDE/rutasRecursos.h"
 	"../INCLUDE/consTextos.h"
@@ -166,7 +166,7 @@
 
 1541188320 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\include\constextos.h
 
-1541277088 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\source\clspersonaje.cpp
+1541280296 source:c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\source\clspersonaje.cpp
 	"clsPersonaje.h"
 
 1541275771 c:\users\matiasfrancisconogue\desktop\marvelitus rpg\marvelitus - desarrollo\include\clspersonaje.h

@@ -363,38 +363,26 @@ int clsPersonaje::animar(clsScreen *screen, tDireccion direction,clsFondo *fondo
     break;
     case ATACA_C:
         {
-            if(evento->wasEvent() && evento->getEventType() == KEY_FREE)
-            {
-                this->setI(0);
-                this->setX(this->getX());
-                this->setY(this->getY());
-                fondo->paste(pantalla->getPtr());
-                this->paste(pantalla->getPtr());
-                pantalla->refresh();
-            }
-            else
-            {
+              for(int v=0; v<4; v++)
+              {
                 this->setI(4);
                 this->setX(this->getX());
                 this->setY(this->getY());
                 fondo->paste(pantalla->getPtr());
                 this->paste(pantalla->getPtr());
                 pantalla->refresh();
-            }
-        }
-    break;
-    case ATACA_L:
-        {
-            if(evento->wasEvent() && evento->getEventType() == KEY_FREE)
-            {
+              }
                 this->setI(0);
                 this->setX(this->getX());
                 this->setY(this->getY());
                 fondo->paste(pantalla->getPtr());
                 this->paste(pantalla->getPtr());
                 pantalla->refresh();
-            }
-            else
+        }
+    break;
+    case ATACA_L:
+        {
+            for(int v=0; v<4; v++)
             {
                 this->setI(5);
                 this->setX(this->getX());
@@ -403,22 +391,25 @@ int clsPersonaje::animar(clsScreen *screen, tDireccion direction,clsFondo *fondo
                 this->paste(pantalla->getPtr());
                 pantalla->refresh();
             }
+            this->setI(0);
+            this->setX(this->getX());
+            this->setY(this->getY());
+            fondo->paste(pantalla->getPtr());
+            this->paste(pantalla->getPtr());
+            pantalla->refresh();
         }
     break;
     case DEFIENDE:
         {
-            if(evento->wasEvent() && evento->getEventType() == KEY_FREE)
+            this->setI(8);
+            this->setX(this->getX());
+            this->setY(this->getY());
+            fondo->paste(pantalla->getPtr());
+            this->paste(pantalla->getPtr());
+            pantalla->refresh();
+            if(evento->wasEvent())
             {
                 this->setI(0);
-                this->setX(this->getX());
-                this->setY(this->getY());
-                fondo->paste(pantalla->getPtr());
-                this->paste(pantalla->getPtr());
-                pantalla->refresh();
-            }
-            else
-            {
-                this->setI(8);
                 this->setX(this->getX());
                 this->setY(this->getY());
                 fondo->paste(pantalla->getPtr());
