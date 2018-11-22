@@ -1034,10 +1034,10 @@ int clsMotor::nivel_1(clsPersonaje seleccionado)
     cout << " Limpio pantalla " << endl;
     fondo.setI(9);
     cout << "Seteo el fondo " << endl;
-
     seleccionado.animar(&pantalla,QUIETO,&fondo);
     cout << "Animo personaje " << endl;
     enemigo.animar(&pantalla,QUIETO,&fondo);
+    pantalla.refresh();
     movimiento = false;
     //fondo.paste(pantalla.getPtr());
     musica[9].playMusic(-1);
@@ -1045,7 +1045,8 @@ int clsMotor::nivel_1(clsPersonaje seleccionado)
     //Loop del Motor
     while(!salirNivel_1)
     {
-        pantalla.refresh();
+    enemigo.animar(&pantalla,QUIETO,&fondo);
+
         //Si hubo un evento
         if(evento.wasEvent())
         {
@@ -1059,25 +1060,24 @@ int clsMotor::nivel_1(clsPersonaje seleccionado)
             {
                 while(evento.getEventType() == KEY_PRESSED)
                 {
-                    pantalla.refresh();
+
                     cout << " tecla presionada " << evento.getKey() << endl;
                     if(evento.wasEvent() && evento.getEventType() == KEY_FREE)
                     {
                         break;
                         seleccionado.animar(&pantalla,QUIETO,&fondo);
-                        enemigo.animar(&pantalla,QUIETO,&fondo);
                         pantalla.refresh();
                     }
                     else
                     {
                         error.set(teclaPresionada());
-                        enemigo.animar(&pantalla,IZQUIERDA,&fondo);
                         pantalla.refresh();
                     }
                 }
             }
             break;
             }
+
         } // if evento was evento
 
         //while de ataque enemigo
@@ -1415,6 +1415,7 @@ int clsMotor::teclaPresionada()
     {
         seleccionado.animar(&pantalla,IZQUIERDA,&fondo);
         enemigo.animar(&pantalla,DERECHA,&fondo);
+
     }
     break;
     case KEY_C:
@@ -1422,6 +1423,7 @@ int clsMotor::teclaPresionada()
     {
         seleccionado.animar(&pantalla,DI_DER,&fondo);
         enemigo.animar(&pantalla,DI_IZQ,&fondo);
+
     }
     break;
     case KEY_D:
@@ -1430,6 +1432,7 @@ int clsMotor::teclaPresionada()
         seleccionado.animar(&pantalla,DERECHA,&fondo);
         enemigo.animar(&pantalla,IZQUIERDA,&fondo);
 
+
     }
     break;
     case KEY_E:
@@ -1437,6 +1440,7 @@ int clsMotor::teclaPresionada()
     {
         seleccionado.animar(&pantalla,DS_DER,&fondo);
         enemigo.animar(&pantalla,DS_IZQ,&fondo);
+
     }
     break;
     case KEY_Q:
@@ -1445,6 +1449,7 @@ int clsMotor::teclaPresionada()
         seleccionado.animar(&pantalla,DS_IZQ,&fondo);
         enemigo.animar(&pantalla,DS_DER,&fondo);
 
+
     }
     break;
     case KEY_S:
@@ -1452,6 +1457,7 @@ int clsMotor::teclaPresionada()
     {
         seleccionado.animar(&pantalla,ABAJO,&fondo);
         enemigo.animar(&pantalla,ABAJO,&fondo);
+
     }
     break;
     case KEY_W:

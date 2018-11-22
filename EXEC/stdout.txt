@@ -33,73 +33,6 @@ Seteo el fondo
 Animo personaje 
 Evento detectado 
 Evento detectado 
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
- tecla presionada 13
-Evento detectado 
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
-Evento detectado 
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
-Evento detectado 
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
- tecla presionada 119
-Evento detectado 
-Evento detectado 
  tecla presionada 100
  tecla presionada 100
  tecla presionada 100
@@ -111,68 +44,20 @@ Evento detectado
  tecla presionada 100
  tecla presionada 100
  tecla presionada 100
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
-Evento detectado 
- tecla presionada 97
- tecla presionada 97
- tecla presionada 97
-Evento detectado 
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
-Evento detectado 
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
-Evento detectado 
- tecla presionada 97
- tecla presionada 97
-Evento detectado 
- tecla presionada 97
- tecla presionada 97
-Evento detectado 
- tecla presionada 97
- tecla presionada 97
-Evento detectado 
- tecla presionada 97
- tecla presionada 97
 Evento detectado 
  tecla presionada 97
  tecla presionada 97
 Evento detectado 
  tecla presionada 100
  tecla presionada 100
-Evento detectado 
  tecla presionada 100
  tecla presionada 100
-Evento detectado 
- tecla presionada 97
- tecla presionada 97
- tecla presionada 97
-Evento detectado 
- tecla presionada 97
- tecla presionada 97
-Evento detectado 
- tecla presionada 97
- tecla presionada 97
- tecla presionada 97
-Evento detectado 
- tecla presionada 97
- tecla presionada 97
 Evento detectado 
- tecla presionada 100
  tecla presionada 100
  tecla presionada 100
-Evento detectado 
  tecla presionada 100
  tecla presionada 100
  tecla presionada 100
- tecla presionada 100
-Evento detectado 
  tecla presionada 100
  tecla presionada 100
  tecla presionada 100
@@ -181,291 +66,73 @@ Evento detectado
  tecla presionada 100
  tecla presionada 100
  tecla presionada 100
-Evento detectado 
- tecla presionada 97
- tecla presionada 97
- tecla presionada 97
-Evento detectado 
  tecla presionada 100
  tecla presionada 100
  tecla presionada 100
  tecla presionada 100
-Evento detectado 
- tecla presionada 44
- tecla presionada 44
-Evento detectado 
- tecla presionada 97
- tecla presionada 97
- tecla presionada 97
-Evento detectado 
- tecla presionada 44
- tecla presionada 44
-Evento detectado 
- tecla presionada 97
- tecla presionada 44
-Evento detectado 
-Evento detectado 
- tecla presionada 97
- tecla presionada 97
- tecla presionada 97
 Evento detectado 
- tecla presionada 97
  tecla presionada 97
  tecla presionada 97
 Evento detectado 
  tecla presionada 97
  tecla presionada 97
- tecla presionada 97
-Evento detectado 
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
 Evento detectado 
- tecla presionada 97
- tecla presionada 97
  tecla presionada 97
  tecla presionada 97
- tecla presionada 97
- tecla presionada 97
- tecla presionada 97
 Evento detectado 
  tecla presionada 97
  tecla presionada 97
- tecla presionada 97
-Evento detectado 
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
-Evento detectado 
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
-Evento detectado 
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
-Evento detectado 
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
-Evento detectado 
- tecla presionada 115
- tecla presionada 115
-Evento detectado 
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
-Evento detectado 
- tecla presionada 119
- tecla presionada 119
 Evento detectado 
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
-Evento detectado 
- tecla presionada 119
- tecla presionada 119
-Evento detectado 
- tecla presionada 119
- tecla presionada 119
-Evento detectado 
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
-Evento detectado 
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
-Evento detectado 
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
-Evento detectado 
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
-Evento detectado 
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
-Evento detectado 
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
-Evento detectado 
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
-Evento detectado 
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
-Evento detectado 
- tecla presionada 119
- tecla presionada 119
-Evento detectado 
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
-Evento detectado 
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
-Evento detectado 
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
-Evento detectado 
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
- tecla presionada 119
-Evento detectado 
- tecla presionada 119
- tecla presionada 119
-Evento detectado 
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
-Evento detectado 
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
- tecla presionada 115
-Evento detectado 
  tecla presionada 100
  tecla presionada 100
  tecla presionada 100
- tecla presionada 100
- tecla presionada 100
-Evento detectado 
- tecla presionada 97
- tecla presionada 97
- tecla presionada 97
-Evento detectado 
- tecla presionada 97
- tecla presionada 97
- tecla presionada 97
 Evento detectado 
- tecla presionada 100
  tecla presionada 100
- tecla presionada 100
- tecla presionada 100
- tecla presionada 97
-Evento detectado 
  tecla presionada 100
  tecla presionada 100
-Evento detectado 
-Evento detectado 
- tecla presionada 97
- tecla presionada 97
- tecla presionada 97
 Evento detectado 
  tecla presionada 100
  tecla presionada 100
  tecla presionada 100
- tecla presionada 100
- tecla presionada 97
 Evento detectado 
-Evento detectado 
  tecla presionada 100
  tecla presionada 100
  tecla presionada 100
  tecla presionada 100
 Evento detectado 
- tecla presionada 97
- tecla presionada 97
  tecla presionada 97
  tecla presionada 97
 Evento detectado 
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
  tecla presionada 97
-Evento detectado 
-Evento detectado 
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
-Evento detectado 
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
  tecla presionada 97
-Evento detectado 
+ tecla presionada 97
 Evento detectado 
  tecla presionada 100
  tecla presionada 100
  tecla presionada 100
  tecla presionada 100
 Evento detectado 
- tecla presionada 97
  tecla presionada 97
  tecla presionada 97
  tecla presionada 97
- tecla presionada 97
-Evento detectado 
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
- tecla presionada 100
 Evento detectado 
+ tecla presionada 27
+ tecla presionada 27
+ tecla presionada 27
+ tecla presionada 27
+ tecla presionada 27
+ tecla presionada 27
+ tecla presionada 27
+ tecla presionada 27
+ tecla presionada 27
+ tecla presionada 27
+ tecla presionada 27
+ tecla presionada 27
+ tecla presionada 27
+ tecla presionada 27
+ tecla presionada 27
+ tecla presionada 27
+ tecla presionada 27
  tecla presionada 27
  tecla presionada 27
  tecla presionada 27
@@ -555,4 +222,7 @@ Se destruyeron la imagenes del sprite sin Nombre
 Se destruyo la imagen0 del sprite sin Nombre
 Se destruyeron la imagenes del sprite sin Nombre
 Se destruyo la imagen0 del sprite sin Nombre
+Se destruyeron la imagenes del sprite sin Nombre
+Se destruyo la imagen0 del sprite sin Nombre
+Se destruyeron la imagenes del sprite sin Nombre
 Se destruyeron la imagenes del sprite sin Nombre
