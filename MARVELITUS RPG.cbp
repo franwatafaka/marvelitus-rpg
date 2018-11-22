@@ -148,6 +148,7 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="GPL LICENSE/Licencia GPL (traduccion NO OFICIAL - castellano argentina).txt" />
 		<Unit filename="GPL LICENSE/Licencia GPL original (ingles).txt" />
 		<Unit filename="INCLUDE/clsAnimacion.h" />
+		<Unit filename="INCLUDE/clsEnemigo.h" />
 		<Unit filename="INCLUDE/clsFondo.h" />
 		<Unit filename="INCLUDE/clsMotor.h" />
 		<Unit filename="INCLUDE/clsPersonaje.h" />
@@ -264,6 +265,7 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/Star_Lord_Intro.mp3" />
 		<Unit filename="RESOURCES/SOUNDS/MUSIC/Thor_Intro.mp3" />
 		<Unit filename="SOURCE/clsAnimacion.cpp" />
+		<Unit filename="SOURCE/clsEnemigo.cpp" />
 		<Unit filename="SOURCE/clsFondo.cpp" />
 		<Unit filename="SOURCE/clsMotor.cpp" />
 		<Unit filename="SOURCE/clsPersonaje.cpp" />

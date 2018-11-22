@@ -11,11 +11,13 @@
 #include <clsSoundEffect.h>
 #include <clsText.h>
 #include <clsTimer.h>
+#include <clsRandom.h>
 
 //------------------------------------------------------------------------------
 #include "clsFondo.h"
 #include "clsAnimacion.h"
 #include "clsPersonaje.h"
+#include "clsEnemigo.h"
 //------------------------------------------------------------------------------
 class clsMotor
 {
@@ -134,6 +136,11 @@ private:
     bool salirDespedida;
     //
     bool movimiento;
+
+    clsEnemigo enemigo;
+
+
+    clsRandom aleatorio;
 };
 
 #endif // CLSMOTOR_H

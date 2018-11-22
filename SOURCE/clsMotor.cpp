@@ -2,11 +2,15 @@
 #include "../INCLUDE/rutasRecursos.h"
 #include "../INCLUDE/consTextos.h"
 
+tDireccion ataques[4] = {DERECHA,ATACA_C,ATACA_L,DEFIENDE};
+tDireccion movimientos[5]= {ARRIBA,ABAJO,DERECHA,IZQUIERDA,QUIETO};
+
 //Metdodo para Iniciar el Motor del programa
 int clsMotor::iniciar()
 {
     error.set(0);
     //--------------------------------------------------------------------------
+    //vector para ataque aleatorio enemigo
 
     //Inicializar modo Grafico
     error.set(modoGrafico.init(1280,720,32));
@@ -200,6 +204,25 @@ int clsMotor::iniciar()
         return error.get();
     }
 
+    //Inicializo enemigo
+    error.set(enemigo.init(&pantalla));
+    if(error.get())
+    {
+        error.show(true);
+        return error.get();
+    }
+
+    //Inicializo enemigo2
+//    error.set(enemigo2.init(&pantalla));
+//    if(error.get())
+//    {
+//        error.show(true);
+//        return error.get();
+//    }
+
+    //para numeros aleatorios
+    aleatorio.init();
+
     //--------------------------------------------------------------------------
     return error.get();
 }
@@ -250,6 +273,8 @@ int clsMotor::bienvenida()
                 return error.get();
             }
         }
+
+
     }
     musica[0].stopMusic();
     //--------------------------------------------------------------------------
@@ -951,34 +976,34 @@ int clsMotor::juego(int personaje)
     switch(personaje)
     {
     case 1:
-        {
-            seleccionado.iniciar(spritesJuegoCapitan,10);
-        }
+    {
+        seleccionado.iniciar(spritesJuegoCapitan,10);
+    }
     break;
     case 2:
-        {
-            seleccionado.iniciar(spritesJuegoDare,10);
-        }
+    {
+        seleccionado.iniciar(spritesJuegoDare,10);
+    }
     break;
     case 3:
-        {
-            seleccionado.iniciar(spritesJuegoIron,10);
-        }
+    {
+        seleccionado.iniciar(spritesJuegoIron,10);
+    }
     break;
     case 4:
-        {
-            seleccionado.iniciar(spritesJuegoSpider,10);
-        }
+    {
+        seleccionado.iniciar(spritesJuegoSpider,10);
+    }
     break;
     case 5:
-        {
-            seleccionado.iniciar(spritesJuegoStar,10);
-        }
+    {
+        seleccionado.iniciar(spritesJuegoStar,10);
+    }
     break;
     case 6:
-        {
-            seleccionado.iniciar(spritesJuegoThor,10);
-        }
+    {
+        seleccionado.iniciar(spritesJuegoThor,10);
+    }
     break;
     }
     //Loop del Motor
@@ -998,34 +1023,44 @@ int clsMotor::juego(int personaje)
 
 int clsMotor::nivel_1(clsPersonaje seleccionado)
 {
+    cout << "Ingreso nivel 1 " << endl;
     error.set(0);
     //--------------------------------------------------------------------------
 
     //Pego fondo en pantalla y refresco
     this->seleccionado = seleccionado;
+    cout << "personaje  " <<  endl;
     pantalla.clean(BLACK);
+    cout << " Limpio pantalla " << endl;
     fondo.setI(9);
-    fondo.paste(pantalla.getPtr());
-    seleccionado.animar(&pantalla,QUIETO,&fondo);
-    movimiento = false;
-    pantalla.refresh();
-    musica[9].playMusic(-1);
+    cout << "Seteo el fondo " << endl;
 
+    seleccionado.animar(&pantalla,QUIETO,&fondo);
+    cout << "Animo personaje " << endl;
+    enemigo.animar(&pantalla,QUIETO,&fondo);
+    movimiento = false;
+    //fondo.paste(pantalla.getPtr());
+    musica[9].playMusic(-1);
+    pantalla.refresh();
     salirNivel_1=false;
     //Loop del Motor
     while(!salirNivel_1)
     {
+
         //Si hubo un evento
         if(evento.wasEvent())
         {
+            cout << "Evento detectado " << endl;
             //Switch de eventos
             switch(evento.getEventType())
             {
+                cout << "Buscando tipo evento ...  " << endl;
             //Presion de una tecla
             case KEY_PRESSED:
             {
                 while(evento.getEventType() == KEY_PRESSED)
                 {
+                    cout << " tecla presionada " << evento.getKey() << endl;
                     if(evento.wasEvent() && evento.getEventType() == KEY_FREE)
                     {
                         break;
@@ -1039,13 +1074,48 @@ int clsMotor::nivel_1(clsPersonaje seleccionado)
             }
             break;
             }
-            if(error.get())
-            {
-                error.show(true);
-                return error.get();
-            }
-        }
-    }
+        } // if evento was evento
+
+        //while de ataque enemigo
+        /* while(evento.wasEvent() )
+          {
+              // aleatorios deben ser entre 0 y 2
+              bool salir = false;
+              int n = 0, movAleatorioEnemi = 0;
+              while(!salir)
+              {
+
+              aleatorio.getNumber(n);
+              if(n == 0 || n<=3)
+              {
+                  salir = true;
+              }
+              }
+              if(evento.getKey() == ATACA_C || evento.getKey() == ATACA_L  && (seleccionado.getX() == enemigo.getX() && seleccionado.getY() == enemigo.getY()))
+              {
+              cout << "nivel 1 - sprites cercanos, movimiento aleatorio de ataque" << endl;
+              enemigo.animar(&pantalla, ataques[n],&fondo);
+              }
+              else if (evento.getKey() == DERECHA || evento.getKey() == IZQUIERDA || evento.getKey() ==  ARRIBA || evento.getKey() == ABAJO)
+              {
+                  bool salirMovsEnemi = false;
+                  while(!salirMovsEnemi)
+                  {
+                   aleatorio.getNumber(movAleatorioEnemi);
+                   cout << "numero aleatorio de movimiento enemigo " << movAleatorioEnemi << endl;
+                   if(movAleatorioEnemi == 0 || movAleatorioEnemi <5)
+                   {
+                       salirMovsEnemi = true;
+                   }
+                  }
+                  cout << "nivel 1 - sprites cercanos, movimiento aleatorio de ataque" << endl;
+              enemigo.animar(&pantalla,movimientos[movAleatorioEnemi],&fondo);
+              enemigo.animar(&pantalla,movimientos[movAleatorioEnemi],&fondo);
+              }
+          }
+        */
+        pantalla.refresh();
+    } // fin while
     musica[9].stopMusic();
     //--------------------------------------------------------------------------
     return error.get();
@@ -1398,6 +1468,7 @@ int clsMotor::teclaPresionada()
     case KEY_a:
     {
         seleccionado.animar(&pantalla,IZQUIERDA,&fondo);
+        enemigo.animar(&pantalla,DERECHA,&fondo);
     }
     break;
     case KEY_B:
@@ -1410,18 +1481,21 @@ int clsMotor::teclaPresionada()
     case KEY_c:
     {
         seleccionado.animar(&pantalla,DI_DER,&fondo);
+        enemigo.animar(&pantalla,DI_IZQ,&fondo);
     }
     break;
     case KEY_D:
     case KEY_d:
     {
         seleccionado.animar(&pantalla,DERECHA,&fondo);
+        enemigo.animar(&pantalla,DERECHA,&fondo);
     }
     break;
     case KEY_E:
     case KEY_e:
     {
         seleccionado.animar(&pantalla,DS_DER,&fondo);
+        enemigo.animar(&pantalla,DI_IZQ,&fondo);
     }
     break;
     case KEY_F:

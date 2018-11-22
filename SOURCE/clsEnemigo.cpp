@@ -1,48 +1,326 @@
 #include "clsEnemigo.h"
 
-int clsEnemigo::init(clsScreen *s)
+const char * const spritesEnemigo[10] =
+{
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/00.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/01.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/02.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/03.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/04.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/05.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/06.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/07.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/08.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/09.png"
+};
+
+int clsEnemigo::init( clsScreen *s)
 {
     pantalla =  s;
+    error.set(0);
     setItems(10);
+    //Sprite personaje
+    for(int u=0; u<10; u++)
+    {
+        setI(u);
+        error.set(load(spritesEnemigo[u]));
+        cout << "Carga spriteEnemigo " << u << endl;
+        if(error.get())
+        {
+            return error.get();
+        }
+    }
     setI(0);
-    error.set(load("RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_0.png"));
-    if(error.get()) {error.show(true); return error.get();}
-    setI(1);
-    error.set(load("RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_1.png"));
-    if(error.get()) {error.show(true); return error.get();}
-    setI(2);
-    error.set(load("RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_3.png"));
-    if(error.get()) {error.show(true); return error.get();}
-    setI(3);
-    error.set(load("RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_4.png"));
-    if(error.get()) {error.show(true); return error.get();}
-    setI(4);
-    error.set(load("RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_A1.png"));
-    if(error.get()) {error.show(true); return error.get();}
-    setI(5);
-    error.set(load("RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_A2.png"));
-    if(error.get()) {error.show(true); return error.get();}
-    setI(6);
-    error.set(load("RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_A3.png"));
-    if(error.get()) {error.show(true); return error.get();}
-    setI(7);
-    error.set(load("RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_A4.png"));
-    if(error.get()) {error.show(true); return error.get();}
-    setI(8);
-    error.set(load("RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_D.png"));
-    if(error.get()) {error.show(true); return error.get();}
-    setI(9);
-    error.set(load("RESOURCES/IMAGES/SPRITES/CHARACTERS/DARE_DEVIL/Dare_Devil_D2.png"));
-    if(error.get()) {error.show(true); return error.get();}
-
-
+    setX(850);
+    setY(500);
     return error.get();
-
 }
 
-void clsEnemigo::animar()
+int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fondo )
 {
-    setX(getX()+posX);
-    setY(getX()+posX);
-    paste(pantalla->getPtr());
+    error.set(0);
+
+    switch(teclaPres)
+    {
+    case QUIETO:
+    {
+        this->setI(0);
+        this->setX(this->getX());
+        this->setY(this->getY());
+        pasos = 0;
+        fondo->paste(pantalla->getPtr());
+        this->paste(pantalla->getPtr());
+
+    }
+    break;
+    case ARRIBA:
+    {
+        if(this->getY() < 310)
+        {
+            this->setY(310);
+        }
+        this->setI(this->getI());
+        this->setX(this->getX());
+        this->setY(this->getY()-10);
+        if(pasos < 3)
+        {
+            setI(0);
+            pasos++;
+        }
+        else if(pasos >= 3 && pasos < 6)
+        {
+            setI(1);
+            pasos++;
+        }
+        else if(pasos == 6)
+        {
+            setI(0);
+            pasos = 0;
+        }
+        fondo->paste(pantalla->getPtr());
+        this->paste(pantalla->getPtr());
+    }
+    break;
+    case DERECHA:
+    {
+        if(this->getX() > 1110)
+        {
+            this->setX(1110);
+        }
+        this->setI(this->getI());
+        this->setX(this->getX()+10);
+        this->setY(this->getY());
+        if(pasos < 3)
+        {
+            setI(5);
+            pasos++;
+        }
+        else if(pasos >= 3 && pasos < 6)
+        {
+            setI(6);
+            pasos++;
+        }
+        else if(pasos == 6)
+        {
+            setI(5);
+            pasos = 0;
+        }
+        fondo->paste(pantalla->getPtr());
+        this->paste(pantalla->getPtr());
+    }
+    break;
+    case ABAJO:
+    {
+        if(this->getY() > 500)
+        {
+            this->setY(500);
+        }
+        this->setI(this->getI());
+        this->setX(this->getX());
+        this->setY(this->getY()+10);
+        if(pasos < 3)
+        {
+            setI(0);
+            pasos++;
+        }
+        else if(pasos >= 3 && pasos < 6)
+        {
+            setI(1);
+            pasos++;
+        }
+        else if(pasos == 6)
+        {
+            setI(0);
+            pasos = 0;
+        }
+    }
+    break;
+    case IZQUIERDA:
+    {
+        if(this->getX() < 20)
+        {
+            this->setX(20);
+        }
+        this->setI(this->getI());
+        this->setX(this->getX()-10);
+        this->setY(this->getY());
+        if(pasos < 3)
+        {
+            setI(0);
+            pasos++;
+        }
+        else if(pasos >= 3 && pasos < 6)
+        {
+            setI(1);
+            pasos++;
+        }
+        else if(pasos == 6)
+        {
+            setI(1);
+            pasos = 0;
+        }
+    }
+    break;
+    case DS_DER:
+    {
+        if(this->getY() < 310)
+        {
+            this->setY(310);
+        }
+        if(this->getX() > 1110)
+        {
+            this->setX(1110);
+        }
+        this->setI(this->getI());
+        this->setX(this->getX()+10);
+        this->setY(this->getY()-10);
+        if(pasos < 3)
+        {
+            setI(0);
+            pasos++;
+        }
+        else if(pasos >= 3 && pasos < 6)
+        {
+            setI(1);
+            pasos++;
+        }
+        else if(pasos == 6)
+        {
+            setI(0);
+            pasos = 0;
+        }
+    }
+    break;
+    case DS_IZQ:
+    {
+        if(this->getY() < 310)
+        {
+            this->setY(310);
+        }
+        if(this->getX() < 20)
+        {
+            this->setX(20);
+        }
+        this->setI(this->getI());
+        this->setX(this->getX()-10);
+        this->setY(this->getY()-10);
+        if(pasos < 3)
+        {
+            setI(2);
+            pasos++;
+        }
+        else if(pasos >= 3 && pasos < 6)
+        {
+            setI(3);
+            pasos++;
+        }
+        else if(pasos == 6)
+        {
+            setI(2);
+            pasos = 0;
+        }
+    }
+    break;
+    case DI_DER:
+    {
+        if(this->getY() > 500)
+        {
+            this->setY(500);
+        }
+        if(this->getX() > 1110)
+        {
+            this->setX(1110);
+        }
+        this->setI(this->getI());
+        this->setX(this->getX()+10);
+        this->setY(this->getY()+10);
+        if(pasos < 3)
+        {
+            setI(0);
+            pasos++;
+        }
+        else if(pasos >= 3 && pasos < 6)
+        {
+            setI(1);
+            pasos++;
+        }
+        else if(pasos == 6)
+        {
+            setI(0);
+            pasos = 0;
+        }
+    }
+    break;
+    case DI_IZQ:
+    {
+        if(this->getY() > 500)
+        {
+            this->setY(500);
+        }
+        if(this->getX() < 20)
+        {
+            this->setX(20);
+        }
+        this->setI(this->getI());
+        this->setX(this->getX()-10);
+        this->setY(this->getY()+10);
+        if(pasos < 3)
+        {
+            setI(2);
+            pasos++;
+        }
+        else if(pasos >= 3 && pasos < 6)
+        {
+            setI(3);
+            pasos++;
+        }
+        else if(pasos == 6)
+        {
+            setI(2);
+            pasos = 0;
+        }
+    }
+    break;
+    case ATACA_C:
+    {
+        for(int v=0; v<4; v++)
+        {
+            this->setI(4);
+            this->setX(this->getX());
+            this->setY(this->getY());
+        }
+        this->setI(3);
+        this->setX(this->getX());
+        this->setY(this->getY());
+    }
+    break;
+    case ATACA_L:
+    {
+        for(int v=0; v<4; v++)
+        {
+            this->setI(5);
+            this->setX(this->getX());
+            this->setY(this->getY());
+        }
+        this->setI(4);
+        this->setX(this->getX());
+        this->setY(this->getY());
+    }
+    break;
+    case DEFIENDE:
+    {
+        this->setI(2);
+        this->setX(this->getX());
+        this->setY(this->getY());
+        if(evento->wasEvent())
+        {
+            this->setI(0);
+            this->setX(this->getX());
+            this->setY(this->getY());
+        }
+    }
+    break;
+    }
+
+    return error.get();
 }

@@ -5,40 +5,28 @@
 Modo grafico iniciado correctamente.
 Monitor de video iniciado correctamente.
 Sistema de audio iniciado correctamente.
-Se destruyo la imagen0 del sprite sin Nombre
-Se destruyo la imagen1 del sprite sin Nombre
-Se destruyo la imagen2 del sprite sin Nombre
-Se destruyo la imagen3 del sprite sin Nombre
-Se destruyo la imagen4 del sprite sin Nombre
-Se destruyo la imagen5 del sprite sin Nombre
-Se destruyo la imagen6 del sprite sin Nombre
-Se destruyo la imagen7 del sprite sin Nombre
-Se destruyo la imagen8 del sprite sin Nombre
-Se destruyo la imagen9 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyo la imagen0 del sprite sin Nombre
-Se destruyo la imagen1 del sprite sin Nombre
-Se destruyo la imagen2 del sprite sin Nombre
-Se destruyo la imagen3 del sprite sin Nombre
-Se destruyo la imagen4 del sprite sin Nombre
-Se destruyo la imagen5 del sprite sin Nombre
-Se destruyo la imagen6 del sprite sin Nombre
-Se destruyo la imagen7 del sprite sin Nombre
-Se destruyo la imagen8 del sprite sin Nombre
-Se destruyo la imagen9 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyo la imagen0 del sprite sin Nombre
-Se destruyo la imagen1 del sprite sin Nombre
-Se destruyo la imagen2 del sprite sin Nombre
-Se destruyo la imagen3 del sprite sin Nombre
-Se destruyo la imagen4 del sprite sin Nombre
-Se destruyo la imagen5 del sprite sin Nombre
-Se destruyo la imagen6 del sprite sin Nombre
-Se destruyo la imagen7 del sprite sin Nombre
-Se destruyo la imagen8 del sprite sin Nombre
-Se destruyo la imagen9 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-
-**********************************************************
-       El proyecto ADN-X ha finalizado correctamente      
-##########################################################
+Carga spriteEnemigo 0
+Carga spriteEnemigo 1
+Carga spriteEnemigo 2
+Carga spriteEnemigo 3
+Carga spriteEnemigo 4
+Carga spriteEnemigo 5
+Carga spriteEnemigo 6
+Carga spriteEnemigo 7
+Carga spriteEnemigo 8
+Carga spriteEnemigo 9
+Generador de numeros aleatorios iniciado correctamente.
+Carga inicializacion personaje 0
+Ingreso nivel 1 
+personaje  
+ Limpio pantalla 
+Seteo el fondo 
+Animo personaje 
+Evento detectado 
+Evento detectado 
+ tecla presionada 100
+ tecla presionada 100
+ tecla presionada 100
+ tecla presionada 100
+Evento detectado 
+ tecla presionada 97
