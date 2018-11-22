@@ -1468,7 +1468,7 @@ int clsMotor::teclaPresionada()
     case KEY_a:
     {
         seleccionado.animar(&pantalla,IZQUIERDA,&fondo);
-        enemigo.animar(&pantalla,DERECHA,&fondo);
+
     }
     break;
     case KEY_B:
@@ -1481,21 +1481,21 @@ int clsMotor::teclaPresionada()
     case KEY_c:
     {
         seleccionado.animar(&pantalla,DI_DER,&fondo);
-        enemigo.animar(&pantalla,DI_IZQ,&fondo);
+
     }
     break;
     case KEY_D:
     case KEY_d:
     {
         seleccionado.animar(&pantalla,DERECHA,&fondo);
-        enemigo.animar(&pantalla,DERECHA,&fondo);
+
     }
     break;
     case KEY_E:
     case KEY_e:
     {
         seleccionado.animar(&pantalla,DS_DER,&fondo);
-        enemigo.animar(&pantalla,DI_IZQ,&fondo);
+
     }
     break;
     case KEY_F:

@@ -4,9 +4,9 @@
 int clsPersonaje::iniciar(char const * const ruta[10], int sprites)
 {
     error.set(0);
-    setItems(10);
+    setItems(9);
     //Sprite personaje
-    for(int x = 0; x<1; x++)
+    for(int x = 0; x<10; x++)
     {
         setI(x);
         error.set(load(ruta[x]));
@@ -352,7 +352,6 @@ int clsPersonaje::animar(clsScreen *screen, tDireccion direction,clsFondo *fondo
         }
     }
     break;
-    pantalla->refresh();
     }
 
     return error.get();

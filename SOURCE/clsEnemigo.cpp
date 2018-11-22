@@ -18,7 +18,7 @@ int clsEnemigo::init( clsScreen *s)
 {
     pantalla =  s;
     error.set(0);
-    setItems(10);
+    setItems(9);
     //Sprite personaje
     for(int u=0; u<10; u++)
     {
@@ -156,7 +156,7 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
         }
         else if(pasos == 6)
         {
-            setI(1);
+            setI(0);
             pasos = 0;
         }
     }
@@ -176,17 +176,17 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
         this->setY(this->getY()-10);
         if(pasos < 3)
         {
-            setI(0);
+            setI(5);
             pasos++;
         }
         else if(pasos >= 3 && pasos < 6)
         {
-            setI(1);
+            setI(6);
             pasos++;
         }
         else if(pasos == 6)
         {
-            setI(0);
+            setI(5);
             pasos = 0;
         }
     }
@@ -206,17 +206,17 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
         this->setY(this->getY()-10);
         if(pasos < 3)
         {
-            setI(2);
+            setI(0);
             pasos++;
         }
         else if(pasos >= 3 && pasos < 6)
         {
-            setI(3);
+            setI(1);
             pasos++;
         }
         else if(pasos == 6)
         {
-            setI(2);
+            setI(0);
             pasos = 0;
         }
     }
@@ -236,17 +236,17 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
         this->setY(this->getY()+10);
         if(pasos < 3)
         {
-            setI(0);
+            setI(6);
             pasos++;
         }
         else if(pasos >= 3 && pasos < 6)
         {
-            setI(1);
+            setI(5);
             pasos++;
         }
         else if(pasos == 6)
         {
-            setI(0);
+            setI(6);
             pasos = 0;
         }
     }
@@ -266,17 +266,17 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
         this->setY(this->getY()+10);
         if(pasos < 3)
         {
-            setI(2);
+            setI(0);
             pasos++;
         }
         else if(pasos >= 3 && pasos < 6)
         {
-            setI(3);
+            setI(1);
             pasos++;
         }
         else if(pasos == 6)
         {
-            setI(2);
+            setI(0);
             pasos = 0;
         }
     }
@@ -285,7 +285,7 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
     {
         for(int v=0; v<4; v++)
         {
-            this->setI(4);
+            this->setI(2);
             this->setX(this->getX());
             this->setY(this->getY());
         }
@@ -298,18 +298,18 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
     {
         for(int v=0; v<4; v++)
         {
-            this->setI(5);
+            this->setI(7);
             this->setX(this->getX());
             this->setY(this->getY());
         }
-        this->setI(4);
+        this->setI(8);
         this->setX(this->getX());
         this->setY(this->getY());
     }
     break;
     case DEFIENDE:
     {
-        this->setI(2);
+        this->setI(4);
         this->setX(this->getX());
         this->setY(this->getY());
         if(evento->wasEvent())
