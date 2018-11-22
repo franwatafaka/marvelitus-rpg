@@ -1041,12 +1041,11 @@ int clsMotor::nivel_1(clsPersonaje seleccionado)
     movimiento = false;
     //fondo.paste(pantalla.getPtr());
     musica[9].playMusic(-1);
-    pantalla.refresh();
     salirNivel_1=false;
     //Loop del Motor
     while(!salirNivel_1)
     {
-
+        pantalla.refresh();
         //Si hubo un evento
         if(evento.wasEvent())
         {
@@ -1060,15 +1059,20 @@ int clsMotor::nivel_1(clsPersonaje seleccionado)
             {
                 while(evento.getEventType() == KEY_PRESSED)
                 {
+                    pantalla.refresh();
                     cout << " tecla presionada " << evento.getKey() << endl;
                     if(evento.wasEvent() && evento.getEventType() == KEY_FREE)
                     {
                         break;
                         seleccionado.animar(&pantalla,QUIETO,&fondo);
+                        enemigo.animar(&pantalla,QUIETO,&fondo);
+                        pantalla.refresh();
                     }
                     else
                     {
                         error.set(teclaPresionada());
+                        enemigo.animar(&pantalla,IZQUIERDA,&fondo);
+                        pantalla.refresh();
                     }
                 }
             }
@@ -1077,7 +1081,7 @@ int clsMotor::nivel_1(clsPersonaje seleccionado)
         } // if evento was evento
 
         //while de ataque enemigo
-        /* while(evento.wasEvent() )
+       /*  while(evento.wasEvent() )
           {
               // aleatorios deben ser entre 0 y 2
               bool salir = false;
@@ -1091,7 +1095,7 @@ int clsMotor::nivel_1(clsPersonaje seleccionado)
                   salir = true;
               }
               }
-              if(evento.getKey() == ATACA_C || evento.getKey() == ATACA_L  && (seleccionado.getX() == enemigo.getX() && seleccionado.getY() == enemigo.getY()))
+              if((evento.getKey() == ATACA_C || evento.getKey() == ATACA_L)  && (seleccionado.getX() == enemigo.getX() && seleccionado.getY() == enemigo.getY()))
               {
               cout << "nivel 1 - sprites cercanos, movimiento aleatorio de ataque" << endl;
               enemigo.animar(&pantalla, ataques[n],&fondo);
@@ -1110,11 +1114,10 @@ int clsMotor::nivel_1(clsPersonaje seleccionado)
                   }
                   cout << "nivel 1 - sprites cercanos, movimiento aleatorio de ataque" << endl;
               enemigo.animar(&pantalla,movimientos[movAleatorioEnemi],&fondo);
-              enemigo.animar(&pantalla,movimientos[movAleatorioEnemi],&fondo);
               }
           }
-        */
-        pantalla.refresh();
+*/
+
     } // fin while
     musica[9].stopMusic();
     //--------------------------------------------------------------------------
@@ -1180,7 +1183,6 @@ int clsMotor::nivel_3(clsPersonaje seleccionado)
 {
     error.set(0);
     //--------------------------------------------------------------------------
-
     //Pego fondo en pantalla y refresco
     this->seleccionado = seleccionado;
     pantalla.clean(BLACK);
@@ -1190,7 +1192,6 @@ int clsMotor::nivel_3(clsPersonaje seleccionado)
     pantalla.refresh();
     musica[11].playMusic(-1);
     reloj.start();
-
     salirNivel_3=false;
     //Loop del Motor
     while(!salirNivel_3)
@@ -1242,7 +1243,6 @@ int clsMotor::escenaGana()
 {
     error.set(0);
     //--------------------------------------------------------------------------
-
     //Pego fondo en pantalla y refresco
     pantalla.clean(BLACK);
     fondo.setI(12);
@@ -1293,7 +1293,6 @@ int clsMotor::escenaPierde()
 {
     error.set(0);
     //--------------------------------------------------------------------------
-
     //Pego fondo en pantalla y refresco
     pantalla.clean(BLACK);
     fondo.setI(15);
@@ -1301,7 +1300,6 @@ int clsMotor::escenaPierde()
     pantalla.refresh();
     musica[17].playMusic(-1);
     reloj.start();
-
     salirEscenaPierde=false;
     //Loop del Motor
     while(!salirEscenaPierde)
@@ -1346,7 +1344,6 @@ int clsMotor::despedida()
 {
     error.set(0);
     //--------------------------------------------------------------------------
-
     //Pego fondo en pantalla y refresco
     pantalla.clean(BLACK);
     fondo.setI(13);
@@ -1406,7 +1403,6 @@ int clsMotor::teclaPresionada()
     switch(evento.getKey())
     {
     //---------------------
-
     case KEY_ESCAPE:
     {
         salirNivel_1 = true;
@@ -1414,80 +1410,25 @@ int clsMotor::teclaPresionada()
         salirNivel_3 = true;
     }
     break;
-    case KEY_0:
-    {
-
-    }
-    break;
-    case KEY_1:
-    {
-
-    }
-    break;
-    case KEY_2:
-    {
-
-    }
-    break;
-    case KEY_3:
-    {
-
-    }
-    break;
-    case KEY_4:
-    {
-
-    }
-    break;
-    case KEY_5:
-    {
-
-    }
-    break;
-    case KEY_6:
-    {
-
-    }
-    break;
-    case KEY_7:
-    {
-
-    }
-    break;
-    case KEY_8:
-    {
-
-    }
-    break;
-    case KEY_9:
-    {
-
-    }
-    break;
     case KEY_A:
     case KEY_a:
     {
         seleccionado.animar(&pantalla,IZQUIERDA,&fondo);
-
-    }
-    break;
-    case KEY_B:
-    case KEY_b:
-    {
-
+        enemigo.animar(&pantalla,DERECHA,&fondo);
     }
     break;
     case KEY_C:
     case KEY_c:
     {
         seleccionado.animar(&pantalla,DI_DER,&fondo);
-
+        enemigo.animar(&pantalla,DI_IZQ,&fondo);
     }
     break;
     case KEY_D:
     case KEY_d:
     {
         seleccionado.animar(&pantalla,DERECHA,&fondo);
+        enemigo.animar(&pantalla,IZQUIERDA,&fondo);
 
     }
     break;
@@ -1495,84 +1436,14 @@ int clsMotor::teclaPresionada()
     case KEY_e:
     {
         seleccionado.animar(&pantalla,DS_DER,&fondo);
-
-    }
-    break;
-    case KEY_F:
-    case KEY_f:
-    {
-
-    }
-    break;
-    case KEY_G:
-    case KEY_g:
-    {
-
-    }
-    break;
-    case KEY_H:
-    case KEY_h:
-    {
-
-    }
-    break;
-    case KEY_I:
-    case KEY_i:
-    {
-
-    }
-    break;
-    case KEY_J:
-    case KEY_j:
-    {
-
-    }
-    break;
-    case KEY_K:
-    case KEY_k:
-    {
-
-    }
-    break;
-    case KEY_L:
-    case KEY_l:
-    {
-
-    }
-    break;
-    case KEY_M:
-    case KEY_m:
-    {
-
-    }
-    break;
-    case KEY_N:
-    case KEY_n:
-    {
-
-    }
-    break;
-    case KEY_O:
-    case KEY_o:
-    {
-
-    }
-    break;
-    case KEY_P:
-    case KEY_p:
-    {
-
+        enemigo.animar(&pantalla,DS_IZQ,&fondo);
     }
     break;
     case KEY_Q:
     case KEY_q:
     {
         seleccionado.animar(&pantalla,DS_IZQ,&fondo);
-    }
-    break;
-    case KEY_R:
-    case KEY_r:
-    {
+        enemigo.animar(&pantalla,DS_DER,&fondo);
 
     }
     break;
@@ -1580,89 +1451,21 @@ int clsMotor::teclaPresionada()
     case KEY_s:
     {
         seleccionado.animar(&pantalla,ABAJO,&fondo);
-    }
-    break;
-    case KEY_T:
-    case KEY_t:
-    {
-
-    }
-    break;
-    case KEY_U:
-    case KEY_u:
-    {
-
-    }
-    break;
-    case KEY_V:
-    case KEY_v:
-    {
-
+        enemigo.animar(&pantalla,ABAJO,&fondo);
     }
     break;
     case KEY_W:
     case KEY_w:
     {
         seleccionado.animar(&pantalla,ARRIBA,&fondo);
-    }
-    break;
-    case KEY_X:
-    case KEY_x:
-    {
-
-    }
-    break;
-    case KEY_Y:
-    case KEY_y:
-    {
-
+        enemigo.animar(&pantalla,ARRIBA,&fondo);
     }
     break;
     case KEY_Z:
     case KEY_z:
     {
         seleccionado.animar(&pantalla,DI_IZQ,&fondo);
-    }
-    break;
-    case KEY_ENTER:
-    {
-
-    }
-    break;
-    case KEY_SPACE:
-    {
-
-    }
-    break;
-    case KEY_BACKSPACE:
-    {
-
-    }
-    break;
-    case KEY_TAB:
-    {
-
-    }
-    break;
-    case KEY_UP:
-    {
-
-    }
-    break;
-    case KEY_DOWN:
-    {
-
-    }
-    break;
-    case KEY_LEFT:
-    {
-
-    }
-    break;
-    case KEY_RIGHT:
-    {
-
-        pantalla.refresh();
+        enemigo.animar(&pantalla,DI_IZQ,&fondo);
     }
     break;
     case KEY_COMMA:
@@ -1698,53 +1501,4 @@ int clsMotor::teclaLiberada()
     return error.get();
 }
 
-//Metdodo para Iniciar evento de mouse izquierdo presionado
-int clsMotor::mouseMovimiento()
-{
-    error.set(0);
-    //--------------------------------------------------------------------------
 
-    //texto.centredWrite("Mouse en Movimiento",360,pantalla.getPtr());
-
-    //--------------------------------------------------------------------------
-    return error.get();
-}
-
-//Metdodo para Iniciar evento de mouse derecho presionado
-int clsMotor::mousePresionado()
-{
-    error.set(0);
-    //--------------------------------------------------------------------------
-
-    switch(evento.getMouseButton())
-    {
-    case MOUSE_LEFT_BUTTON:
-    {
-
-    }
-    break;
-    case MOUSE_RIGHT_BUTTON:
-    {
-
-    }
-    break;
-    case MOUSE_MIDDLE_BUTTON:
-    {
-
-    }
-    break;
-    }
-
-    //--------------------------------------------------------------------------
-    return error.get();
-}
-
-//Metdodo para Iniciar evento de mouse del medio presionado
-int clsMotor::mouseLiberado()
-{
-    error.set(0);
-    //--------------------------------------------------------------------------
-
-    //--------------------------------------------------------------------------
-    return error.get();
-}

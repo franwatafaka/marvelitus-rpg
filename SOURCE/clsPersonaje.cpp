@@ -11,10 +11,7 @@ int clsPersonaje::iniciar(char const * const ruta[10], int sprites)
         setI(x);
         error.set(load(ruta[x]));
         cout << "Carga inicializacion personaje " << x << endl;
-        if(error.get())
-        {
-            return error.get();
-        }
+        if(error.get()){return error.get();}
     }
 
     setI(0);
