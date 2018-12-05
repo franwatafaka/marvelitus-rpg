@@ -47,3 +47,54 @@ personaje
  Limpio pantalla 
 Seteo el fondo 
 Animo personaje 
+Se destruyo la imagen 0 del sprite sin Nombre
+Se destruyo la imagen 1 del sprite sin Nombre
+Se destruyo la imagen 2 del sprite sin Nombre
+Se destruyo la imagen 3 del sprite sin Nombre
+Se destruyo la imagen 4 del sprite sin Nombre
+Se destruyo la imagen 5 del sprite sin Nombre
+Se destruyo la imagen 6 del sprite sin Nombre
+Se destruyo la imagen 7 del sprite sin Nombre
+Se destruyo la imagen 8 del sprite sin Nombre
+Se destruyo la imagen 9 del sprite sin Nombre
+Se destruyeron la imagenes del sprite sin Nombre
+Se destruyo la imagen 0 del sprite sin Nombre
+Se destruyo la imagen 1 del sprite sin Nombre
+Se destruyo la imagen 2 del sprite sin Nombre
+Se destruyo la imagen 3 del sprite sin Nombre
+Se destruyo la imagen 4 del sprite sin Nombre
+Se destruyo la imagen 5 del sprite sin Nombre
+Se destruyo la imagen 6 del sprite sin Nombre
+Se destruyo la imagen 7 del sprite sin Nombre
+Se destruyo la imagen 8 del sprite sin Nombre
+Se destruyo la imagen 9 del sprite sin Nombre
+Se destruyeron la imagenes del sprite sin Nombre
+Se destruyo la imagen 0 del sprite sin Nombre
+Se destruyo la imagen 1 del sprite sin Nombre
+Se destruyo la imagen 2 del sprite sin Nombre
+Se destruyo la imagen 3 del sprite sin Nombre
+Se destruyo la imagen 4 del sprite sin Nombre
+Se destruyo la imagen 5 del sprite sin Nombre
+Se destruyo la imagen 6 del sprite sin Nombre
+Se destruyo la imagen 7 del sprite sin Nombre
+Se destruyo la imagen 8 del sprite sin Nombre
+Se destruyo la imagen 9 del sprite sin Nombre
+Se destruyeron la imagenes del sprite sin Nombre
+
+**********************************************************
+       El proyecto ADN-X ha finalizado correctamente      
+##########################################################
+Se destruyo la imagen 0 del sprite sin Nombre
+Se destruyo la imagen 1 del sprite sin Nombre
+Se destruyo la imagen 2 del sprite sin Nombre
+Se destruyo la imagen 3 del sprite sin Nombre
+Se destruyo la imagen 4 del sprite sin Nombre
+Se destruyo la imagen 5 del sprite sin Nombre
+Se destruyo la imagen 6 del sprite sin Nombre
+Se destruyo la imagen 7 del sprite sin Nombre
+Se destruyo la imagen 8 del sprite sin Nombre
+Se destruyeron la imagenes del sprite sin Nombre
+Se destruyo la imagen 0 del sprite sin Nombre
+Se destruyeron la imagenes del sprite sin Nombre
+Se destruyo la imagen 0 del sprite sin Nombre
+Se destruyeron la imagenes del sprite sin Nombre

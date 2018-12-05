@@ -4,7 +4,7 @@
 int clsPersonaje::iniciar(char const * const ruta[10], int sprites)
 {
     error.set(0);
-    setItems(9);
+    setItems(10);
     //Sprite personaje
     for(int x = 0; x<10; x++)
     {
@@ -295,39 +295,20 @@ int clsPersonaje::animar(clsScreen *screen, tDireccion direction,clsFondo *fondo
     break;
     case ATACA_C:
     {
-        for(int v=0; v<4; v++)
-        {
             this->setI(4);
             this->setX(this->getX());
             this->setY(this->getY());
             fondo->paste(pantalla->getPtr());
             this->paste(pantalla->getPtr());
-
-        }
-        this->setI(0);
-        this->setX(this->getX());
-        this->setY(this->getY());
-        fondo->paste(pantalla->getPtr());
-        this->paste(pantalla->getPtr());
-
     }
     break;
     case ATACA_L:
     {
-        for(int v=0; v<4; v++)
-        {
             this->setI(5);
             this->setX(this->getX());
             this->setY(this->getY());
             fondo->paste(pantalla->getPtr());
             this->paste(pantalla->getPtr());
-
-        }
-        this->setI(0);
-        this->setX(this->getX());
-        this->setY(this->getY());
-        fondo->paste(pantalla->getPtr());
-        this->paste(pantalla->getPtr());
 
     }
     break;
@@ -338,15 +319,6 @@ int clsPersonaje::animar(clsScreen *screen, tDireccion direction,clsFondo *fondo
         this->setY(this->getY());
         fondo->paste(pantalla->getPtr());
         this->paste(pantalla->getPtr());
-
-        if(evento->wasEvent())
-        {
-            this->setI(8);
-            this->setX(this->getX());
-            this->setY(this->getY());
-            fondo->paste(pantalla->getPtr());
-            this->paste(pantalla->getPtr());
-        }
     }
     break;
     }

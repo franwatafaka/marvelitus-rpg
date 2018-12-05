@@ -398,7 +398,7 @@ int clsMotor::eleccionPersonaje()
     texto.loadFont(comic,20);
     //Pego fondo en pantalla y refresco
     pantalla.clean(BLACK);
-    fondo.setI(15);
+    fondo.setI(14);
     fondo.paste(pantalla.getPtr());
     pantalla.refresh();
     musica[16].playMusic(-1);
@@ -1425,7 +1425,6 @@ int clsMotor::teclaPresionada()
     break;
     case KEY_RIGHT_SLASH:
     {
-        cout <<  "sprite nro " << seleccionado.getI();
         seleccionado.animar(&pantalla,DEFIENDE,&fondo);
     }
     break;
