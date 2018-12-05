@@ -341,7 +341,7 @@ int clsPersonaje::animar(clsScreen *screen, tDireccion direction,clsFondo *fondo
 
         if(evento->wasEvent())
         {
-            this->setI(0);
+            this->setI(8);
             this->setX(this->getX());
             this->setY(this->getY());
             fondo->paste(pantalla->getPtr());

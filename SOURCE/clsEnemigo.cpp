@@ -25,10 +25,7 @@ int clsEnemigo::init( clsScreen *s)
         setI(u);
         error.set(load(spritesEnemigo[u]));
         cout << "Carga spriteEnemigo " << u << endl;
-        if(error.get())
-        {
-            return error.get();
-        }
+        if(error.get()){ return error.get();}
     }
     setI(0);
     setX(850);

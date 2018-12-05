@@ -4,7 +4,7 @@
 
 tDireccion ataques[4] = {DERECHA,ATACA_C,ATACA_L,DEFIENDE};
 tDireccion movimientos[5]= {ARRIBA,ABAJO,DERECHA,IZQUIERDA,QUIETO};
-
+const int txtPostY[5]= {0,40,60,80,120};
 //Metdodo para Iniciar el Motor del programa
 int clsMotor::iniciar()
 {
@@ -500,11 +500,15 @@ int clsMotor::introCapi(bool * elegido)
     fondo.setI(3);
     fondo.paste(pantalla.getPtr());
     texto.setFontColor(AZUL_CAPI);
-    texto.centredWrite(textoCapi[0],0,pantalla.getPtr());
-    texto.centredWrite(textoCapi[1],40,pantalla.getPtr());
-    texto.centredWrite(textoCapi[2],60,pantalla.getPtr());
-    texto.centredWrite(textoCapi[3],80,pantalla.getPtr());
-    texto.centredWrite(textoCapi[4],120,pantalla.getPtr());
+    for(int x=0; x<5; x++ )
+    {
+        texto.centredWrite(textoCapi[x],txtPostY[x],pantalla.getPtr());
+    }
+//    texto.centredWrite(textoCapi[0],0,pantalla.getPtr());
+//    texto.centredWrite(textoCapi[1],40,pantalla.getPtr());
+//    texto.centredWrite(textoCapi[2],60,pantalla.getPtr());
+//    texto.centredWrite(textoCapi[3],80,pantalla.getPtr());
+//    texto.centredWrite(textoCapi[4],120,pantalla.getPtr());
     musica[3].playMusic(-1);
     reloj.start();
     salirIntroCapi=false;
@@ -547,11 +551,15 @@ int clsMotor::introCapi(bool * elegido)
             pantalla.clean(BLACK);
             fondo.setI(3);
             fondo.paste(pantalla.getPtr());
-            texto.centredWrite(textoCapi[0],0,pantalla.getPtr());
-            texto.centredWrite(textoCapi[1],40,pantalla.getPtr());
-            texto.centredWrite(textoCapi[2],60,pantalla.getPtr());
-            texto.centredWrite(textoCapi[3],80,pantalla.getPtr());
-            texto.centredWrite(textoCapi[4],120,pantalla.getPtr());
+            for(int x=0; x<5; x++ )
+            {
+                texto.centredWrite(textoCapi[x],txtPostY[x],pantalla.getPtr());
+            }
+//            texto.centredWrite(textoCapi[0],0,pantalla.getPtr());
+//            texto.centredWrite(textoCapi[1],40,pantalla.getPtr());
+//            texto.centredWrite(textoCapi[2],60,pantalla.getPtr());
+//            texto.centredWrite(textoCapi[3],80,pantalla.getPtr());
+//            texto.centredWrite(textoCapi[4],120,pantalla.getPtr());
             animaciones[0].play(&pantalla);
         }
         else
@@ -580,11 +588,15 @@ int clsMotor::introDare(bool * elegido)
     fondo.setI(4);
     fondo.paste(pantalla.getPtr());
     texto.setFontColor(ROJO_DARE);
-    texto.centredWrite(textoDare[0],0,pantalla.getPtr());
-    texto.centredWrite(textoDare[1],40,pantalla.getPtr());
-    texto.centredWrite(textoDare[2],60,pantalla.getPtr());
-    texto.centredWrite(textoDare[3],80,pantalla.getPtr());
-    texto.centredWrite(textoDare[4],120,pantalla.getPtr());
+    for(int x=0; x<5; x++ )
+    {
+        texto.centredWrite(textoDare[x],txtPostY[x],pantalla.getPtr());
+    }
+//    texto.centredWrite(textoDare[0],0,pantalla.getPtr());
+//    texto.centredWrite(textoDare[1],40,pantalla.getPtr());
+//    texto.centredWrite(textoDare[2],60,pantalla.getPtr());
+//    texto.centredWrite(textoDare[3],80,pantalla.getPtr());
+//    texto.centredWrite(textoDare[4],120,pantalla.getPtr());
     musica[4].playMusic(-1);
     reloj.start();
 
@@ -628,883 +640,866 @@ int clsMotor::introDare(bool * elegido)
             pantalla.clean(BLACK);
             fondo.setI(4);
             fondo.paste(pantalla.getPtr());
-            texto.centredWrite(textoDare[0],0,pantalla.getPtr());
-            texto.centredWrite(textoDare[1],40,pantalla.getPtr());
-            texto.centredWrite(textoDare[2],60,pantalla.getPtr());
-            texto.centredWrite(textoDare[3],80,pantalla.getPtr());
-            texto.centredWrite(textoDare[4],120,pantalla.getPtr());
-            animaciones[1].play(&pantalla);
+            for(int x=0; x<5; x++ )
+            {
+                texto.centredWrite(textoDare[x],txtPostY[x],pantalla.getPtr());
+            }
+//            texto.centredWrite(textoDare[0],0,pantalla.getPtr());
+//            texto.centredWrite(textoDare[1],40,pantalla.getPtr());
+//            texto.centredWrite(textoDare[2],60,pantalla.getPtr());
+//            texto.centredWrite(textoDare[3],80,pantalla.getPtr());
+//            texto.centredWrite(textoDare[4],120,pantalla.getPtr());
+                animaciones[1].play(&pantalla);
+            }
+            else
+            {
+                pantalla.clean(BLACK);
+                pantalla.refresh();
+                salirIntroDare=true;
+                salirSeleccion=true;
+            }
         }
-        else
-        {
-            pantalla.clean(BLACK);
-            pantalla.refresh();
-            salirIntroDare=true;
-            salirSeleccion=true;
-        }
+        musica[4].stopMusic();
+        //--------------------------------------------------------------------------
+        return error.get();
     }
-    musica[4].stopMusic();
-    //--------------------------------------------------------------------------
-    return error.get();
-}
 
 //Metdodo para Correr la historia de Iron Man
-int clsMotor::introIron(bool * elegido)
-{
-    error.set(0);
-    //--------------------------------------------------------------------------
-
-    //Pego fondo en pantalla y refresco
-    pantalla.clean(BLACK);
-    fondo.setI(5);
-    fondo.paste(pantalla.getPtr());
-    texto.setFontColor(AMARILLO_IRON);
-    texto.centredWrite(textoIron[0],0,pantalla.getPtr());
-    texto.centredWrite(textoIron[1],40,pantalla.getPtr());
-    texto.centredWrite(textoIron[2],60,pantalla.getPtr());
-    texto.centredWrite(textoIron[3],80,pantalla.getPtr());
-    texto.centredWrite(textoIron[4],120,pantalla.getPtr());
-    musica[5].playMusic(-1);
-    reloj.start();
-
-    salirIntroIron=false;
-    ingresoJuego = false;
-    //Loop del Motor
-    while(!salirIntroIron)
+    int clsMotor::introIron(bool * elegido)
     {
-        //Si hubo un evento
-        if(evento.wasEvent())
+        error.set(0);
+        //--------------------------------------------------------------------------
+
+        //Pego fondo en pantalla y refresco
+        pantalla.clean(BLACK);
+        fondo.setI(5);
+        fondo.paste(pantalla.getPtr());
+        texto.setFontColor(AMARILLO_IRON);
+        for(int x=0; x<5; x++ )
         {
-            //Switch de eventos
-            switch(evento.getEventType())
+            texto.centredWrite(textoIron[x],txtPostY[x],pantalla.getPtr());
+        }
+//    texto.centredWrite(textoIron[0],0,pantalla.getPtr());
+//    texto.centredWrite(textoIron[1],40,pantalla.getPtr());
+//    texto.centredWrite(textoIron[2],60,pantalla.getPtr());
+//    texto.centredWrite(textoIron[3],80,pantalla.getPtr());
+//    texto.centredWrite(textoIron[4],120,pantalla.getPtr());
+        musica[5].playMusic(-1);
+        reloj.start();
+
+        salirIntroIron=false;
+        ingresoJuego = false;
+        //Loop del Motor
+        while(!salirIntroIron)
+        {
+            //Si hubo un evento
+            if(evento.wasEvent())
             {
-            //Presion de una tecla
-            case KEY_PRESSED:
-            {
-                if(evento.getKey() == KEY_ESCAPE)
+                //Switch de eventos
+                switch(evento.getEventType())
                 {
-                    salirIntroIron = true;
-                }
-                if(evento.getKey() == KEY_ENTER)
+                //Presion de una tecla
+                case KEY_PRESSED:
                 {
-                    *elegido = true;
-                    ingresoJuego = true;
-                    juego(3);
+                    if(evento.getKey() == KEY_ESCAPE)
+                    {
+                        salirIntroIron = true;
+                    }
+                    if(evento.getKey() == KEY_ENTER)
+                    {
+                        *elegido = true;
+                        ingresoJuego = true;
+                        juego(3);
+                    }
+                }
+                break;
+                }
+                if(error.get())
+                {
+                    error.show(true);
+                    return error.get();
                 }
             }
-            break;
-            }
-            if(error.get())
+            if(ingresoJuego != true)
             {
-                error.show(true);
-                return error.get();
+                //Refresca Pantalla
+                pantalla.refresh();
+                pantalla.clean(BLACK);
+                fondo.setI(5);
+                fondo.paste(pantalla.getPtr());
+                for(int x=0; x<5; x++ )
+                {
+                    texto.centredWrite(textoIron[x],txtPostY[x],pantalla.getPtr());
+                }
+//                texto.centredWrite(textoIron[0],0,pantalla.getPtr());
+//                texto.centredWrite(textoIron[1],40,pantalla.getPtr());
+//                texto.centredWrite(textoIron[2],60,pantalla.getPtr());
+//                texto.centredWrite(textoIron[3],80,pantalla.getPtr());
+//                texto.centredWrite(textoIron[4],120,pantalla.getPtr());
+                animaciones[2].play(&pantalla);
+            }
+            else
+            {
+                pantalla.clean(BLACK);
+                pantalla.refresh();
+                salirIntroIron=true;
+                salirSeleccion=true;
             }
         }
-        if(ingresoJuego != true)
-        {
-            //Refresca Pantalla
-            pantalla.refresh();
-            pantalla.clean(BLACK);
-            fondo.setI(5);
-            fondo.paste(pantalla.getPtr());
-            texto.centredWrite(textoIron[0],0,pantalla.getPtr());
-            texto.centredWrite(textoIron[1],40,pantalla.getPtr());
-            texto.centredWrite(textoIron[2],60,pantalla.getPtr());
-            texto.centredWrite(textoIron[3],80,pantalla.getPtr());
-            texto.centredWrite(textoIron[4],120,pantalla.getPtr());
-            animaciones[2].play(&pantalla);
-        }
-        else
-        {
-            pantalla.clean(BLACK);
-            pantalla.refresh();
-            salirIntroIron=true;
-            salirSeleccion=true;
-        }
+        musica[5].stopMusic();
+        //--------------------------------------------------------------------------
+        return error.get();
     }
-    musica[5].stopMusic();
-    //--------------------------------------------------------------------------
-    return error.get();
-}
 
 //Metdodo para Correr la historia de Spider Man
-int clsMotor::introSpider(bool * elegido)
-{
-    error.set(0);
-    //--------------------------------------------------------------------------
-
-    //Pego fondo en pantalla y refresco
-    pantalla.clean(BLACK);
-    fondo.setI(6);
-    fondo.paste(pantalla.getPtr());
-    texto.setFontColor(ROJO_SPIDER);
-    texto.centredWrite(textoSpider[0],0,pantalla.getPtr());
-    texto.centredWrite(textoSpider[1],40,pantalla.getPtr());
-    texto.centredWrite(textoSpider[2],60,pantalla.getPtr());
-    texto.centredWrite(textoSpider[3],80,pantalla.getPtr());
-    texto.centredWrite(textoSpider[4],120,pantalla.getPtr());
-    musica[6].playMusic(-1);
-    reloj.start();
-
-    salirIntroSpider=false;
-    ingresoJuego = false;
-    //Loop del Motor
-    while(!salirIntroSpider)
+    int clsMotor::introSpider(bool * elegido)
     {
-        //Si hubo un evento
-        if(evento.wasEvent())
-        {
-            //Switch de eventos
-            switch(evento.getEventType())
-            {
-            //Presion de una tecla
-            case KEY_PRESSED:
-            {
-                if(evento.getKey() == KEY_ESCAPE)
-                {
-                    salirIntroSpider = true;
-                }
-                if(evento.getKey() == KEY_ENTER)
-                {
-                    *elegido = true;
-                    ingresoJuego = true;
-                    juego(4);
-                }
-            }
-            break;
-            }
-            if(error.get())
-            {
-                error.show(true);
-                return error.get();
-            }
-        }
-        if(ingresoJuego != true)
-        {
-            //Refresca Pantalla
-            pantalla.refresh();
-            pantalla.clean(BLACK);
-            fondo.setI(6);
-            fondo.paste(pantalla.getPtr());
-            texto.centredWrite(textoSpider[0],0,pantalla.getPtr());
-            texto.centredWrite(textoSpider[1],40,pantalla.getPtr());
-            texto.centredWrite(textoSpider[2],60,pantalla.getPtr());
-            texto.centredWrite(textoSpider[3],80,pantalla.getPtr());
-            texto.centredWrite(textoSpider[4],120,pantalla.getPtr());
-            animaciones[3].play(&pantalla);
-        }
-        else
-        {
-            pantalla.clean(BLACK);
-            pantalla.refresh();
-            salirIntroSpider=true;
-            salirSeleccion=true;
-        }
+        error.set(0);
+        //--------------------------------------------------------------------------
+
+        //Pego fondo en pantalla y refresco
+        pantalla.clean(BLACK);
+        fondo.setI(6);
+        fondo.paste(pantalla.getPtr());
+        texto.setFontColor(ROJO_SPIDER);
+                for(int x=0;x<5;x++ )
+    {
+        texto.centredWrite(textoSpider[x],txtPostY[x],pantalla.getPtr());
     }
-    musica[6].stopMusic();
-    //--------------------------------------------------------------------------
-    return error.get();
-}
+//        texto.centredWrite(textoSpider[0],0,pantalla.getPtr());
+//        texto.centredWrite(textoSpider[1],40,pantalla.getPtr());
+//        texto.centredWrite(textoSpider[2],60,pantalla.getPtr());
+//        texto.centredWrite(textoSpider[3],80,pantalla.getPtr());
+//        texto.centredWrite(textoSpider[4],120,pantalla.getPtr());
+        musica[6].playMusic(-1);
+        reloj.start();
+
+        salirIntroSpider=false;
+        ingresoJuego = false;
+        //Loop del Motor
+        while(!salirIntroSpider)
+        {
+            //Si hubo un evento
+            if(evento.wasEvent())
+            {
+                //Switch de eventos
+                switch(evento.getEventType())
+                {
+                //Presion de una tecla
+                case KEY_PRESSED:
+                {
+                    if(evento.getKey() == KEY_ESCAPE)
+                    {
+                        salirIntroSpider = true;
+                    }
+                    if(evento.getKey() == KEY_ENTER)
+                    {
+                        *elegido = true;
+                        ingresoJuego = true;
+                        juego(4);
+                    }
+                }
+                break;
+                }
+                if(error.get())
+                {
+                    error.show(true);
+                    return error.get();
+                }
+            }
+            if(ingresoJuego != true)
+            {
+                //Refresca Pantalla
+                pantalla.refresh();
+                pantalla.clean(BLACK);
+                fondo.setI(6);
+                fondo.paste(pantalla.getPtr());
+                                for(int x=0;x<5;x++ )
+    {
+        texto.centredWrite(textoSpider[x],txtPostY[x],pantalla.getPtr());
+    }
+//                texto.centredWrite(textoSpider[0],0,pantalla.getPtr());
+//                texto.centredWrite(textoSpider[1],40,pantalla.getPtr());
+//                texto.centredWrite(textoSpider[2],60,pantalla.getPtr());
+//                texto.centredWrite(textoSpider[3],80,pantalla.getPtr());
+//                texto.centredWrite(textoSpider[4],120,pantalla.getPtr());
+                animaciones[3].play(&pantalla);
+            }
+            else
+            {
+                pantalla.clean(BLACK);
+                pantalla.refresh();
+                salirIntroSpider=true;
+                salirSeleccion=true;
+            }
+        }
+        musica[6].stopMusic();
+        //--------------------------------------------------------------------------
+        return error.get();
+    }
 
 //Metdodo para Correr la historia de Star Lord
-int clsMotor::introStar(bool * elegido)
-{
-    error.set(0);
-    //--------------------------------------------------------------------------
-
-    //Pego fondo en pantalla y refresco
-    pantalla.clean(BLACK);
-    fondo.setI(7);
-    fondo.paste(pantalla.getPtr());
-    texto.setFontColor(VIOLETA_STAR);
-    texto.centredWrite(textoStar[0],0,pantalla.getPtr());
-    texto.centredWrite(textoStar[1],40,pantalla.getPtr());
-    texto.centredWrite(textoStar[2],60,pantalla.getPtr());
-    texto.centredWrite(textoStar[3],80,pantalla.getPtr());
-    texto.centredWrite(textoStar[4],120,pantalla.getPtr());
-    musica[7].playMusic(-1);
-    reloj.start();
-
-    salirIntroStar=false;
-    ingresoJuego = false;
-    //Loop del Motor
-    while(!salirIntroStar)
+    int clsMotor::introStar(bool * elegido)
     {
-        //Si hubo un evento
-        if(evento.wasEvent())
-        {
-            //Switch de eventos
-            switch(evento.getEventType())
-            {
-            //Presion de una tecla
-            case KEY_PRESSED:
-            {
-                if(evento.getKey() == KEY_ESCAPE)
-                {
-                    salirIntroStar = true;
-                }
-                if(evento.getKey() == KEY_ENTER)
-                {
-                    *elegido = true;
-                    ingresoJuego = true;
-                    juego(5);
-                }
-            }
-            break;
-            }
-            if(error.get())
-            {
-                error.show(true);
-                return error.get();
-            }
-        }
-        if(ingresoJuego != true)
-        {
-            //Refresca Pantalla
-            pantalla.refresh();
-            pantalla.clean(BLACK);
-            fondo.setI(7);
-            fondo.paste(pantalla.getPtr());
-            texto.centredWrite(textoStar[0],0,pantalla.getPtr());
-            texto.centredWrite(textoStar[1],40,pantalla.getPtr());
-            texto.centredWrite(textoStar[2],60,pantalla.getPtr());
-            texto.centredWrite(textoStar[3],80,pantalla.getPtr());
-            texto.centredWrite(textoStar[4],120,pantalla.getPtr());
-            animaciones[4].play(&pantalla);
-        }
-        else
-        {
-            pantalla.clean(BLACK);
-            pantalla.refresh();
-            salirIntroStar=true;
-            salirSeleccion=true;
-        }
+        error.set(0);
+        //--------------------------------------------------------------------------
+
+        //Pego fondo en pantalla y refresco
+        pantalla.clean(BLACK);
+        fondo.setI(7);
+        fondo.paste(pantalla.getPtr());
+        texto.setFontColor(VIOLETA_STAR);
+                        for(int x=0;x<5;x++ )
+    {
+        texto.centredWrite(textoStar[x],txtPostY[x],pantalla.getPtr());
     }
-    musica[7].stopMusic();
-    //--------------------------------------------------------------------------
-    return error.get();
-}
+//        texto.centredWrite(textoStar[0],0,pantalla.getPtr());
+//        texto.centredWrite(textoStar[1],40,pantalla.getPtr());
+//        texto.centredWrite(textoStar[2],60,pantalla.getPtr());
+//        texto.centredWrite(textoStar[3],80,pantalla.getPtr());
+//        texto.centredWrite(textoStar[4],120,pantalla.getPtr());
+        musica[7].playMusic(-1);
+        reloj.start();
+
+        salirIntroStar=false;
+        ingresoJuego = false;
+        //Loop del Motor
+        while(!salirIntroStar)
+        {
+            //Si hubo un evento
+            if(evento.wasEvent())
+            {
+                //Switch de eventos
+                switch(evento.getEventType())
+                {
+                //Presion de una tecla
+                case KEY_PRESSED:
+                {
+                    if(evento.getKey() == KEY_ESCAPE)
+                    {
+                        salirIntroStar = true;
+                    }
+                    if(evento.getKey() == KEY_ENTER)
+                    {
+                        *elegido = true;
+                        ingresoJuego = true;
+                        juego(5);
+                    }
+                }
+                break;
+                }
+                if(error.get())
+                {
+                    error.show(true);
+                    return error.get();
+                }
+            }
+            if(ingresoJuego != true)
+            {
+                //Refresca Pantalla
+                pantalla.refresh();
+                pantalla.clean(BLACK);
+                fondo.setI(7);
+                fondo.paste(pantalla.getPtr());
+                                for(int x=0;x<5;x++ )
+    {
+        texto.centredWrite(textoStar[x],txtPostY[x],pantalla.getPtr());
+    }
+//                texto.centredWrite(textoStar[0],0,pantalla.getPtr());
+//                texto.centredWrite(textoStar[1],40,pantalla.getPtr());
+//                texto.centredWrite(textoStar[2],60,pantalla.getPtr());
+//                texto.centredWrite(textoStar[3],80,pantalla.getPtr());
+//                texto.centredWrite(textoStar[4],120,pantalla.getPtr());
+                animaciones[4].play(&pantalla);
+            }
+            else
+            {
+                pantalla.clean(BLACK);
+                pantalla.refresh();
+                salirIntroStar=true;
+                salirSeleccion=true;
+            }
+        }
+        musica[7].stopMusic();
+        //--------------------------------------------------------------------------
+        return error.get();
+    }
 
 //Metdodo para Correr la historia de Thor
-int clsMotor::introThor(bool * elegido)
-{
-    error.set(0);
-    //--------------------------------------------------------------------------
-
-    //Pego fondo en pantalla y refresco
-    pantalla.clean(BLACK);
-    fondo.setI(8);
-    fondo.paste(pantalla.getPtr());
-    texto.setFontColor(CELESTE_THOR);
-    texto.centredWrite(textoThor[0],0,pantalla.getPtr());
-    texto.centredWrite(textoThor[1],40,pantalla.getPtr());
-    texto.centredWrite(textoThor[2],60,pantalla.getPtr());
-    texto.centredWrite(textoThor[3],80,pantalla.getPtr());
-    texto.centredWrite(textoThor[4],120,pantalla.getPtr());
-    musica[8].playMusic(-1);
-    reloj.start();
-
-    salirIntroThor=false;
-    ingresoJuego = false;
-    //Loop del Motor
-    while(!salirIntroThor)
+    int clsMotor::introThor(bool * elegido)
     {
-        //Si hubo un evento
-        if(evento.wasEvent())
+        error.set(0);
+        //--------------------------------------------------------------------------
+
+        //Pego fondo en pantalla y refresco
+        pantalla.clean(BLACK);
+        fondo.setI(8);
+        fondo.paste(pantalla.getPtr());
+        texto.setFontColor(CELESTE_THOR);
+                              for(int x=0;x<5;x++ )
+    {
+        texto.centredWrite(textoThor[x],txtPostY[x],pantalla.getPtr());
+    }
+//        texto.centredWrite(textoThor[0],0,pantalla.getPtr());
+//        texto.centredWrite(textoThor[1],40,pantalla.getPtr());
+//        texto.centredWrite(textoThor[2],60,pantalla.getPtr());
+//        texto.centredWrite(textoThor[3],80,pantalla.getPtr());
+//        texto.centredWrite(textoThor[4],120,pantalla.getPtr());
+        musica[8].playMusic(-1);
+        reloj.start();
+
+        salirIntroThor=false;
+        ingresoJuego = false;
+        //Loop del Motor
+        while(!salirIntroThor)
         {
-            //Switch de eventos
-            switch(evento.getEventType())
+            //Si hubo un evento
+            if(evento.wasEvent())
             {
-            //Presion de una tecla
-            case KEY_PRESSED:
-            {
-                if(evento.getKey() == KEY_ESCAPE)
+                //Switch de eventos
+                switch(evento.getEventType())
                 {
-                    salirIntroThor = true;
-                }
-                if(evento.getKey() == KEY_ENTER)
+                //Presion de una tecla
+                case KEY_PRESSED:
                 {
-                    *elegido = true;
-                    ingresoJuego = true;
-                    juego(6);
-                }
-            }
-            break;
-            }
-            if(error.get())
-            {
-                error.show(true);
-                return error.get();
-            }
-        }
-        if(ingresoJuego != true)
-        {
-            //Refresca Pantalla
-            pantalla.refresh();
-            pantalla.clean(BLACK);
-            fondo.setI(8);
-            fondo.paste(pantalla.getPtr());
-            texto.centredWrite(textoThor[0],0,pantalla.getPtr());
-            texto.centredWrite(textoThor[1],40,pantalla.getPtr());
-            texto.centredWrite(textoThor[2],60,pantalla.getPtr());
-            texto.centredWrite(textoThor[3],80,pantalla.getPtr());
-            texto.centredWrite(textoThor[4],120,pantalla.getPtr());
-            animaciones[5].play(&pantalla);
-        }
-        else
-        {
-            pantalla.clean(BLACK);
-            pantalla.refresh();
-            salirIntroThor=true;
-            salirSeleccion=true;
-        }
-    }
-    musica[8].stopMusic();
-    //--------------------------------------------------------------------------
-    return error.get();
-}
-
-int clsMotor::juego(int personaje)
-{
-    error.set(0);
-    //--------------------------------------------------------------------------
-
-    //Pego fondo en pantalla y refresco
-    pantalla.clean(BLACK);
-    pantalla.refresh();
-    salirJuego=false;
-    switch(personaje)
-    {
-    case 1:
-    {
-        seleccionado.iniciar(spritesJuegoCapitan,10);
-    }
-    break;
-    case 2:
-    {
-        seleccionado.iniciar(spritesJuegoDare,10);
-    }
-    break;
-    case 3:
-    {
-        seleccionado.iniciar(spritesJuegoIron,10);
-    }
-    break;
-    case 4:
-    {
-        seleccionado.iniciar(spritesJuegoSpider,10);
-    }
-    break;
-    case 5:
-    {
-        seleccionado.iniciar(spritesJuegoStar,10);
-    }
-    break;
-    case 6:
-    {
-        seleccionado.iniciar(spritesJuegoThor,10);
-    }
-    break;
-    }
-    //Loop del Motor
-    while(!salirJuego)
-    {
-        //Secuencia de Niveles OK
-        nivel_1(seleccionado);
-        nivel_2(seleccionado);
-        nivel_3(seleccionado);
-        escenaGana();
-        escenaPierde();
-        salirJuego = true;
-    }
-    //--------------------------------------------------------------------------
-    return error.get();
-}
-
-int clsMotor::nivel_1(clsPersonaje seleccionado)
-{
-    cout << "Ingreso nivel 1 " << endl;
-    error.set(0);
-    //--------------------------------------------------------------------------
-
-    //Pego fondo en pantalla y refresco
-    this->seleccionado = seleccionado;
-    cout << "personaje  " <<  endl;
-    pantalla.clean(BLACK);
-    cout << " Limpio pantalla " << endl;
-    fondo.setI(9);
-    cout << "Seteo el fondo " << endl;
-    seleccionado.animar(&pantalla,QUIETO,&fondo);
-    cout << "Animo personaje " << endl;
-    enemigo.animar(&pantalla,QUIETO,&fondo);
-    pantalla.refresh();
-    movimiento = false;
-    //fondo.paste(pantalla.getPtr());
-    musica[9].playMusic(-1);
-    salirNivel_1=false;
-    //Loop del Motor
-    while(!salirNivel_1)
-    {
-    enemigo.animar(&pantalla,QUIETO,&fondo);
-
-        //Si hubo un evento
-        if(evento.wasEvent())
-        {
-            cout << "Evento detectado " << endl;
-            //Switch de eventos
-            switch(evento.getEventType())
-            {
-                cout << "Buscando tipo evento ...  " << endl;
-            //Presion de una tecla
-            case KEY_PRESSED:
-            {
-                while(evento.getEventType() == KEY_PRESSED)
-                {
-
-                    cout << " tecla presionada " << evento.getKey() << endl;
-                    if(evento.wasEvent() && evento.getEventType() == KEY_FREE)
+                    if(evento.getKey() == KEY_ESCAPE)
                     {
-                        break;
-                        seleccionado.animar(&pantalla,QUIETO,&fondo);
-                        pantalla.refresh();
+                        salirIntroThor = true;
                     }
-                    else
+                    if(evento.getKey() == KEY_ENTER)
                     {
-                        error.set(teclaPresionada());
-                        pantalla.refresh();
+                        *elegido = true;
+                        ingresoJuego = true;
+                        juego(6);
                     }
                 }
-            }
-            break;
-            }
-
-        } // if evento was evento
-
-        //while de ataque enemigo
-       /*  while(evento.wasEvent() )
-          {
-              // aleatorios deben ser entre 0 y 2
-              bool salir = false;
-              int n = 0, movAleatorioEnemi = 0;
-              while(!salir)
-              {
-
-              aleatorio.getNumber(n);
-              if(n == 0 || n<=3)
-              {
-                  salir = true;
-              }
-              }
-              if((evento.getKey() == ATACA_C || evento.getKey() == ATACA_L)  && (seleccionado.getX() == enemigo.getX() && seleccionado.getY() == enemigo.getY()))
-              {
-              cout << "nivel 1 - sprites cercanos, movimiento aleatorio de ataque" << endl;
-              enemigo.animar(&pantalla, ataques[n],&fondo);
-              }
-              else if (evento.getKey() == DERECHA || evento.getKey() == IZQUIERDA || evento.getKey() ==  ARRIBA || evento.getKey() == ABAJO)
-              {
-                  bool salirMovsEnemi = false;
-                  while(!salirMovsEnemi)
-                  {
-                   aleatorio.getNumber(movAleatorioEnemi);
-                   cout << "numero aleatorio de movimiento enemigo " << movAleatorioEnemi << endl;
-                   if(movAleatorioEnemi == 0 || movAleatorioEnemi <5)
-                   {
-                       salirMovsEnemi = true;
-                   }
-                  }
-                  cout << "nivel 1 - sprites cercanos, movimiento aleatorio de ataque" << endl;
-              enemigo.animar(&pantalla,movimientos[movAleatorioEnemi],&fondo);
-              }
-          }
-*/
-
-    } // fin while
-    musica[9].stopMusic();
-    //--------------------------------------------------------------------------
-    return error.get();
-}
-
-int clsMotor::nivel_2(clsPersonaje seleccionado)
-{
-    error.set(0);
-    //--------------------------------------------------------------------------
-
-    //Pego fondo en pantalla y refresco
-    this->seleccionado = seleccionado;
-    pantalla.clean(BLACK);
-    fondo.setI(10);
-    fondo.paste(pantalla.getPtr());
-    seleccionado.animar(&pantalla,QUIETO,&fondo);
-    pantalla.refresh();
-    musica[10].playMusic(-1);
-    reloj.start();
-
-    salirNivel_2=false;
-    //Loop del Motor
-    while(!salirNivel_2)
-    {
-        //Si hubo un evento
-        if(evento.wasEvent())
-        {
-            //Switch de eventos
-            switch(evento.getEventType())
-            {
-            //Presion de una tecla
-            case KEY_PRESSED:
-            {
-                while(evento.getEventType() == KEY_PRESSED)
+                break;
+                }
+                if(error.get())
                 {
-                    if(evento.wasEvent() && evento.getEventType() == KEY_FREE)
-                    {
-                        break;
-                        seleccionado.animar(&pantalla,QUIETO,&fondo);
-                    }
-                    else
-                    {
-                        error.set(teclaPresionada());
-                    }
+                    error.show(true);
+                    return error.get();
                 }
             }
-            break;
-            }
-            if(error.get())
+            if(ingresoJuego != true)
             {
-                error.show(true);
-                return error.get();
-            }
-        }
+                //Refresca Pantalla
+                pantalla.refresh();
+                pantalla.clean(BLACK);
+                fondo.setI(8);
+                fondo.paste(pantalla.getPtr());
+                                              for(int x=0;x<5;x++ )
+    {
+        texto.centredWrite(textoThor[x],txtPostY[x],pantalla.getPtr());
     }
-    musica[10].stopMusic();
-    //--------------------------------------------------------------------------
-    return error.get();
-}
-
-int clsMotor::nivel_3(clsPersonaje seleccionado)
-{
-    error.set(0);
-    //--------------------------------------------------------------------------
-    //Pego fondo en pantalla y refresco
-    this->seleccionado = seleccionado;
-    pantalla.clean(BLACK);
-    fondo.setI(11);
-    fondo.paste(pantalla.getPtr());
-    seleccionado.animar(&pantalla,QUIETO,&fondo);
-    pantalla.refresh();
-    musica[11].playMusic(-1);
-    reloj.start();
-    salirNivel_3=false;
-    //Loop del Motor
-    while(!salirNivel_3)
-    {
-        //Revision de reloj
-        if(reloj.getState() == 16500)
-        {
-            musica[11].stopMusic();
-            musica[12].playMusic(-1);
-        }
-        //Si hubo un evento
-        if(evento.wasEvent())
-        {
-            //Switch de eventos
-            switch(evento.getEventType())
-            {
-            //Presion de una tecla
-            case KEY_PRESSED:
-            {
-                while(evento.getEventType() == KEY_PRESSED)
-                {
-                    if(evento.wasEvent() && evento.getEventType() == KEY_FREE)
-                    {
-                        break;
-                        seleccionado.animar(&pantalla,QUIETO,&fondo);
-                    }
-                    else
-                    {
-                        error.set(teclaPresionada());
-                    }
-                }
+//                texto.centredWrite(textoThor[0],0,pantalla.getPtr());
+//                texto.centredWrite(textoThor[1],40,pantalla.getPtr());
+//                texto.centredWrite(textoThor[2],60,pantalla.getPtr());
+//                texto.centredWrite(textoThor[3],80,pantalla.getPtr());
+//                texto.centredWrite(textoThor[4],120,pantalla.getPtr());
+                animaciones[5].play(&pantalla);
             }
-            break;
-            }
-            if(error.get())
+            else
             {
-                error.show(true);
-                return error.get();
+                pantalla.clean(BLACK);
+                pantalla.refresh();
+                salirIntroThor=true;
+                salirSeleccion=true;
             }
         }
+        musica[8].stopMusic();
+        //--------------------------------------------------------------------------
+        return error.get();
     }
-    musica[12].stopMusic();
-    //--------------------------------------------------------------------------
-    return error.get();
-}
 
-//Metdodo para Correr la historia del programa
-int clsMotor::escenaGana()
-{
-    error.set(0);
-    //--------------------------------------------------------------------------
-    //Pego fondo en pantalla y refresco
-    pantalla.clean(BLACK);
-    fondo.setI(12);
-    fondo.paste(pantalla.getPtr());
-    pantalla.refresh();
-    musica[14].playMusic(-1);
-    reloj.start();
-
-    salirEscenaGana=false;
-    //Loop del Motor
-    while(!salirEscenaGana)
+    int clsMotor::juego(int personaje)
     {
-        //Si hubo un evento
-        if(evento.wasEvent())
-        {
-            //Switch de eventos
-            switch(evento.getEventType())
-            {
-            //Presion de una tecla
-            case KEY_PRESSED:
-            {
-                if(evento.getKey() == KEY_ENTER)
-                {
-                    salirEscenaGana = true;
-                }
-            }
-            break;
-            }
-            if(error.get())
-            {
-                error.show(true);
-                return error.get();
-            }
-        }
-        texto.loadFont(comic,40);
-        texto.setFontColor(GREEN);
-        texto.centredWrite("Has Derrotado a Ronan y has salvado la Galaxia!",40,pantalla.getPtr());
-        texto.centredWrite("Tus hazañas quedarán grabadas en la historia.",85,pantalla.getPtr());
+        error.set(0);
+        //--------------------------------------------------------------------------
+
+        //Pego fondo en pantalla y refresco
+        pantalla.clean(BLACK);
         pantalla.refresh();
-    }
-    musica[14].stopMusic();
-    //--------------------------------------------------------------------------
-    return error.get();
-}
-
-//Metdodo para Correr la historia del programa
-int clsMotor::escenaPierde()
-{
-    error.set(0);
-    //--------------------------------------------------------------------------
-    //Pego fondo en pantalla y refresco
-    pantalla.clean(BLACK);
-    fondo.setI(15);
-    fondo.paste(pantalla.getPtr());
-    pantalla.refresh();
-    musica[17].playMusic(-1);
-    reloj.start();
-    salirEscenaPierde=false;
-    //Loop del Motor
-    while(!salirEscenaPierde)
-    {
-        //Si hubo un evento
-        if(evento.wasEvent())
+        salirJuego=false;
+        switch(personaje)
         {
-            //Switch de eventos
-            switch(evento.getEventType())
+        case 1:
+        {
+            seleccionado.iniciar(spritesJuegoCapitan,10);
+        }
+        break;
+        case 2:
+        {
+            seleccionado.iniciar(spritesJuegoDare,10);
+        }
+        break;
+        case 3:
+        {
+            seleccionado.iniciar(spritesJuegoIron,10);
+        }
+        break;
+        case 4:
+        {
+            seleccionado.iniciar(spritesJuegoSpider,10);
+        }
+        break;
+        case 5:
+        {
+            seleccionado.iniciar(spritesJuegoStar,10);
+        }
+        break;
+        case 6:
+        {
+            seleccionado.iniciar(spritesJuegoThor,10);
+        }
+        break;
+        }
+        //Loop del Motor
+        while(!salirJuego)
+        {
+            //Secuencia de Niveles OK
+            nivel_1(seleccionado);
+            nivel_2(seleccionado);
+            nivel_3(seleccionado);
+            escenaGana();
+            escenaPierde();
+            salirJuego = true;
+        }
+        //--------------------------------------------------------------------------
+        return error.get();
+    }
+
+    int clsMotor::nivel_1(clsPersonaje seleccionado)
+    {
+        cout << "Ingreso nivel 1 " << endl;
+        error.set(0);
+        //--------------------------------------------------------------------------
+
+        //Pego fondo en pantalla y refresco
+        this->seleccionado = seleccionado;
+        cout << "personaje  " <<  endl;
+        pantalla.clean(BLACK);
+        cout << " Limpio pantalla " << endl;
+        fondo.setI(9);
+        cout << "Seteo el fondo " << endl;
+        seleccionado.animar(&pantalla,QUIETO,&fondo);
+        cout << "Animo personaje " << endl;
+
+        pantalla.refresh();
+        movimiento = false;
+        //fondo.paste(pantalla.getPtr());
+        musica[9].playMusic(-1);
+        salirNivel_1=false;
+        //Loop del Motor
+        while(!salirNivel_1)
+        {
+            //Si hubo un evento
+            if(evento.wasEvent())
             {
-            //Presion de una tecla
-            case KEY_PRESSED:
-            {
-                if(evento.getKey() == KEY_ENTER)
+
+                //Switch de eventos
+                switch(evento.getEventType())
                 {
-                    salirEscenaPierde = true;
+                //Presion de una tecla
+                case KEY_PRESSED:
+                {
+                    while(evento.getEventType() == KEY_PRESSED)
+                    {
+                        pantalla.refresh();
+                        if(evento.wasEvent() && evento.getEventType() == KEY_FREE)
+                        {
+
+                            break;
+                            pantalla.refresh();
+                            seleccionado.animar(&pantalla,QUIETO,&fondo);
+                        }
+                        else
+                        {
+                            error.set(teclaPresionada());
+                        }
+                    }
+                }
+                break;
                 }
             }
-            break;
-            }
-            if(error.get())
+
+        } // fin while
+        musica[9].stopMusic();
+        //--------------------------------------------------------------------------
+        return error.get();
+    }
+
+    int clsMotor::nivel_2(clsPersonaje seleccionado)
+    {
+        error.set(0);
+        //--------------------------------------------------------------------------
+
+        //Pego fondo en pantalla y refresco
+        this->seleccionado = seleccionado;
+        pantalla.clean(BLACK);
+        fondo.setI(10);
+        fondo.paste(pantalla.getPtr());
+        seleccionado.animar(&pantalla,QUIETO,&fondo);
+        pantalla.refresh();
+        musica[10].playMusic(-1);
+        reloj.start();
+
+        salirNivel_2=false;
+        //Loop del Motor
+        while(!salirNivel_2)
+        {
+            //Si hubo un evento
+            if(evento.wasEvent())
             {
-                error.show(true);
-                return error.get();
+                //Switch de eventos
+                switch(evento.getEventType())
+                {
+                //Presion de una tecla
+                case KEY_PRESSED:
+                {
+                    while(evento.getEventType() == KEY_PRESSED)
+                    {
+                        if(evento.wasEvent() && evento.getEventType() == KEY_FREE)
+                        {
+                            break;
+                            seleccionado.animar(&pantalla,QUIETO,&fondo);
+                        }
+                        else
+                        {
+                            error.set(teclaPresionada());
+                        }
+                    }
+                }
+                break;
+                }
+                if(error.get())
+                {
+                    error.show(true);
+                    return error.get();
+                }
+            }
+        }
+        musica[10].stopMusic();
+        //--------------------------------------------------------------------------
+        return error.get();
+    }
+
+    int clsMotor::nivel_3(clsPersonaje seleccionado)
+    {
+        error.set(0);
+        //--------------------------------------------------------------------------
+        //Pego fondo en pantalla y refresco
+        this->seleccionado = seleccionado;
+        pantalla.clean(BLACK);
+        fondo.setI(11);
+        fondo.paste(pantalla.getPtr());
+        seleccionado.animar(&pantalla,QUIETO,&fondo);
+        pantalla.refresh();
+        musica[11].playMusic(-1);
+        reloj.start();
+        salirNivel_3=false;
+        //Loop del Motor
+        while(!salirNivel_3)
+        {
+            //Revision de reloj
+            if(reloj.getState() == 16500)
+            {
+                musica[11].stopMusic();
+                musica[12].playMusic(-1);
+            }
+            //Si hubo un evento
+            if(evento.wasEvent())
+            {
+                //Switch de eventos
+                switch(evento.getEventType())
+                {
+                //Presion de una tecla
+                case KEY_PRESSED:
+                {
+                    while(evento.getEventType() == KEY_PRESSED)
+                    {
+                        if(evento.wasEvent() && evento.getEventType() == KEY_FREE)
+                        {
+                            break;
+                            seleccionado.animar(&pantalla,QUIETO,&fondo);
+                        }
+                        else
+                        {
+                            error.set(teclaPresionada());
+                        }
+                    }
+                }
+                break;
+                }
+                if(error.get())
+                {
+                    error.show(true);
+                    return error.get();
+                }
+            }
+        }
+        musica[12].stopMusic();
+        //--------------------------------------------------------------------------
+        return error.get();
+    }
+
+//Metdodo para Correr la historia del programa
+    int clsMotor::escenaGana()
+    {
+        error.set(0);
+        //--------------------------------------------------------------------------
+        //Pego fondo en pantalla y refresco
+        pantalla.clean(BLACK);
+        fondo.setI(12);
+        fondo.paste(pantalla.getPtr());
+        pantalla.refresh();
+        musica[14].playMusic(-1);
+        reloj.start();
+
+        salirEscenaGana=false;
+        //Loop del Motor
+        while(!salirEscenaGana)
+        {
+            //Si hubo un evento
+            if(evento.wasEvent())
+            {
+                //Switch de eventos
+                switch(evento.getEventType())
+                {
+                //Presion de una tecla
+                case KEY_PRESSED:
+                {
+                    if(evento.getKey() == KEY_ENTER)
+                    {
+                        salirEscenaGana = true;
+                    }
+                }
+                break;
+                }
+                if(error.get())
+                {
+                    error.show(true);
+                    return error.get();
+                }
             }
             texto.loadFont(comic,40);
-            texto.setFontColor(RED);
-            texto.centredWrite("Derrota!! Ronan, regirá la galaxia...",340,pantalla.getPtr());
-            texto.centredWrite("Tu miserable intento quedará manchado de verguenza!!!",390,pantalla.getPtr());
-            texto.centredWrite("Serás recordado como inutil...por toda la eternidad.",460,pantalla.getPtr());
+            texto.setFontColor(GREEN);
+            texto.centredWrite("Has Derrotado a Ronan y has salvado la Galaxia!",40,pantalla.getPtr());
+            texto.centredWrite("Tus hazañas quedarán grabadas en la historia.",85,pantalla.getPtr());
             pantalla.refresh();
         }
+        musica[14].stopMusic();
+        //--------------------------------------------------------------------------
+        return error.get();
     }
-    musica[17].stopMusic();
-    //--------------------------------------------------------------------------
-    return error.get();
-}
+
+//Metdodo para Correr la historia del programa
+    int clsMotor::escenaPierde()
+    {
+        error.set(0);
+        //--------------------------------------------------------------------------
+        //Pego fondo en pantalla y refresco
+        pantalla.clean(BLACK);
+        fondo.setI(15);
+        fondo.paste(pantalla.getPtr());
+        pantalla.refresh();
+        musica[17].playMusic(-1);
+        reloj.start();
+        salirEscenaPierde=false;
+        //Loop del Motor
+        while(!salirEscenaPierde)
+        {
+            //Si hubo un evento
+            if(evento.wasEvent())
+            {
+                //Switch de eventos
+                switch(evento.getEventType())
+                {
+                //Presion de una tecla
+                case KEY_PRESSED:
+                {
+                    if(evento.getKey() == KEY_ENTER)
+                    {
+                        salirEscenaPierde = true;
+                    }
+                }
+                break;
+                }
+                if(error.get())
+                {
+                    error.show(true);
+                    return error.get();
+                }
+                texto.loadFont(comic,40);
+                texto.setFontColor(RED);
+                texto.centredWrite("Derrota!! Ronan, regirá la galaxia...",340,pantalla.getPtr());
+                texto.centredWrite("Tu miserable intento quedará manchado de verguenza!!!",390,pantalla.getPtr());
+                texto.centredWrite("Serás recordado como inutil...por toda la eternidad.",460,pantalla.getPtr());
+                pantalla.refresh();
+            }
+        }
+        musica[17].stopMusic();
+        //--------------------------------------------------------------------------
+        return error.get();
+    }
 
 
 //Metdodo para Correr la bienvenida del programa
-int clsMotor::despedida()
-{
-    error.set(0);
-    //--------------------------------------------------------------------------
-    //Pego fondo en pantalla y refresco
-    pantalla.clean(BLACK);
-    fondo.setI(13);
-    fondo.paste(pantalla.getPtr());
-    pantalla.refresh();
-    musica[15].playMusic(1);
-    reloj.start();
-
-    salirDespedida=false;
-    //Loop del Motor
-    while(!salirDespedida)
+    int clsMotor::despedida()
     {
-        //Revisar relo jen cada vuelta
-        reloj.update();
-        if(reloj.getState() == 47000)
+        error.set(0);
+        //--------------------------------------------------------------------------
+        //Pego fondo en pantalla y refresco
+        pantalla.clean(BLACK);
+        fondo.setI(13);
+        fondo.paste(pantalla.getPtr());
+        pantalla.refresh();
+        musica[15].playMusic(1);
+        reloj.start();
+
+        salirDespedida=false;
+        //Loop del Motor
+        while(!salirDespedida)
         {
-            salirDespedida = true;
-        }
-        //Si hubo un evento
-        if(evento.wasEvent())
-        {
-            //Switch de eventos
-            switch(evento.getEventType())
+            //Revisar relo jen cada vuelta
+            reloj.update();
+            if(reloj.getState() == 47000)
             {
-            //Presion de una tecla
-            case KEY_PRESSED:
+                salirDespedida = true;
+            }
+            //Si hubo un evento
+            if(evento.wasEvent())
             {
-                if(evento.getKey() == KEY_ESCAPE)
+                //Switch de eventos
+                switch(evento.getEventType())
                 {
-                    salirDespedida = true;
+                //Presion de una tecla
+                case KEY_PRESSED:
+                {
+
+                    if(evento.getKey() == KEY_ESCAPE)
+                    {
+                        salirDespedida = true;
+                    }
                 }
+                }
+                if(error.get())
+                {
+                    error.show(true);
+                    return error.get();
+                }
+                //Refresca Pantalla
+                pantalla.refresh();
+                pantalla.clean(BLACK);
+                fondo.setI(13);
+                fondo.paste(pantalla.getPtr());
             }
-            }
-            if(error.get())
-            {
-                error.show(true);
-                return error.get();
-            }
-            //Refresca Pantalla
-            pantalla.refresh();
-            pantalla.clean(BLACK);
-            fondo.setI(13);
-            fondo.paste(pantalla.getPtr());
         }
+        musica[15].stopMusic();
+        //--------------------------------------------------------------------------
+        return error.get();
     }
-    musica[15].stopMusic();
-    //--------------------------------------------------------------------------
-    return error.get();
-}
 
 //Metdodo para Iniciar evento de tecla presionada
-int clsMotor::teclaPresionada()
-{
-    error.set(0);
-    //--------------------------------------------------------------------------
+    int clsMotor::teclaPresionada()
+    {
+        error.set(0);
+        //--------------------------------------------------------------------------
 
-    switch(evento.getKey())
-    {
-    //---------------------
-    case KEY_ESCAPE:
-    {
-        salirNivel_1 = true;
-        salirNivel_2 = true;
-        salirNivel_3 = true;
-    }
-    break;
-    case KEY_A:
-    case KEY_a:
-    {
-        seleccionado.animar(&pantalla,IZQUIERDA,&fondo);
-        enemigo.animar(&pantalla,DERECHA,&fondo);
-
-    }
-    break;
-    case KEY_C:
-    case KEY_c:
-    {
-        seleccionado.animar(&pantalla,DI_DER,&fondo);
-        enemigo.animar(&pantalla,DI_IZQ,&fondo);
-
-    }
-    break;
-    case KEY_D:
-    case KEY_d:
-    {
-        seleccionado.animar(&pantalla,DERECHA,&fondo);
-        enemigo.animar(&pantalla,IZQUIERDA,&fondo);
-
-
-    }
-    break;
-    case KEY_E:
-    case KEY_e:
-    {
-        seleccionado.animar(&pantalla,DS_DER,&fondo);
-        enemigo.animar(&pantalla,DS_IZQ,&fondo);
-
-    }
-    break;
-    case KEY_Q:
-    case KEY_q:
-    {
-        seleccionado.animar(&pantalla,DS_IZQ,&fondo);
-        enemigo.animar(&pantalla,DS_DER,&fondo);
-
-
-    }
-    break;
-    case KEY_S:
-    case KEY_s:
-    {
-        seleccionado.animar(&pantalla,ABAJO,&fondo);
-        enemigo.animar(&pantalla,ABAJO,&fondo);
-
-    }
-    break;
-    case KEY_W:
-    case KEY_w:
-    {
-        seleccionado.animar(&pantalla,ARRIBA,&fondo);
-        enemigo.animar(&pantalla,ARRIBA,&fondo);
-    }
-    break;
-    case KEY_Z:
-    case KEY_z:
-    {
-        seleccionado.animar(&pantalla,DI_IZQ,&fondo);
-        enemigo.animar(&pantalla,DI_IZQ,&fondo);
-    }
-    break;
-    case KEY_COMMA:
-    {
-        seleccionado.animar(&pantalla,ATACA_C,&fondo);
-    }
-    break;
-    case KEY_PERIOD:
-    {
-        seleccionado.animar(&pantalla,ATACA_L,&fondo);
-    }
-    break;
-    case KEY_RIGHT_SLASH:
-    {
-        seleccionado.animar(&pantalla,DEFIENDE,&fondo);
-    }
-    break;
-
+        switch(evento.getKey())
+        {
         //---------------------
-    }
+        case KEY_ESCAPE:
+        {
+            salirNivel_1 = true;
+            salirNivel_2 = true;
+            salirNivel_3 = true;
+        }
+        break;
+        case KEY_A:
+        case KEY_a:
+        {
+            seleccionado.animar(&pantalla,IZQUIERDA,&fondo);
+        }
+        break;
+        case KEY_C:
+        case KEY_c:
+        {
+            seleccionado.animar(&pantalla,DI_DER,&fondo);
+        }
+        break;
+        case KEY_D:
+        case KEY_d:
+        {
+            seleccionado.animar(&pantalla,DERECHA,&fondo);
+        }
+        break;
+        case KEY_E:
+        case KEY_e:
+        {
+            seleccionado.animar(&pantalla,DS_DER,&fondo);
 
-    //--------------------------------------------------------------------------
-    return error.get();
-}
+        }
+        break;
+        case KEY_Q:
+        case KEY_q:
+        {
+            seleccionado.animar(&pantalla,DS_IZQ,&fondo);
+        }
+        break;
+        case KEY_S:
+        case KEY_s:
+        {
+            seleccionado.animar(&pantalla,ABAJO,&fondo);
+
+        }
+        break;
+        case KEY_W:
+        case KEY_w:
+        {
+            seleccionado.animar(&pantalla,ARRIBA,&fondo);
+
+        }
+        break;
+        case KEY_Z:
+        case KEY_z:
+        {
+            seleccionado.animar(&pantalla,DI_IZQ,&fondo);
+
+        }
+        break;
+        case KEY_COMMA:
+        {
+            seleccionado.animar(&pantalla,ATACA_C,&fondo);
+        }
+        break;
+        case KEY_PERIOD:
+        {
+            seleccionado.animar(&pantalla,ATACA_L,&fondo);
+        }
+        break;
+        case KEY_RIGHT_SLASH:
+        {
+            cout <<  "sprite nro " << seleccionado.getI();
+            seleccionado.animar(&pantalla,DEFIENDE,&fondo);
+        }
+        break;
+
+            //---------------------
+        }
+
+        //--------------------------------------------------------------------------
+        return error.get();
+    }
 
 //Metdodo para Iniciar evento de tecla liberada
-int clsMotor::teclaLiberada()
-{
-    error.set(0);
-    //--------------------------------------------------------------------------
+    int clsMotor::teclaLiberada()
+    {
+        error.set(0);
+        //--------------------------------------------------------------------------
 
-    //--------------------------------------------------------------------------
-    return error.get();
-}
+        //--------------------------------------------------------------------------
+        return error.get();
+    }
 
 
