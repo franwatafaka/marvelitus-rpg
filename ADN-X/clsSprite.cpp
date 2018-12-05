@@ -118,7 +118,7 @@ clsSprite::~clsSprite()
         if(&spritePointer[p] != NULL)
         {
             delete spritePointer[p].getPtr();
-            cout << "Se destruyo la imagen"
+            cout << "Se destruyo la imagen "
                  << p
                  << " del sprite "
                  << getName()

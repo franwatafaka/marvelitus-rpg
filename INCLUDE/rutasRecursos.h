@@ -13,24 +13,24 @@ const char comic[] = {"FONTS/ComicBook.ttf"};
 //------------------------------------------------------------------------------
 //                                  Fondos
 //------------------------------------------------------------------------------
-
-const char fondoDeBienvenida[] = {"RESOURCES/IMAGES/BACKGROUNDS/Bienvenida.png"};
-const char fondoDeMenu[] = {"RESOURCES/IMAGES/BACKGROUNDS/Main_menu.png"};
-const char fondoDeHistoria[] = {"RESOURCES/IMAGES/BACKGROUNDS/Historia.png"};
-const char fondoDeCapitanAmerica[] = {"RESOURCES/IMAGES/BACKGROUNDS/Captain_America_Intro.png"};
-const char fondoDeDareDevil[] = {"RESOURCES/IMAGES/BACKGROUNDS/Dare_Devil_Intro.png"};
-const char fondoDeIronMan[] = {"RESOURCES/IMAGES/BACKGROUNDS/Iron_Man_Intro.png"};
-const char fondoDeSpiderMan[] = {"RESOURCES/IMAGES/BACKGROUNDS/Spider_Man_Intro.png"};
-const char fondoDeStarLord[] = {"RESOURCES/IMAGES/BACKGROUNDS/Star_Lord_Intro.png"};
-const char fondoDeThor[] = {"RESOURCES/IMAGES/BACKGROUNDS/Thor_Intro.png"};
-const char fondoDeNivel_1[] = {"RESOURCES/IMAGES/BACKGROUNDS/Nivel_1.png"};
-const char fondoDeNivel_2[] = {"RESOURCES/IMAGES/BACKGROUNDS/Nivel_2.png"};
-const char fondoDeNivel_3[] = {"RESOURCES/IMAGES/BACKGROUNDS/Nivel_3.png"};
-const char fondoDeEscenaFinalGana[] = {"RESOURCES/IMAGES/BACKGROUNDS/Escena_Final_Gana.png"};
-const char fondoDeDespedida[] = {"RESOURCES/IMAGES/BACKGROUNDS/Despedida.png"};
-const char fondoDeSeleccionPersonajes[] = {"RESOURCES/IMAGES/BACKGROUNDS/Seleccion_Personajes.png"};
-const char fondoDeEscenaFinalPierde[] = {"RESOURCES/IMAGES/BACKGROUNDS/Escena_Final_Pierde.png"};
-
+const char * const vectorFdo[16] = {
+    "RESOURCES/IMAGES/BACKGROUNDS/Bienvenida.png",
+    "RESOURCES/IMAGES/BACKGROUNDS/Main_menu.png",
+    "RESOURCES/IMAGES/BACKGROUNDS/Historia.png",
+    "RESOURCES/IMAGES/BACKGROUNDS/Captain_America_Intro.png",
+    "RESOURCES/IMAGES/BACKGROUNDS/Dare_Devil_Intro.png",
+    "RESOURCES/IMAGES/BACKGROUNDS/Iron_Man_Intro.png",
+    "RESOURCES/IMAGES/BACKGROUNDS/Spider_Man_Intro.png",
+    "RESOURCES/IMAGES/BACKGROUNDS/Star_Lord_Intro.png",
+    "RESOURCES/IMAGES/BACKGROUNDS/Thor_Intro.png",
+    "RESOURCES/IMAGES/BACKGROUNDS/Nivel_1.png",
+    "RESOURCES/IMAGES/BACKGROUNDS/Nivel_2.png",
+    "RESOURCES/IMAGES/BACKGROUNDS/Nivel_3.png",
+    "RESOURCES/IMAGES/BACKGROUNDS/Escena_Final_Gana.png",
+    "RESOURCES/IMAGES/BACKGROUNDS/Despedida.png",
+    "RESOURCES/IMAGES/BACKGROUNDS/Seleccion_Personajes.png",
+    "RESOURCES/IMAGES/BACKGROUNDS/Escena_Final_Pierde.png"
+    };
 
 ///**************************************************************************///
 
@@ -81,7 +81,23 @@ const char musicaDeEscenaFinalPierde[] = {"RESOURCES/SOUNDS/MUSIC/09-Final_Scene
 const char chat_grande[] = {"RESOURCES/IMAGES/SPRITES/CONTEXT/Burbuja_Chat_Grande.png"};
 
 ///**************************************************************************///
+//------------------------------------------------------------------------------
+//                                  Sprites enemigos
+//------------------------------------------------------------------------------
 
+const char * const spritesEnemigo[10] =
+{
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/00.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/01.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/02.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/03.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/04.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/05.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/06.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/07.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/08.png",
+    "RESOURCES/IMAGES/SPRITES/CHARACTERS/ENEMIGO/09.png"
+};
 
 
 ///**************************************************************************///

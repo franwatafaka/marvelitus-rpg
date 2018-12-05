@@ -443,7 +443,7 @@
 	"adnConsts.h"
 	"clsError.h"
 
-1541277860 source:c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\adn-x\clssprite.cpp
+1543983281 source:c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\adn-x\clssprite.cpp
 	"clsSprite.h"
 
 1540069937 c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\adn-x\clssprite.h
@@ -516,17 +516,17 @@
 	<clsFondo.h>
 	"rutasRecursos.h"
 
-1542898920 c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\include\rutasrecursos.h
+1543983517 c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\include\rutasrecursos.h
 
 1542898920 source:c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\source\clsanimacion.cpp
 	"clsAnimacion.h"
 	"../INCLUDE/rutasRecursos.h"
 
-1542898920 source:c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\source\clsfondo.cpp
+1543983003 source:c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\source\clsfondo.cpp
 	"clsFondo.h"
 	"../INCLUDE/rutasRecursos.h"
 
-1543801830 source:c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\source\clsmotor.cpp
+1543983010 source:c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\source\clsmotor.cpp
 	"clsMotor.h"
 	"../INCLUDE/rutasRecursos.h"
 	"../INCLUDE/consTextos.h"

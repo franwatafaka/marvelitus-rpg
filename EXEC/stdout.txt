@@ -5,6 +5,22 @@
 Modo grafico iniciado correctamente.
 Monitor de video iniciado correctamente.
 Sistema de audio iniciado correctamente.
+Carga fondo 0
+Carga fondo 1
+Carga fondo 2
+Carga fondo 3
+Carga fondo 4
+Carga fondo 5
+Carga fondo 6
+Carga fondo 7
+Carga fondo 8
+Carga fondo 9
+Carga fondo 10
+Carga fondo 11
+Carga fondo 12
+Carga fondo 13
+Carga fondo 14
+Carga fondo 15
 Carga spriteEnemigo 0
 Carga spriteEnemigo 1
 Carga spriteEnemigo 2
@@ -31,54 +47,3 @@ personaje
  Limpio pantalla 
 Seteo el fondo 
 Animo personaje 
-Se destruyo la imagen0 del sprite sin Nombre
-Se destruyo la imagen1 del sprite sin Nombre
-Se destruyo la imagen2 del sprite sin Nombre
-Se destruyo la imagen3 del sprite sin Nombre
-Se destruyo la imagen4 del sprite sin Nombre
-Se destruyo la imagen5 del sprite sin Nombre
-Se destruyo la imagen6 del sprite sin Nombre
-Se destruyo la imagen7 del sprite sin Nombre
-Se destruyo la imagen8 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyo la imagen0 del sprite sin Nombre
-Se destruyo la imagen1 del sprite sin Nombre
-Se destruyo la imagen2 del sprite sin Nombre
-Se destruyo la imagen3 del sprite sin Nombre
-Se destruyo la imagen4 del sprite sin Nombre
-Se destruyo la imagen5 del sprite sin Nombre
-Se destruyo la imagen6 del sprite sin Nombre
-Se destruyo la imagen7 del sprite sin Nombre
-Se destruyo la imagen8 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyo la imagen0 del sprite sin Nombre
-Se destruyo la imagen1 del sprite sin Nombre
-Se destruyo la imagen2 del sprite sin Nombre
-Se destruyo la imagen3 del sprite sin Nombre
-Se destruyo la imagen4 del sprite sin Nombre
-Se destruyo la imagen5 del sprite sin Nombre
-Se destruyo la imagen6 del sprite sin Nombre
-Se destruyo la imagen7 del sprite sin Nombre
-Se destruyo la imagen8 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-
-**********************************************************
-       El proyecto ADN-X ha finalizado correctamente      
-##########################################################
-Se destruyo la imagen0 del sprite sin Nombre
-Se destruyo la imagen1 del sprite sin Nombre
-Se destruyo la imagen2 del sprite sin Nombre
-Se destruyo la imagen3 del sprite sin Nombre
-Se destruyo la imagen4 del sprite sin Nombre
-Se destruyo la imagen5 del sprite sin Nombre
-Se destruyo la imagen6 del sprite sin Nombre
-Se destruyo la imagen7 del sprite sin Nombre
-Se destruyo la imagen8 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyo la imagen0 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyo la imagen0 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyo la imagen0 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre

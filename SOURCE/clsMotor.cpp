@@ -398,7 +398,7 @@ int clsMotor::eleccionPersonaje()
     texto.loadFont(comic,20);
     //Pego fondo en pantalla y refresco
     pantalla.clean(BLACK);
-    fondo.setI(14);
+    fondo.setI(15);
     fondo.paste(pantalla.getPtr());
     pantalla.refresh();
     musica[16].playMusic(-1);
