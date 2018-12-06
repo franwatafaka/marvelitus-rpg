@@ -273,8 +273,6 @@ int clsMotor::bienvenida()
                 return error.get();
             }
         }
-
-
     }
     musica[0].stopMusic();
     //--------------------------------------------------------------------------
@@ -1029,45 +1027,53 @@ int clsMotor::nivel_1(clsPersonaje seleccionado)
     fondo.setI(9);
     cout << "Seteo el fondo " << endl;
     seleccionado.animar(&pantalla,QUIETO,&fondo);
-    cout << "Animo personaje " << endl;
-
+    cout << "Muestro personaje " << endl;
+    enemigo.animar(&pantalla,QUIETO,&fondo);
+    cout << "Muestro enemigo " << endl;
     pantalla.refresh();
     movimiento = false;
+    int distancia_personajes = enemigo.getX()-seleccionado.getX();
+    int distancia_personajes_calculada = enemigo.getX()-seleccionado.getX();
+    cout << "distancia_personajes_calculada " << distancia_personajes_calculada << " distancia_personajes " << distancia_personajes << endl;
     //fondo.paste(pantalla.getPtr());
     musica[9].playMusic(-1);
     salirNivel_1=false;
     //Loop del Motor
     while(!salirNivel_1)
     {
+
         //Si hubo un evento
         if(evento.wasEvent())
         {
-
             //Switch de eventos
             switch(evento.getEventType())
             {
             //Presion de una tecla
             case KEY_PRESSED:
             {
-                while(evento.getEventType() == KEY_PRESSED)
+                while(evento.getEventType() == KEY_PRESSED )
                 {
-                    pantalla.refresh();
                     if(evento.wasEvent() && evento.getEventType() == KEY_FREE)
                     {
                         break;
-                        pantalla.refresh();
                         seleccionado.animar(&pantalla,QUIETO,&fondo);
+                        pantalla.refresh();
+                        distancia_personajes_calculada = distancia_personajes_calculada-seleccionado.getX();
                     }
                     else
+
                     {
                         error.set(teclaPresionada());
+                        distancia_personajes_calculada = distancia_personajes_calculada-seleccionado.getX();
+                        pantalla.refresh();
                     }
+
                 }
+
             }
             break;
             }
         }
-
     } // fin while
     musica[9].stopMusic();
     //--------------------------------------------------------------------------

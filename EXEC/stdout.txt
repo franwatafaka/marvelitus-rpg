@@ -46,7 +46,9 @@ Ingreso nivel 1
 personaje  
  Limpio pantalla 
 Seteo el fondo 
-Animo personaje 
+Muestro personaje 
+Muestro enemigo 
+distancia_personajes_calculada 845 distancia_personajes 845
 Se destruyo la imagen 0 del sprite sin Nombre
 Se destruyo la imagen 1 del sprite sin Nombre
 Se destruyo la imagen 2 del sprite sin Nombre
@@ -93,8 +95,12 @@ Se destruyo la imagen 5 del sprite sin Nombre
 Se destruyo la imagen 6 del sprite sin Nombre
 Se destruyo la imagen 7 del sprite sin Nombre
 Se destruyo la imagen 8 del sprite sin Nombre
+Se destruyo la imagen 9 del sprite sin Nombre
 Se destruyeron la imagenes del sprite sin Nombre
 Se destruyo la imagen 0 del sprite sin Nombre
 Se destruyeron la imagenes del sprite sin Nombre
 Se destruyo la imagen 0 del sprite sin Nombre
+Se destruyeron la imagenes del sprite sin Nombre
+Se destruyo la imagen 0 del sprite sin Nombre
+Se destruyeron la imagenes del sprite sin Nombre
 Se destruyeron la imagenes del sprite sin Nombre

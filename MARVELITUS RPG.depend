@@ -516,7 +516,7 @@
 	<clsFondo.h>
 	"rutasRecursos.h"
 
-1543983517 c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\include\rutasrecursos.h
+1543988075 c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\include\rutasrecursos.h
 
 1542898920 source:c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\source\clsanimacion.cpp
 	"clsAnimacion.h"
@@ -526,17 +526,17 @@
 	"clsFondo.h"
 	"../INCLUDE/rutasRecursos.h"
 
-1543985774 source:c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\source\clsmotor.cpp
+1544068985 source:c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\source\clsmotor.cpp
 	"clsMotor.h"
 	"../INCLUDE/rutasRecursos.h"
 	"../INCLUDE/consTextos.h"
 
 1541277860 c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\include\constextos.h
 
-1543985539 source:c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\source\clspersonaje.cpp
+1543986466 source:c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\source\clspersonaje.cpp
 	"clsPersonaje.h"
 
-1543983548 source:c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\source\clsenemigo.cpp
+1544069240 source:c:\users\mtlwa\onedrive\documentos\github\marvelitus-rpg\source\clsenemigo.cpp
 	"clsEnemigo.h"
 	"../INCLUDE/rutasRecursos.h"
 
