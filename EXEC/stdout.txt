@@ -99,8 +99,3 @@ Se destruyo la imagen 9 del sprite sin Nombre
 Se destruyeron la imagenes del sprite sin Nombre
 Se destruyo la imagen 0 del sprite sin Nombre
 Se destruyeron la imagenes del sprite sin Nombre
-Se destruyo la imagen 0 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyo la imagen 0 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre

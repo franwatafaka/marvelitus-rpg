@@ -1028,7 +1028,7 @@ int clsMotor::nivel_1(clsPersonaje seleccionado)
     cout << "Seteo el fondo " << endl;
     seleccionado.animar(&pantalla,QUIETO,&fondo);
     cout << "Muestro personaje " << endl;
-    enemigo.animar(&pantalla,QUIETO,&fondo);
+    enemigo.animar(&pantalla,&fondo);
     cout << "Muestro enemigo " << endl;
     pantalla.refresh();
     movimiento = false;

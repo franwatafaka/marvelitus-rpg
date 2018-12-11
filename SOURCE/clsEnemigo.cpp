@@ -1,7 +1,7 @@
 #include "clsEnemigo.h"
 #include "../INCLUDE/rutasRecursos.h"
 
-int clsEnemigo::init( clsScreen *s)
+int clsEnemigo::init( clsScreen *s )
 {
     pantalla =  s;
     error.set(0);
@@ -20,10 +20,10 @@ int clsEnemigo::init( clsScreen *s)
     return error.get();
 }
 
-int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fondo )
+int clsEnemigo::animar(clsScreen *pantalla, clsFondo *fondo )
 {
     error.set(0);
-
+Uint16 teclaPres;
     switch(teclaPres)
     {
     case QUIETO:
@@ -34,7 +34,6 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
         pasos = 0;
         fondo->paste(pantalla->getPtr());
         this->paste(pantalla->getPtr());
-
 
     }
     break;
@@ -62,8 +61,7 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
             setI(0);
             pasos = 0;
         }
-          fondo->paste(pantalla->getPtr());
-
+        fondo->paste(pantalla->getPtr());
         this->paste(pantalla->getPtr());
     }
     break;
@@ -91,8 +89,7 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
             setI(5);
             pasos = 0;
         }
-          fondo->paste(pantalla->getPtr());
-
+        fondo->paste(pantalla->getPtr());
         this->paste(pantalla->getPtr());
     }
     break;
@@ -106,7 +103,7 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
         this->setX(this->getX());
         this->setY(this->getY()+10);
         fondo->paste(pantalla->getPtr());
-            this->paste(pantalla->getPtr());
+        this->paste(pantalla->getPtr());
         if(pasos < 3)
         {
             setI(0);
@@ -122,8 +119,7 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
             setI(0);
             pasos = 0;
         }
-          fondo->paste(pantalla->getPtr());
-
+        fondo->paste(pantalla->getPtr());
         this->paste(pantalla->getPtr());
     }
     break;
@@ -153,8 +149,7 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
             setI(0);
             pasos = 0;
         }
-          fondo->paste(pantalla->getPtr());
-
+        fondo->paste(pantalla->getPtr());
         this->paste(pantalla->getPtr());
     }
     break;
@@ -172,7 +167,7 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
         this->setX(this->getX()+10);
         this->setY(this->getY()-10);
         fondo->paste(pantalla->getPtr());
-            this->paste(pantalla->getPtr());
+        this->paste(pantalla->getPtr());
         if(pasos < 3)
         {
             setI(5);
@@ -188,8 +183,7 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
             setI(5);
             pasos = 0;
         }
-          fondo->paste(pantalla->getPtr());
-
+        fondo->paste(pantalla->getPtr());
         this->paste(pantalla->getPtr());
     }
     break;
@@ -207,7 +201,7 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
         this->setX(this->getX()-10);
         this->setY(this->getY()-10);
         fondo->paste(pantalla->getPtr());
-            this->paste(pantalla->getPtr());
+        this->paste(pantalla->getPtr());
         if(pasos < 3)
         {
             setI(0);
@@ -223,8 +217,7 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
             setI(0);
             pasos = 0;
         }
-          fondo->paste(pantalla->getPtr());
-
+        fondo->paste(pantalla->getPtr());
         this->paste(pantalla->getPtr());
     }
     break;
@@ -242,7 +235,7 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
         this->setX(this->getX()+10);
         this->setY(this->getY()+10);
         fondo->paste(pantalla->getPtr());
-            this->paste(pantalla->getPtr());
+        this->paste(pantalla->getPtr());
         if(pasos < 3)
         {
             setI(6);
@@ -258,8 +251,7 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
             setI(6);
             pasos = 0;
         }
-          fondo->paste(pantalla->getPtr());
-
+        fondo->paste(pantalla->getPtr());
         this->paste(pantalla->getPtr());
     }
     break;
@@ -277,7 +269,7 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
         this->setX(this->getX()-10);
         this->setY(this->getY()+10);
         fondo->paste(pantalla->getPtr());
-            this->paste(pantalla->getPtr());
+        this->paste(pantalla->getPtr());
         if(pasos < 3)
         {
             setI(0);
@@ -293,45 +285,26 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
             setI(0);
             pasos = 0;
         }
-          fondo->paste(pantalla->getPtr());
-
+        fondo->paste(pantalla->getPtr());
         this->paste(pantalla->getPtr());
     }
     break;
     case ATACA_C:
     {
-
-        for(int v=0; v<4; v++)
-        {
             this->setI(3);
             this->setX(this->getX());
             this->setY(this->getY());
             fondo->paste(pantalla->getPtr());
             this->paste(pantalla->getPtr());
-        }
-           this->setI(0);
-            this->setX(this->getX());
-            this->setY(this->getY());
-            fondo->paste(pantalla->getPtr());
-            this->paste(pantalla->getPtr());
-
     }
     break;
     case ATACA_L:
     {
-        for(int v=0; v<4; v++)
-        {
             this->setI(7);
             this->setX(this->getX());
             this->setY(this->getY());
             fondo->paste(pantalla->getPtr());
             this->paste(pantalla->getPtr());
-        }
-        this->setI(8);
-        this->setX(this->getX());
-        this->setY(this->getY());
-        fondo->paste(pantalla->getPtr());
-        this->paste(pantalla->getPtr());
     }
     break;
     case DEFIENDE:
@@ -349,10 +322,8 @@ int clsEnemigo::animar(clsScreen *pantalla, tDireccion teclaPres, clsFondo *fond
             fondo->paste(pantalla->getPtr());
             this->paste(pantalla->getPtr());
         }
-
     }
     break;
     }
-
     return error.get();
 }

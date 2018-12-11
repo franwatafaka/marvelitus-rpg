@@ -11,7 +11,7 @@ public:
     void inherit() {};
     int init( clsScreen *s);
     int vida = 0;
-    int animar(clsScreen *pantalla, tDireccion, clsFondo *fondo );
+    int animar(clsScreen *pantalla, clsFondo *fondo );
     clsScreen *pantalla;
     clsFondo *fondo;
     tDireccion *direction;

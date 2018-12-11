@@ -540,3 +540,377 @@
 	"clsEnemigo.h"
 	"../INCLUDE/rutasRecursos.h"
 
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clsaudio.cpp
+	"clsAudio.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clsaudio.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\adnconsts.h
+	<SDL/SDL.h>
+	<SDL/SDL_video.h>
+	<SDL/SDL_image.h>
+	<SDL/SDL_ttf.h>
+	<SDL/SDL_mixer.h>
+	<SDL.h>
+	<SDL_video.h>
+	"SDL_image.h"
+	"SDL_ttf.h"
+	"SDL_mixer.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clserror.h
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clsdot.cpp
+	"clsDot.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clsdot.h
+	"adnConsts.h"
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clserror.cpp
+	<cstring>
+	<iostream>
+	"clsError.h"
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clsevent.cpp
+	"clsEvent.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clsevent.h
+	"adnConsts.h"
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clsimage.cpp
+	"clsImage.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clsimage.h
+	"adnConsts.h"
+	"clsError.h"
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clslog.cpp
+	"clsLog.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clslog.h
+	<cstdio>
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clsmode.cpp
+	"clsMode.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clsmode.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clsmusic.cpp
+	"clsMusic.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clsmusic.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clsrandom.cpp
+	"clsRandom.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clsrandom.h
+	<ctime>
+	<cstdlib>
+	<iostream>
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clsscreen.cpp
+	"clsScreen.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clsscreen.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clssoundeffect.cpp
+	"clsSoundEffect.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clssoundeffect.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clssprite.cpp
+	"clsSprite.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clssprite.h
+	<iostream>
+	<cstring>
+	"adnConsts.h"
+	"clsError.h"
+	"clsDot.h"
+	"clsImage.h"
+	"clsDot.h"
+	"clsScreen.h"
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clstext.cpp
+	"clsText.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clstext.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clstimer.cpp
+	"clsTimer.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\adn-x\clstimer.h
+	"clsEvent.h"
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\main.cpp
+	<iostream>
+	<clsLog.h>
+	<clsError.h>
+	<clsMotor.h>
+	<locale>
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\include\clsmotor.h
+	<adnConsts.h>
+	<clsError.h>
+	<clsEvent.h>
+	<clsMode.h>
+	<clsScreen.h>
+	<clsAudio.h>
+	<clsMusic.h>
+	<clsSoundEffect.h>
+	<clsText.h>
+	<clsTimer.h>
+	<clsRandom.h>
+	"clsFondo.h"
+	"clsAnimacion.h"
+	"clsPersonaje.h"
+	"clsEnemigo.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\include\clsfondo.h
+	<clsSprite.h>
+	<clsScreen.h>
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\include\clsanimacion.h
+	<clsSprite.h>
+	<clsScreen.h>
+	<clsTimer.h>
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\include\clspersonaje.h
+	<clsSprite.h>
+	<clsEvent.h>
+	<clsFondo.h>
+	"rutasRecursos.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\include\rutasrecursos.h
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\include\clsenemigo.h
+	<clsTimer.h>
+	<clsSprite.h>
+	<clsScreen.h>
+	<clsFondo.h>
+	<clsEvent.h>
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\source\clsanimacion.cpp
+	"clsAnimacion.h"
+	"../INCLUDE/rutasRecursos.h"
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\source\clsfondo.cpp
+	"clsFondo.h"
+	"../INCLUDE/rutasRecursos.h"
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\source\clsmotor.cpp
+	"clsMotor.h"
+	"../INCLUDE/rutasRecursos.h"
+	"../INCLUDE/consTextos.h"
+
+1544071410 c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\include\constextos.h
+
+1544071410 source:c:\users\daniela\desktop\fran\lab2_tp2_sosa_francisco\marvelitus-rpg-master\source\clspersonaje.cpp
+	"clsPersonaje.h"
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clsaudio.cpp
+	"clsAudio.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clsaudio.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\adn-x\adnconsts.h
+	<SDL/SDL.h>
+	<SDL/SDL_video.h>
+	<SDL/SDL_image.h>
+	<SDL/SDL_ttf.h>
+	<SDL/SDL_mixer.h>
+	<SDL.h>
+	<SDL_video.h>
+	"SDL_image.h"
+	"SDL_ttf.h"
+	"SDL_mixer.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clserror.h
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clsdot.cpp
+	"clsDot.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clsdot.h
+	"adnConsts.h"
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clserror.cpp
+	<cstring>
+	<iostream>
+	"clsError.h"
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clsevent.cpp
+	"clsEvent.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clsevent.h
+	"adnConsts.h"
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clsimage.cpp
+	"clsImage.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clsimage.h
+	"adnConsts.h"
+	"clsError.h"
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clslog.cpp
+	"clsLog.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clslog.h
+	<cstdio>
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clsmode.cpp
+	"clsMode.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clsmode.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clsmusic.cpp
+	"clsMusic.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clsmusic.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clsrandom.cpp
+	"clsRandom.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clsrandom.h
+	<ctime>
+	<cstdlib>
+	<iostream>
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clsscreen.cpp
+	"clsScreen.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clsscreen.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clssoundeffect.cpp
+	"clsSoundEffect.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clssoundeffect.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clssprite.cpp
+	"clsSprite.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clssprite.h
+	<iostream>
+	<cstring>
+	"adnConsts.h"
+	"clsError.h"
+	"clsDot.h"
+	"clsImage.h"
+	"clsDot.h"
+	"clsScreen.h"
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clstext.cpp
+	"clsText.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clstext.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clstimer.cpp
+	"clsTimer.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\adn-x\clstimer.h
+	"clsEvent.h"
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\main.cpp
+	<iostream>
+	<clsLog.h>
+	<clsError.h>
+	<clsMotor.h>
+	<locale>
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\include\clsmotor.h
+	<adnConsts.h>
+	<clsError.h>
+	<clsEvent.h>
+	<clsMode.h>
+	<clsScreen.h>
+	<clsAudio.h>
+	<clsMusic.h>
+	<clsSoundEffect.h>
+	<clsText.h>
+	<clsTimer.h>
+	<clsRandom.h>
+	"clsFondo.h"
+	"clsAnimacion.h"
+	"clsPersonaje.h"
+	"clsEnemigo.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\include\clsfondo.h
+	<clsSprite.h>
+	<clsScreen.h>
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\include\clsanimacion.h
+	<clsSprite.h>
+	<clsScreen.h>
+	<clsTimer.h>
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\include\clspersonaje.h
+	<clsSprite.h>
+	<clsEvent.h>
+	<clsFondo.h>
+	"rutasRecursos.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\include\rutasrecursos.h
+
+1544572222 c:\users\daniela\documents\github\marvelitus-rpg\include\clsenemigo.h
+	<clsTimer.h>
+	<clsSprite.h>
+	<clsScreen.h>
+	<clsFondo.h>
+	<clsEvent.h>
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\source\clsanimacion.cpp
+	"clsAnimacion.h"
+	"../INCLUDE/rutasRecursos.h"
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\source\clsfondo.cpp
+	"clsFondo.h"
+	"../INCLUDE/rutasRecursos.h"
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\source\clsmotor.cpp
+	"clsMotor.h"
+	"../INCLUDE/rutasRecursos.h"
+	"../INCLUDE/consTextos.h"
+
+1544071410 c:\users\daniela\documents\github\marvelitus-rpg\include\constextos.h
+
+1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\source\clspersonaje.cpp
+	"clsPersonaje.h"
+
+1544572241 source:c:\users\daniela\documents\github\marvelitus-rpg\source\clsenemigo.cpp
+	"clsEnemigo.h"
+	"../INCLUDE/rutasRecursos.h"
+
