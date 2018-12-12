@@ -885,12 +885,13 @@
 
 1544071410 c:\users\daniela\documents\github\marvelitus-rpg\include\rutasrecursos.h
 
-1544572222 c:\users\daniela\documents\github\marvelitus-rpg\include\clsenemigo.h
+1544575754 c:\users\daniela\documents\github\marvelitus-rpg\include\clsenemigo.h
 	<clsTimer.h>
 	<clsSprite.h>
 	<clsScreen.h>
 	<clsFondo.h>
 	<clsEvent.h>
+	<clsPersonaje.h>
 
 1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\source\clsanimacion.cpp
 	"clsAnimacion.h"
@@ -900,7 +901,7 @@
 	"clsFondo.h"
 	"../INCLUDE/rutasRecursos.h"
 
-1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\source\clsmotor.cpp
+1544575309 source:c:\users\daniela\documents\github\marvelitus-rpg\source\clsmotor.cpp
 	"clsMotor.h"
 	"../INCLUDE/rutasRecursos.h"
 	"../INCLUDE/consTextos.h"
@@ -910,7 +911,7 @@
 1544071410 source:c:\users\daniela\documents\github\marvelitus-rpg\source\clspersonaje.cpp
 	"clsPersonaje.h"
 
-1544572241 source:c:\users\daniela\documents\github\marvelitus-rpg\source\clsenemigo.cpp
+1544575754 source:c:\users\daniela\documents\github\marvelitus-rpg\source\clsenemigo.cpp
 	"clsEnemigo.h"
 	"../INCLUDE/rutasRecursos.h"
 

@@ -1018,7 +1018,7 @@ int clsMotor::nivel_1(clsPersonaje seleccionado)
     cout << "Ingreso nivel 1 " << endl;
     error.set(0);
     //--------------------------------------------------------------------------
-
+        salirNivel_1=false;
     //Pego fondo en pantalla y refresco
     this->seleccionado = seleccionado;
     cout << "personaje  " <<  endl;
@@ -1028,7 +1028,7 @@ int clsMotor::nivel_1(clsPersonaje seleccionado)
     cout << "Seteo el fondo " << endl;
     seleccionado.animar(&pantalla,QUIETO,&fondo);
     cout << "Muestro personaje " << endl;
-    enemigo.animar(&pantalla,&fondo);
+
     cout << "Muestro enemigo " << endl;
     pantalla.refresh();
     movimiento = false;
@@ -1037,11 +1037,11 @@ int clsMotor::nivel_1(clsPersonaje seleccionado)
     cout << "distancia_personajes_calculada " << distancia_personajes_calculada << " distancia_personajes " << distancia_personajes << endl;
     //fondo.paste(pantalla.getPtr());
     musica[9].playMusic(-1);
-    salirNivel_1=false;
+
     //Loop del Motor
     while(!salirNivel_1)
     {
-
+        enemigo.animar(&pantalla,&fondo, &seleccionado,&salirNivel_1);
         //Si hubo un evento
         if(evento.wasEvent())
         {

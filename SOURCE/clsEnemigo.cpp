@@ -20,10 +20,30 @@ int clsEnemigo::init( clsScreen *s )
     return error.get();
 }
 
-int clsEnemigo::animar(clsScreen *pantalla, clsFondo *fondo )
+int clsEnemigo::animar(clsScreen *pantalla, clsFondo *fondo, clsPersonaje *oPersonaje, bool *salirJuego )
 {
     error.set(0);
-Uint16 teclaPres;
+    Uint16 teclaPres;
+    this->setI(0);
+     fondo->paste(pantalla->getPtr());
+        this->paste(pantalla->getPtr());
+        bool salir = *salirJuego;
+    while(!salir)
+    {
+        cout<< "Entre al while" << endl;
+
+    if((oPersonaje->getX()== this->getX()) && (oPersonaje->getY() == this->getY()))
+    {
+        teclaPres = ATACA_L;
+    }
+    else
+    {
+        teclaPres = QUIETO;
+        fondo->paste(pantalla->getPtr());
+        this->paste(pantalla->getPtr());
+
+    }
+
     switch(teclaPres)
     {
     case QUIETO:
@@ -324,6 +344,9 @@ Uint16 teclaPres;
         }
     }
     break;
+    }
+
+
     }
     return error.get();
 }

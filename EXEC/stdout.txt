@@ -49,53 +49,229 @@ Seteo el fondo
 Muestro personaje 
 Muestro enemigo 
 distancia_personajes_calculada 845 distancia_personajes 845
-Se destruyo la imagen 0 del sprite sin Nombre
-Se destruyo la imagen 1 del sprite sin Nombre
-Se destruyo la imagen 2 del sprite sin Nombre
-Se destruyo la imagen 3 del sprite sin Nombre
-Se destruyo la imagen 4 del sprite sin Nombre
-Se destruyo la imagen 5 del sprite sin Nombre
-Se destruyo la imagen 6 del sprite sin Nombre
-Se destruyo la imagen 7 del sprite sin Nombre
-Se destruyo la imagen 8 del sprite sin Nombre
-Se destruyo la imagen 9 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyo la imagen 0 del sprite sin Nombre
-Se destruyo la imagen 1 del sprite sin Nombre
-Se destruyo la imagen 2 del sprite sin Nombre
-Se destruyo la imagen 3 del sprite sin Nombre
-Se destruyo la imagen 4 del sprite sin Nombre
-Se destruyo la imagen 5 del sprite sin Nombre
-Se destruyo la imagen 6 del sprite sin Nombre
-Se destruyo la imagen 7 del sprite sin Nombre
-Se destruyo la imagen 8 del sprite sin Nombre
-Se destruyo la imagen 9 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyo la imagen 0 del sprite sin Nombre
-Se destruyo la imagen 1 del sprite sin Nombre
-Se destruyo la imagen 2 del sprite sin Nombre
-Se destruyo la imagen 3 del sprite sin Nombre
-Se destruyo la imagen 4 del sprite sin Nombre
-Se destruyo la imagen 5 del sprite sin Nombre
-Se destruyo la imagen 6 del sprite sin Nombre
-Se destruyo la imagen 7 del sprite sin Nombre
-Se destruyo la imagen 8 del sprite sin Nombre
-Se destruyo la imagen 9 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-
-**********************************************************
-       El proyecto ADN-X ha finalizado correctamente      
-##########################################################
-Se destruyo la imagen 0 del sprite sin Nombre
-Se destruyo la imagen 1 del sprite sin Nombre
-Se destruyo la imagen 2 del sprite sin Nombre
-Se destruyo la imagen 3 del sprite sin Nombre
-Se destruyo la imagen 4 del sprite sin Nombre
-Se destruyo la imagen 5 del sprite sin Nombre
-Se destruyo la imagen 6 del sprite sin Nombre
-Se destruyo la imagen 7 del sprite sin Nombre
-Se destruyo la imagen 8 del sprite sin Nombre
-Se destruyo la imagen 9 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
-Se destruyo la imagen 0 del sprite sin Nombre
-Se destruyeron la imagenes del sprite sin Nombre
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
+Entre al while
