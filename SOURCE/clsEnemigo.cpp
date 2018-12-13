@@ -12,7 +12,10 @@ int clsEnemigo::init( clsScreen *s )
         setI(u);
         error.set(load(spritesEnemigo[u]));
         cout << "Carga spriteEnemigo " << u << endl;
-        if(error.get()){ return error.get();}
+        if(error.get())
+        {
+            return error.get();
+        }
     }
     setI(0);
     setX(850);
@@ -20,29 +23,45 @@ int clsEnemigo::init( clsScreen *s )
     return error.get();
 }
 
-int clsEnemigo::animar(clsScreen *pantalla, clsFondo *fondo, clsPersonaje *oPersonaje, bool *salirJuego )
+int clsEnemigo::animar(clsScreen *pantalla, clsFondo *fondo, clsPersonaje *oPersonaje)
 {
+    cout<< "Entre a animar" << endl;
     error.set(0);
     Uint16 teclaPres;
-    this->setI(0);
-     fondo->paste(pantalla->getPtr());
-        this->paste(pantalla->getPtr());
-        bool salir = *salirJuego;
-    while(!salir)
-    {
-        cout<< "Entre al while" << endl;
+    teclaPres = QUIETO;
 
-    if((oPersonaje->getX()== this->getX()) && (oPersonaje->getY() == this->getY()))
+
+    if(posX > 1100 || ( posX > 1100 && !this->getContact(oPersonaje) ) )
     {
-        teclaPres = ATACA_L;
-    }
-    else
-    {
-        teclaPres = QUIETO;
-        fondo->paste(pantalla->getPtr());
-        this->paste(pantalla->getPtr());
+
+            posX--;
+        teclaPres = IZQUIERDA;
+        cout << "IZQUIERDA" << endl;
 
     }
+     if( posX < 1100 || (posX < 1100 && !this->getContact(oPersonaje)))
+    {
+        posX++;
+        teclaPres = DERECHA;
+        cout << "DERECHA" << endl;
+
+
+    }
+    if( this->getContact(oPersonaje) )
+    {
+
+        cout<<" ataca "<<endl;
+        teclaPres = ATACA_C;
+        cout << "ataca atacaaa" << endl;
+    }
+
+
+
+
+
+
+
+
 
     switch(teclaPres)
     {
@@ -54,7 +73,6 @@ int clsEnemigo::animar(clsScreen *pantalla, clsFondo *fondo, clsPersonaje *oPers
         pasos = 0;
         fondo->paste(pantalla->getPtr());
         this->paste(pantalla->getPtr());
-
     }
     break;
     case ARRIBA:
@@ -311,20 +329,20 @@ int clsEnemigo::animar(clsScreen *pantalla, clsFondo *fondo, clsPersonaje *oPers
     break;
     case ATACA_C:
     {
-            this->setI(3);
-            this->setX(this->getX());
-            this->setY(this->getY());
-            fondo->paste(pantalla->getPtr());
-            this->paste(pantalla->getPtr());
+        this->setI(3);
+        this->setX(this->getX());
+        this->setY(this->getY());
+        fondo->paste(pantalla->getPtr());
+        this->paste(pantalla->getPtr());
     }
     break;
     case ATACA_L:
     {
-            this->setI(7);
-            this->setX(this->getX());
-            this->setY(this->getY());
-            fondo->paste(pantalla->getPtr());
-            this->paste(pantalla->getPtr());
+        this->setI(7);
+        this->setX(this->getX());
+        this->setY(this->getY());
+        fondo->paste(pantalla->getPtr());
+        this->paste(pantalla->getPtr());
     }
     break;
     case DEFIENDE:
@@ -347,6 +365,5 @@ int clsEnemigo::animar(clsScreen *pantalla, clsFondo *fondo, clsPersonaje *oPers
     }
 
 
-    }
     return error.get();
 }

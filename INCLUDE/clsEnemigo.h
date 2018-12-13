@@ -12,12 +12,12 @@ public:
     void inherit() {};
     int init( clsScreen *s);
     int vida = 0;
-
-    int animar(clsScreen *pantalla, clsFondo *fondo, clsPersonaje *oPersonaje, bool *salirJuego );
+    int posPersonaje = 0;
+    int animar(clsScreen *pantalla, clsFondo *fondo, clsPersonaje *oPersonaje);
     clsScreen *pantalla;
     clsFondo *fondo;
     tDireccion *direction;
-    clsPersonaje oPersonaje;
+
 
 
 protected:

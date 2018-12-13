@@ -238,7 +238,7 @@ int clsMotor::bienvenida()
     fondo.setI(0);
     fondo.paste(pantalla.getPtr());
     pantalla.refresh();
-    musica[0].playMusic(1);
+ //  musica[0].playMusic(1);
     reloj.start();
 
     salirBienvenida=false;
@@ -274,7 +274,7 @@ int clsMotor::bienvenida()
             }
         }
     }
-    musica[0].stopMusic();
+//    musica[0].stopMusic();
     //--------------------------------------------------------------------------
     return error.get();
 }
@@ -290,7 +290,7 @@ int clsMotor::menu()
     fondo.setI(1);
     fondo.paste(pantalla.getPtr());
     pantalla.refresh();
-    musica[1].playMusic(-1);
+ //   musica[1].playMusic(-1);
     reloj.start();
 
     salirMenu=false;
@@ -327,7 +327,7 @@ int clsMotor::menu()
             }
         }
     }
-    musica[1].stopMusic();
+ //   musica[1].stopMusic();
     //--------------------------------------------------------------------------
     return error.get();
 }
@@ -343,7 +343,7 @@ int clsMotor::historia()
     fondo.setI(2);
     fondo.paste(pantalla.getPtr());
     pantalla.refresh();
-    musica[2].playMusic(1);
+ //   musica[2].playMusic(1);
     reloj.start();
 
     salirHistoria=false;
@@ -379,7 +379,7 @@ int clsMotor::historia()
             }
         }
     }
-    musica[2].stopMusic();
+ //   musica[2].stopMusic();
     error.set(eleccionPersonaje());
     error.set(menu());
     //--------------------------------------------------------------------------
@@ -399,7 +399,7 @@ int clsMotor::eleccionPersonaje()
     fondo.setI(14);
     fondo.paste(pantalla.getPtr());
     pantalla.refresh();
-    musica[16].playMusic(-1);
+  //  musica[16].playMusic(-1);
     reloj.start();
 
     salirSeleccion=false;
@@ -421,7 +421,7 @@ int clsMotor::eleccionPersonaje()
                 switch(evento.getKey())
                 {
                 case KEY_1:
-                    musica[16].stopMusic();
+                 //   musica[16].stopMusic();
                     error.set(introCapi(&eligioPersonaje));
                     if(eligioPersonaje == false)
                     {
@@ -429,7 +429,7 @@ int clsMotor::eleccionPersonaje()
                     }
                     break;
                 case KEY_2:
-                    musica[16].stopMusic();
+                  //  musica[16].stopMusic();
                     error.set(introDare(&eligioPersonaje));
                     if(eligioPersonaje == false)
                     {
@@ -437,7 +437,7 @@ int clsMotor::eleccionPersonaje()
                     }
                     break;
                 case KEY_3:
-                    musica[16].stopMusic();
+                   // musica[16].stopMusic();
                     error.set(introIron(&eligioPersonaje));
                     if(eligioPersonaje == false)
                     {
@@ -445,7 +445,7 @@ int clsMotor::eleccionPersonaje()
                     }
                     break;
                 case KEY_4:
-                    musica[16].stopMusic();
+                 //   musica[16].stopMusic();
                     error.set(introSpider(&eligioPersonaje));
                     if(eligioPersonaje == false)
                     {
@@ -453,7 +453,7 @@ int clsMotor::eleccionPersonaje()
                     }
                     break;
                 case KEY_5:
-                    musica[16].stopMusic();
+                 //   musica[16].stopMusic();
                     error.set(introStar(&eligioPersonaje));
                     if(eligioPersonaje == false)
                     {
@@ -461,7 +461,7 @@ int clsMotor::eleccionPersonaje()
                     }
                     break;
                 case KEY_6:
-                    musica[16].stopMusic();
+                 //   musica[16].stopMusic();
                     error.set(introThor(&eligioPersonaje));
                     if(eligioPersonaje == false)
                     {
@@ -482,7 +482,7 @@ int clsMotor::eleccionPersonaje()
             }
         }
     }
-    musica[16].stopMusic();
+  //  musica[16].stopMusic();
     //--------------------------------------------------------------------------
     return error.get();
 }
@@ -503,7 +503,7 @@ int clsMotor::introCapi(bool * elegido)
         texto.centredWrite(textoCapi[x],txtPostY[x],pantalla.getPtr());
     }
 
-    musica[3].playMusic(-1);
+   // musica[3].playMusic(-1);
     reloj.start();
     salirIntroCapi=false;
     ingresoJuego=false;
@@ -560,7 +560,7 @@ int clsMotor::introCapi(bool * elegido)
             salirSeleccion=true;
         }
     }
-    musica[3].stopMusic();
+ //   musica[3].stopMusic();
 
     //--------------------------------------------------------------------------
     return error.get();
@@ -582,7 +582,7 @@ int clsMotor::introDare(bool * elegido)
     {
         texto.centredWrite(textoDare[x],txtPostY[x],pantalla.getPtr());
     }
-    musica[4].playMusic(-1);
+  //  musica[4].playMusic(-1);
     reloj.start();
 
     salirIntroDare=false;
@@ -639,7 +639,7 @@ int clsMotor::introDare(bool * elegido)
             salirSeleccion=true;
         }
     }
-    musica[4].stopMusic();
+  //  musica[4].stopMusic();
     //--------------------------------------------------------------------------
     return error.get();
 }
@@ -659,7 +659,7 @@ int clsMotor::introIron(bool * elegido)
     {
         texto.centredWrite(textoIron[x],txtPostY[x],pantalla.getPtr());
     }
-    musica[5].playMusic(-1);
+  //  musica[5].playMusic(-1);
     reloj.start();
 
     salirIntroIron=false;
@@ -717,7 +717,7 @@ int clsMotor::introIron(bool * elegido)
             salirSeleccion=true;
         }
     }
-    musica[5].stopMusic();
+ //   musica[5].stopMusic();
     //--------------------------------------------------------------------------
     return error.get();
 }
@@ -737,7 +737,7 @@ int clsMotor::introSpider(bool * elegido)
     {
         texto.centredWrite(textoSpider[x],txtPostY[x],pantalla.getPtr());
     }
-    musica[6].playMusic(-1);
+   // musica[6].playMusic(-1);
     reloj.start();
 
     salirIntroSpider=false;
@@ -794,7 +794,7 @@ int clsMotor::introSpider(bool * elegido)
             salirSeleccion=true;
         }
     }
-    musica[6].stopMusic();
+   // musica[6].stopMusic();
     //--------------------------------------------------------------------------
     return error.get();
 }
@@ -815,7 +815,7 @@ int clsMotor::introStar(bool * elegido)
         texto.centredWrite(textoStar[x],txtPostY[x],pantalla.getPtr());
     }
 
-    musica[7].playMusic(-1);
+  //  musica[7].playMusic(-1);
     reloj.start();
 
     salirIntroStar=false;
@@ -872,7 +872,7 @@ int clsMotor::introStar(bool * elegido)
             salirSeleccion=true;
         }
     }
-    musica[7].stopMusic();
+   // musica[7].stopMusic();
     //--------------------------------------------------------------------------
     return error.get();
 }
@@ -893,7 +893,7 @@ int clsMotor::introThor(bool * elegido)
         texto.centredWrite(textoThor[x],txtPostY[x],pantalla.getPtr());
     }
 
-    musica[8].playMusic(-1);
+   // musica[8].playMusic(-1);
     reloj.start();
 
     salirIntroThor=false;
@@ -951,7 +951,7 @@ int clsMotor::introThor(bool * elegido)
             salirSeleccion=true;
         }
     }
-    musica[8].stopMusic();
+  //  musica[8].stopMusic();
     //--------------------------------------------------------------------------
     return error.get();
 }
@@ -1028,20 +1028,15 @@ int clsMotor::nivel_1(clsPersonaje seleccionado)
     cout << "Seteo el fondo " << endl;
     seleccionado.animar(&pantalla,QUIETO,&fondo);
     cout << "Muestro personaje " << endl;
-
+     enemigo.animar(&pantalla,&fondo, &seleccionado);
     cout << "Muestro enemigo " << endl;
     pantalla.refresh();
-    movimiento = false;
-    int distancia_personajes = enemigo.getX()-seleccionado.getX();
-    int distancia_personajes_calculada = enemigo.getX()-seleccionado.getX();
-    cout << "distancia_personajes_calculada " << distancia_personajes_calculada << " distancia_personajes " << distancia_personajes << endl;
-    //fondo.paste(pantalla.getPtr());
-    musica[9].playMusic(-1);
-
+   // movimiento = false;
+   // musica[9].playMusic(-1);
     //Loop del Motor
     while(!salirNivel_1)
     {
-        enemigo.animar(&pantalla,&fondo, &seleccionado,&salirNivel_1);
+
         //Si hubo un evento
         if(evento.wasEvent())
         {
@@ -1055,27 +1050,29 @@ int clsMotor::nivel_1(clsPersonaje seleccionado)
                 {
                     if(evento.wasEvent() && evento.getEventType() == KEY_FREE)
                     {
-                        break;
-                        seleccionado.animar(&pantalla,QUIETO,&fondo);
+                      // seleccionado.animar(&pantalla,QUIETO,&fondo);
+
                         pantalla.refresh();
-                        distancia_personajes_calculada = distancia_personajes_calculada-seleccionado.getX();
+                        break;
                     }
                     else
-
                     {
+                       // enemigo.animar(&pantalla,&fondo,&seleccionado);
                         error.set(teclaPresionada());
-                        distancia_personajes_calculada = distancia_personajes_calculada-seleccionado.getX();
                         pantalla.refresh();
                     }
-
                 }
-
             }
             break;
             }
         }
+        else
+        {
+            enemigo.animar(&pantalla,&fondo,&seleccionado);
+            pantalla.refresh();
+        }
     } // fin while
-    musica[9].stopMusic();
+  //  musica[9].stopMusic();
     //--------------------------------------------------------------------------
     return error.get();
 }
@@ -1435,6 +1432,7 @@ int clsMotor::teclaPresionada()
     }
     break;
 
+
         //---------------------
     }
 
@@ -1446,8 +1444,8 @@ int clsMotor::teclaPresionada()
 int clsMotor::teclaLiberada()
 {
     error.set(0);
-    //--------------------------------------------------------------------------
-
+    //-------------------------------------------------------------------------
+      pantalla.refresh();
     //--------------------------------------------------------------------------
     return error.get();
 }
